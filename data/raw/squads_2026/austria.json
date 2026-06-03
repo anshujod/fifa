@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Alexander Schlager",
+    "position": "GK",
+    "club": "Red Bull Salzburg",
+    "age": 30,
+    "caps": 26,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "David Affengruber",
+    "position": "DF",
+    "club": "Elche",
+    "age": 25,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Kevin Danso",
+    "position": "DF",
+    "club": "Tottenham Hotspur",
+    "age": 27,
+    "caps": 32,
+    "goals": 0,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Xaver Schlager",
+    "position": "MF",
+    "club": "RB Leipzig",
+    "age": 28,
+    "caps": 51,
+    "goals": 4,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Stefan Posch",
+    "position": "DF",
+    "club": "Mainz 05",
+    "age": 29,
+    "caps": 52,
+    "goals": 5,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Nicolas Seiwald",
+    "position": "MF",
+    "club": "RB Leipzig",
+    "age": 25,
+    "caps": 47,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Marko Arnautović",
+    "position": "FW",
+    "club": "Red Star Belgrade",
+    "age": 37,
+    "caps": 133,
+    "goals": 47,
+    "market_value": null
+  },
+  {
+    "name": "David Alaba (captain)",
+    "position": "DF",
+    "club": "Real Madrid",
+    "age": 33,
+    "caps": 113,
+    "goals": 15,
+    "market_value": null
+  },
+  {
+    "name": "Marcel Sabitzer",
+    "position": "MF",
+    "club": "Borussia Dortmund",
+    "age": 32,
+    "caps": 98,
+    "goals": 26,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Florian Grillitsch",
+    "position": "MF",
+    "club": "Braga",
+    "age": 30,
+    "caps": 58,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Michael Gregoritsch",
+    "position": "FW",
+    "club": "FC Augsburg",
+    "age": 32,
+    "caps": 75,
+    "goals": 24,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Florian Wiegele",
+    "position": "GK",
+    "club": "Viktoria Plzeň",
+    "age": 25,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€2.20m"
+  },
+  {
+    "name": "Patrick Pentz",
+    "position": "GK",
+    "club": "Brøndby",
+    "age": 29,
+    "caps": 18,
+    "goals": 0,
+    "market_value": "€2.20m"
+  },
+  {
+    "name": "Saša Kalajdžić",
+    "position": "FW",
+    "club": "LASK",
+    "age": 28,
+    "caps": 22,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Philipp Lienhart",
+    "position": "DF",
+    "club": "SC Freiburg",
+    "age": 29,
+    "caps": 41,
+    "goals": 3,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Phillipp Mwene",
+    "position": "DF",
+    "club": "Mainz 05",
+    "age": 32,
+    "caps": 30,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Carney Chukwuemeka",
+    "position": "MF",
+    "club": "Borussia Dortmund",
+    "age": 22,
+    "caps": 3,
+    "goals": 1,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Romano Schmid",
+    "position": "MF",
+    "club": "Werder Bremen",
+    "age": 26,
+    "caps": 34,
+    "goals": 3,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Konrad Laimer",
+    "position": "MF",
+    "club": "Bayern Munich",
+    "age": 29,
+    "caps": 57,
+    "goals": 7,
+    "market_value": "€32.00m"
+  },
+  {
+    "name": "Patrick Wimmer",
+    "position": "FW",
+    "club": "VfL Wolfsburg",
+    "age": 25,
+    "caps": 30,
+    "goals": 1,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Alexander Prass",
+    "position": "MF",
+    "club": "TSG Hoffenheim",
+    "age": 25,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Marco Friedl",
+    "position": "DF",
+    "club": "Werder Bremen",
+    "age": 28,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Paul Wanner",
+    "position": "MF",
+    "club": "PSV Eindhoven",
+    "age": 20,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Michael Svoboda",
+    "position": "DF",
+    "club": "Venezia",
+    "age": 27,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Alessandro Schöpf",
+    "position": "MF",
+    "club": "Wolfsberger AC",
+    "age": 32,
+    "caps": 35,
+    "goals": 6,
+    "market_value": "€800k"
+  }
+]

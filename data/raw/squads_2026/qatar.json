@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Mahmud Abunada",
+    "position": "GK",
+    "club": "Al-Rayyan",
+    "age": 26,
+    "caps": 4,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Pedro Miguel",
+    "position": "DF",
+    "club": "Al-Sadd",
+    "age": 35,
+    "caps": 98,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Lucas Mendes",
+    "position": "DF",
+    "club": "Al-Wakrah",
+    "age": 35,
+    "caps": 25,
+    "goals": 1,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Issa Laye",
+    "position": "DF",
+    "club": "Al-Arabi",
+    "age": 28,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Jassem Gaber",
+    "position": "DF",
+    "club": "Al-Rayyan",
+    "age": 24,
+    "caps": 31,
+    "goals": 1,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Abdulaziz Hatem",
+    "position": "MF",
+    "club": "Al-Rayyan",
+    "age": 36,
+    "caps": 117,
+    "goals": 11,
+    "market_value": null
+  },
+  {
+    "name": "Ahmed Alaaeldin",
+    "position": "FW",
+    "club": "Al-Rayyan",
+    "age": 33,
+    "caps": 67,
+    "goals": 9,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Edmilson Junior",
+    "position": "FW",
+    "club": "Al-Duhail",
+    "age": 31,
+    "caps": 15,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Mohammed Muntari",
+    "position": "FW",
+    "club": "Al-Gharafa",
+    "age": 32,
+    "caps": 67,
+    "goals": 16,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Hassan Al-Haydos (captain)",
+    "position": "FW",
+    "club": "Al-Sadd",
+    "age": 35,
+    "caps": 185,
+    "goals": 41,
+    "market_value": null
+  },
+  {
+    "name": "Akram Afif",
+    "position": "FW",
+    "club": "Al-Sadd",
+    "age": 29,
+    "caps": 124,
+    "goals": 39,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Karim Boudiaf",
+    "position": "MF",
+    "club": "Al-Duhail",
+    "age": 35,
+    "caps": 117,
+    "goals": 5,
+    "market_value": "€175k"
+  },
+  {
+    "name": "Ayoub Al-Oui",
+    "position": "DF",
+    "club": "Al-Gharafa",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€375k"
+  },
+  {
+    "name": "Homam Ahmed",
+    "position": "DF",
+    "club": "Cultural Leonesa",
+    "age": 26,
+    "caps": 67,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Yusuf Abdurisag",
+    "position": "FW",
+    "club": "Al-Wakrah",
+    "age": 26,
+    "caps": 38,
+    "goals": 3,
+    "market_value": "€275k"
+  },
+  {
+    "name": "Boualem Khoukhi",
+    "position": "DF",
+    "club": "Al-Sadd",
+    "age": 35,
+    "caps": 115,
+    "goals": 20,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Ahmed Al-Ganehi",
+    "position": "MF",
+    "club": "Al-Gharafa",
+    "age": 25,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Sultan Al-Brake",
+    "position": "DF",
+    "club": "Al-Duhail",
+    "age": 30,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Almoez Ali",
+    "position": "FW",
+    "club": "Al-Duhail",
+    "age": 29,
+    "caps": 115,
+    "goals": 55,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Ahmed Fathy",
+    "position": "MF",
+    "club": "Al-Arabi",
+    "age": 33,
+    "caps": 47,
+    "goals": 0,
+    "market_value": "-"
+  },
+  {
+    "name": "Salah Zakaria",
+    "position": "GK",
+    "club": "Al-Duhail",
+    "age": 27,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Meshaal Barsham",
+    "position": "GK",
+    "club": "Al-Sadd",
+    "age": 28,
+    "caps": 52,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Assim Madibo",
+    "position": "MF",
+    "club": "Al-Wakrah",
+    "age": 29,
+    "caps": 50,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Tahsin Jamshid",
+    "position": "FW",
+    "club": "Al-Duhail",
+    "age": 19,
+    "caps": 2,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Al-Hashmi Al-Hussain",
+    "position": "DF",
+    "club": "Al-Arabi",
+    "age": 22,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Mohamed Manai",
+    "position": "FW",
+    "club": "Al-Shamal",
+    "age": 23,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "-"
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Alisson",
+    "position": "GK",
+    "club": "Liverpool",
+    "age": 33,
+    "caps": 77,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Wesley",
+    "position": "DF",
+    "club": "Roma",
+    "age": 22,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Gabriel Magalhães",
+    "position": "DF",
+    "club": "Arsenal",
+    "age": 28,
+    "caps": 17,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Marquinhos (captain)",
+    "position": "DF",
+    "club": "Paris Saint-Germain",
+    "age": 32,
+    "caps": 104,
+    "goals": 7,
+    "market_value": null
+  },
+  {
+    "name": "Casemiro",
+    "position": "MF",
+    "club": "Manchester United",
+    "age": 34,
+    "caps": 85,
+    "goals": 9,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Alex Sandro",
+    "position": "DF",
+    "club": "Flamengo",
+    "age": 35,
+    "caps": 44,
+    "goals": 2,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Vinícius Júnior",
+    "position": "FW",
+    "club": "Real Madrid",
+    "age": 25,
+    "caps": 48,
+    "goals": 9,
+    "market_value": null
+  },
+  {
+    "name": "Bruno Guimarães",
+    "position": "MF",
+    "club": "Newcastle United",
+    "age": 28,
+    "caps": 42,
+    "goals": 2,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Matheus Cunha",
+    "position": "FW",
+    "club": "Manchester United",
+    "age": 27,
+    "caps": 22,
+    "goals": 1,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Neymar",
+    "position": "FW",
+    "club": "Santos",
+    "age": 34,
+    "caps": 128,
+    "goals": 79,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Raphinha",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 29,
+    "caps": 38,
+    "goals": 11,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Weverton",
+    "position": "GK",
+    "club": "Grêmio",
+    "age": 38,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Danilo Luiz",
+    "position": "DF",
+    "club": "Flamengo",
+    "age": 34,
+    "caps": 69,
+    "goals": 1,
+    "market_value": "-"
+  },
+  {
+    "name": "Bremer",
+    "position": "DF",
+    "club": "Juventus",
+    "age": 29,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Léo Pereira",
+    "position": "DF",
+    "club": "Flamengo",
+    "age": 30,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Douglas Santos",
+    "position": "DF",
+    "club": "Zenit Saint Petersburg",
+    "age": 32,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€7.50m"
+  },
+  {
+    "name": "Fabinho",
+    "position": "MF",
+    "club": "Al-Ittihad",
+    "age": 32,
+    "caps": 32,
+    "goals": 0,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Danilo Santos",
+    "position": "MF",
+    "club": "Botafogo",
+    "age": 25,
+    "caps": 3,
+    "goals": 2,
+    "market_value": "-"
+  },
+  {
+    "name": "Endrick",
+    "position": "FW",
+    "club": "Lyon",
+    "age": 19,
+    "caps": 16,
+    "goals": 3,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Lucas Paquetá",
+    "position": "MF",
+    "club": "Flamengo",
+    "age": 28,
+    "caps": 62,
+    "goals": 13,
+    "market_value": "€32.00m"
+  },
+  {
+    "name": "Luiz Henrique",
+    "position": "FW",
+    "club": "Zenit Saint Petersburg",
+    "age": 25,
+    "caps": 14,
+    "goals": 2,
+    "market_value": "€24.00m"
+  },
+  {
+    "name": "Gabriel Martinelli",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 24,
+    "caps": 22,
+    "goals": 4,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Ederson",
+    "position": "GK",
+    "club": "Fenerbahçe",
+    "age": 32,
+    "caps": 32,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Roger Ibañez",
+    "position": "DF",
+    "club": "Al-Ahli",
+    "age": 27,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Igor Thiago",
+    "position": "FW",
+    "club": "Brentford",
+    "age": 24,
+    "caps": 3,
+    "goals": 2,
+    "market_value": "€65.00m"
+  },
+  {
+    "name": "Rayan",
+    "position": "FW",
+    "club": "Bournemouth",
+    "age": 19,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€90.00m"
+  }
+]

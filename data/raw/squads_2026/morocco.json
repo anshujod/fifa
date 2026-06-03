@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Yassine Bounou",
+    "position": "GK",
+    "club": "Al-Hilal",
+    "age": 35,
+    "caps": 89,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Achraf Hakimi (captain)",
+    "position": "DF",
+    "club": "Paris Saint-Germain",
+    "age": 27,
+    "caps": 95,
+    "goals": 11,
+    "market_value": null
+  },
+  {
+    "name": "Noussair Mazraoui",
+    "position": "DF",
+    "club": "Manchester United",
+    "age": 28,
+    "caps": 44,
+    "goals": 2,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Sofyan Amrabat",
+    "position": "MF",
+    "club": "Real Betis",
+    "age": 29,
+    "caps": 74,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Nayef Aguerd",
+    "position": "DF",
+    "club": "Marseille",
+    "age": 30,
+    "caps": 64,
+    "goals": 2,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Ayyoub Bouaddi",
+    "position": "MF",
+    "club": "Lille",
+    "age": 18,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Chemsdine Talbi",
+    "position": "MF",
+    "club": "Sunderland",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Azzedine Ounahi",
+    "position": "MF",
+    "club": "Girona",
+    "age": 26,
+    "caps": 48,
+    "goals": 9,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Soufiane Rahimi",
+    "position": "FW",
+    "club": "Al-Ain",
+    "age": 30,
+    "caps": 36,
+    "goals": 12,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Brahim Díaz",
+    "position": "FW",
+    "club": "Real Madrid",
+    "age": 26,
+    "caps": 25,
+    "goals": 13,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Ismael Saibari",
+    "position": "MF",
+    "club": "PSV Eindhoven",
+    "age": 25,
+    "caps": 30,
+    "goals": 9,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Munir Mohamedi",
+    "position": "GK",
+    "club": "RS Berkane",
+    "age": 37,
+    "caps": 53,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Zakaria El Ouahdi",
+    "position": "DF",
+    "club": "Genk",
+    "age": 24,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Issa Diop",
+    "position": "DF",
+    "club": "Fulham",
+    "age": 29,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Samir El Mourabet",
+    "position": "MF",
+    "club": "Strasbourg",
+    "age": 20,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Gessime Yassine",
+    "position": "MF",
+    "club": "Strasbourg",
+    "age": 20,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Abde Ezzalzouli",
+    "position": "FW",
+    "club": "Real Betis",
+    "age": 24,
+    "caps": 36,
+    "goals": 2,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Chadi Riad",
+    "position": "DF",
+    "club": "Crystal Palace",
+    "age": 22,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Youssef Belammari",
+    "position": "DF",
+    "club": "Al Ahly",
+    "age": 27,
+    "caps": 18,
+    "goals": 0,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Ayoub El Kaabi",
+    "position": "FW",
+    "club": "Olympiacos",
+    "age": 32,
+    "caps": 71,
+    "goals": 37,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Ayoube Amaimouni",
+    "position": "FW",
+    "club": "Eintracht Frankfurt",
+    "age": 21,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Ahmed Reda Tagnaouti",
+    "position": "GK",
+    "club": "AS FAR",
+    "age": 30,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Bilal El Khannouss",
+    "position": "MF",
+    "club": "VfB Stuttgart",
+    "age": 22,
+    "caps": 36,
+    "goals": 3,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Neil El Aynaoui",
+    "position": "MF",
+    "club": "Roma",
+    "age": 24,
+    "caps": 15,
+    "goals": 2,
+    "market_value": "€23.00m"
+  },
+  {
+    "name": "Redouane Halhal",
+    "position": "DF",
+    "club": "Mechelen",
+    "age": 23,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Anass Salah-Eddine",
+    "position": "DF",
+    "club": "PSV Eindhoven",
+    "age": 24,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€12.00m"
+  }
+]

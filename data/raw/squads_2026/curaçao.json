@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Eloy Room",
+    "position": "GK",
+    "club": "Miami FC",
+    "age": 37,
+    "caps": 71,
+    "goals": 0,
+    "market_value": "€150k"
+  },
+  {
+    "name": "Shurandy Sambo",
+    "position": "DF",
+    "club": "Sparta Rotterdam",
+    "age": 24,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€1.30m"
+  },
+  {
+    "name": "Juriën Gaari",
+    "position": "DF",
+    "club": "Abha",
+    "age": 32,
+    "caps": 59,
+    "goals": 1,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Roshon van Eijma",
+    "position": "DF",
+    "club": "RKC Waalwijk",
+    "age": 28,
+    "caps": 27,
+    "goals": 1,
+    "market_value": "€375k"
+  },
+  {
+    "name": "Sherel Floranus",
+    "position": "DF",
+    "club": "PEC Zwolle",
+    "age": 27,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Godfried Roemeratoe",
+    "position": "MF",
+    "club": "RKC Waalwijk",
+    "age": 26,
+    "caps": 27,
+    "goals": 1,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Juninho Bacuna",
+    "position": "MF",
+    "club": "Volendam",
+    "age": 28,
+    "caps": 48,
+    "goals": 14,
+    "market_value": "€1.70m"
+  },
+  {
+    "name": "Livano Comenencia",
+    "position": "MF",
+    "club": "Zürich",
+    "age": 22,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Jürgen Locadia",
+    "position": "FW",
+    "club": "Miami FC",
+    "age": 32,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Leandro Bacuna (captain)",
+    "position": "MF",
+    "club": "Iğdır",
+    "age": 34,
+    "caps": 71,
+    "goals": 16,
+    "market_value": null
+  },
+  {
+    "name": "Jeremy Antonisse",
+    "position": "FW",
+    "club": "Kifisia",
+    "age": 24,
+    "caps": 26,
+    "goals": 3,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Sontje Hansen",
+    "position": "FW",
+    "club": "Middlesbrough",
+    "age": 24,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Tyrese Noslin",
+    "position": "FW",
+    "club": "Telstar",
+    "age": 23,
+    "caps": 6,
+    "goals": 1,
+    "market_value": "€750k"
+  },
+  {
+    "name": "Kenji Gorré",
+    "position": "FW",
+    "club": "Maccabi Haifa",
+    "age": 31,
+    "caps": 37,
+    "goals": 6,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Ar'jany Martha",
+    "position": "MF",
+    "club": "Rotherham United",
+    "age": 22,
+    "caps": 8,
+    "goals": 2,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Jearl Margaritha",
+    "position": "FW",
+    "club": "Beveren",
+    "age": 26,
+    "caps": 21,
+    "goals": 5,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Brandley Kuwas",
+    "position": "FW",
+    "club": "Volendam",
+    "age": 33,
+    "caps": 34,
+    "goals": 2,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Armando Obispo",
+    "position": "DF",
+    "club": "PSV Eindhoven",
+    "age": 27,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Gervane Kastaneer",
+    "position": "FW",
+    "club": "Terengganu",
+    "age": 30,
+    "caps": 28,
+    "goals": 9,
+    "market_value": "€175k"
+  },
+  {
+    "name": "Joshua Brenet",
+    "position": "DF",
+    "club": "Kayserispor",
+    "age": 32,
+    "caps": 17,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Tahith Chong",
+    "position": "MF",
+    "club": "Sheffield United",
+    "age": 26,
+    "caps": 5,
+    "goals": 3,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Kevin Felida",
+    "position": "MF",
+    "club": "Den Bosch",
+    "age": 26,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Riechedly Bazoer",
+    "position": "DF",
+    "club": "Konyaspor",
+    "age": 29,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Deveron Fonville",
+    "position": "DF",
+    "club": "NEC",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Tyrick Bodak",
+    "position": "GK",
+    "club": "Telstar",
+    "age": 24,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€25k"
+  },
+  {
+    "name": "Trevor Doornbusch",
+    "position": "GK",
+    "club": "VVV-Venlo",
+    "age": 26,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€50k"
+  }
+]

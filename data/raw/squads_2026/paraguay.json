@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Gatito Fernández",
+    "position": "GK",
+    "club": "Cerro Porteño",
+    "age": 38,
+    "caps": 30,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Gustavo Velázquez",
+    "position": "DF",
+    "club": "Cerro Porteño",
+    "age": 35,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Omar Alderete",
+    "position": "DF",
+    "club": "Sunderland",
+    "age": 29,
+    "caps": 35,
+    "goals": 3,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Juan José Cáceres",
+    "position": "DF",
+    "club": "Dynamo Moscow",
+    "age": 26,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Fabián Balbuena",
+    "position": "DF",
+    "club": "Grêmio",
+    "age": 34,
+    "caps": 47,
+    "goals": 2,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Júnior Alonso",
+    "position": "DF",
+    "club": "Atlético Mineiro",
+    "age": 33,
+    "caps": 70,
+    "goals": 3,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Ramón Sosa",
+    "position": "MF",
+    "club": "Palmeiras",
+    "age": 26,
+    "caps": 28,
+    "goals": 1,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Diego Gómez",
+    "position": "MF",
+    "club": "Brighton & Hove Albion",
+    "age": 23,
+    "caps": 23,
+    "goals": 3,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Antonio Sanabria",
+    "position": "FW",
+    "club": "Cremonese",
+    "age": 30,
+    "caps": 47,
+    "goals": 7,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Miguel Almirón",
+    "position": "MF",
+    "club": "Atlanta United FC",
+    "age": 32,
+    "caps": 75,
+    "goals": 9,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Maurício",
+    "position": "MF",
+    "club": "Palmeiras",
+    "age": 24,
+    "caps": 2,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Orlando Gill",
+    "position": "GK",
+    "club": "San Lorenzo",
+    "age": 26,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "José Canale",
+    "position": "DF",
+    "club": "Lanús",
+    "age": 29,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€2.20m"
+  },
+  {
+    "name": "Andrés Cubas",
+    "position": "MF",
+    "club": "Vancouver Whitecaps FC",
+    "age": 30,
+    "caps": 32,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Gustavo Gómez (captain)",
+    "position": "DF",
+    "club": "Palmeiras",
+    "age": 33,
+    "caps": 88,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Damián Bobadilla",
+    "position": "MF",
+    "club": "São Paulo",
+    "age": 24,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Kaku",
+    "position": "FW",
+    "club": "Al-Ain",
+    "age": 31,
+    "caps": 32,
+    "goals": 5,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Álex Arce",
+    "position": "FW",
+    "club": "Independiente Rivadavia",
+    "age": 30,
+    "caps": 14,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Julio Enciso",
+    "position": "FW",
+    "club": "Strasbourg",
+    "age": 22,
+    "caps": 31,
+    "goals": 4,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Braian Ojeda",
+    "position": "MF",
+    "club": "Orlando City SC",
+    "age": 25,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Gabriel Ávalos",
+    "position": "FW",
+    "club": "Independiente",
+    "age": 35,
+    "caps": 22,
+    "goals": 2,
+    "market_value": "€750k"
+  },
+  {
+    "name": "Gastón Olveira",
+    "position": "GK",
+    "club": "Olimpia",
+    "age": 33,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Matías Galarza",
+    "position": "MF",
+    "club": "Atlanta United FC",
+    "age": 24,
+    "caps": 14,
+    "goals": 2,
+    "market_value": "€5.50m"
+  },
+  {
+    "name": "Gustavo Caballero",
+    "position": "MF",
+    "club": "Portsmouth",
+    "age": 24,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Isidro Pitta",
+    "position": "FW",
+    "club": "Red Bull Bragantino",
+    "age": 26,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€7.50m"
+  },
+  {
+    "name": "Alexandro Maidana",
+    "position": "DF",
+    "club": "Talleres",
+    "age": 20,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€2.50m"
+  }
+]

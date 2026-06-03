@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Thibaut Courtois",
+    "position": "GK",
+    "club": "Real Madrid",
+    "age": 34,
+    "caps": 108,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Zeno Debast",
+    "position": "DF",
+    "club": "Sporting CP",
+    "age": 22,
+    "caps": 26,
+    "goals": 1,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Arthur Theate",
+    "position": "DF",
+    "club": "Eintracht Frankfurt",
+    "age": 26,
+    "caps": 33,
+    "goals": 1,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Brandon Mechele",
+    "position": "DF",
+    "club": "Club Brugge",
+    "age": 33,
+    "caps": 8,
+    "goals": 1,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Maxim De Cuyper",
+    "position": "DF",
+    "club": "Brighton & Hove Albion",
+    "age": 25,
+    "caps": 18,
+    "goals": 4,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Axel Witsel",
+    "position": "MF",
+    "club": "Girona",
+    "age": 37,
+    "caps": 137,
+    "goals": 12,
+    "market_value": "€1.40m"
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "position": "MF",
+    "club": "Napoli",
+    "age": 34,
+    "caps": 118,
+    "goals": 36,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Youri Tielemans (captain)",
+    "position": "MF",
+    "club": "Aston Villa",
+    "age": 29,
+    "caps": 84,
+    "goals": 13,
+    "market_value": null
+  },
+  {
+    "name": "Romelu Lukaku",
+    "position": "FW",
+    "club": "Napoli",
+    "age": 33,
+    "caps": 125,
+    "goals": 90,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Leandro Trossard",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 31,
+    "caps": 50,
+    "goals": 11,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Jérémy Doku",
+    "position": "FW",
+    "club": "Manchester City",
+    "age": 24,
+    "caps": 42,
+    "goals": 7,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Senne Lammens",
+    "position": "GK",
+    "club": "Manchester United",
+    "age": 23,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Mike Penders",
+    "position": "GK",
+    "club": "Strasbourg",
+    "age": 20,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Dodi Lukébakio",
+    "position": "FW",
+    "club": "Benfica",
+    "age": 28,
+    "caps": 29,
+    "goals": 5,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Thomas Meunier",
+    "position": "DF",
+    "club": "Lille",
+    "age": 34,
+    "caps": 79,
+    "goals": 10,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Koni De Winter",
+    "position": "DF",
+    "club": "Milan",
+    "age": 23,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€23.00m"
+  },
+  {
+    "name": "Charles De Ketelaere",
+    "position": "FW",
+    "club": "Atalanta",
+    "age": 25,
+    "caps": 29,
+    "goals": 5,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Joaquin Seys",
+    "position": "DF",
+    "club": "Club Brugge",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Diego Moreira",
+    "position": "MF",
+    "club": "Strasbourg",
+    "age": 21,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Hans Vanaken",
+    "position": "MF",
+    "club": "Club Brugge",
+    "age": 33,
+    "caps": 33,
+    "goals": 7,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Timothy Castagne",
+    "position": "DF",
+    "club": "Fulham",
+    "age": 30,
+    "caps": 62,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Alexis Saelemaekers",
+    "position": "MF",
+    "club": "Milan",
+    "age": 26,
+    "caps": 24,
+    "goals": 2,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Nicolas Raskin",
+    "position": "MF",
+    "club": "Rangers",
+    "age": 25,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Amadou Onana",
+    "position": "MF",
+    "club": "Aston Villa",
+    "age": 24,
+    "caps": 28,
+    "goals": 1,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Nathan Ngoy",
+    "position": "DF",
+    "club": "Lille",
+    "age": 23,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Matias Fernandez-Pardo",
+    "position": "FW",
+    "club": "Lille",
+    "age": 21,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€35.00m"
+  }
+]

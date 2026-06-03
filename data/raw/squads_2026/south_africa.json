@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Ronwen Williams (captain)",
+    "position": "GK",
+    "club": "Mamelodi Sundowns",
+    "age": 34,
+    "caps": 62,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Thabang Matuludi",
+    "position": "DF",
+    "club": "Polokwane City",
+    "age": 27,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Khulumani Ndamane",
+    "position": "DF",
+    "club": "Mamelodi Sundowns",
+    "age": 22,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Teboho Mokoena",
+    "position": "MF",
+    "club": "Mamelodi Sundowns",
+    "age": 29,
+    "caps": 51,
+    "goals": 9,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Thalente Mbatha",
+    "position": "MF",
+    "club": "Orlando Pirates",
+    "age": 26,
+    "caps": 14,
+    "goals": 3,
+    "market_value": "€1.60m"
+  },
+  {
+    "name": "Aubrey Modiba",
+    "position": "DF",
+    "club": "Mamelodi Sundowns",
+    "age": 30,
+    "caps": 44,
+    "goals": 3,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Oswin Appollis",
+    "position": "FW",
+    "club": "Orlando Pirates",
+    "age": 24,
+    "caps": 25,
+    "goals": 8,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Tshepang Moremi",
+    "position": "FW",
+    "club": "Orlando Pirates",
+    "age": 25,
+    "caps": 9,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Lyle Foster",
+    "position": "FW",
+    "club": "Burnley",
+    "age": 25,
+    "caps": 26,
+    "goals": 10,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Relebohile Mofokeng",
+    "position": "FW",
+    "club": "Orlando Pirates",
+    "age": 21,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Themba Zwane",
+    "position": "MF",
+    "club": "Mamelodi Sundowns",
+    "age": 36,
+    "caps": 53,
+    "goals": 12,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Thapelo Maseko",
+    "position": "FW",
+    "club": "AEL Limassol",
+    "age": 22,
+    "caps": 9,
+    "goals": 1,
+    "market_value": "€750k"
+  },
+  {
+    "name": "Sphephelo Sithole",
+    "position": "MF",
+    "club": "Tondela",
+    "age": 27,
+    "caps": 27,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Mbekezeli Mbokazi",
+    "position": "DF",
+    "club": "Chicago Fire FC",
+    "age": 20,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Iqraam Rayners",
+    "position": "FW",
+    "club": "Mamelodi Sundowns",
+    "age": 30,
+    "caps": 13,
+    "goals": 4,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Sipho Chaine",
+    "position": "GK",
+    "club": "Orlando Pirates",
+    "age": 29,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€1.40m"
+  },
+  {
+    "name": "Evidence Makgopa",
+    "position": "FW",
+    "club": "Orlando Pirates",
+    "age": 26,
+    "caps": 26,
+    "goals": 6,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Samukele Kabini",
+    "position": "DF",
+    "club": "Molde",
+    "age": 22,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Nkosinathi Sibisi",
+    "position": "DF",
+    "club": "Orlando Pirates",
+    "age": 30,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€1.60m"
+  },
+  {
+    "name": "Khuliso Mudau",
+    "position": "DF",
+    "club": "Mamelodi Sundowns",
+    "age": 31,
+    "caps": 32,
+    "goals": 1,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Ime Okon",
+    "position": "DF",
+    "club": "Hannover 96",
+    "age": 22,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Ricardo Goss",
+    "position": "GK",
+    "club": "Siwelele",
+    "age": 32,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Jayden Adams",
+    "position": "MF",
+    "club": "Mamelodi Sundowns",
+    "age": 25,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€1.40m"
+  },
+  {
+    "name": "Olwethu Makhanya",
+    "position": "DF",
+    "club": "Philadelphia Union",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Kamogelo Sebelebele",
+    "position": "FW",
+    "club": "Orlando Pirates",
+    "age": 23,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€850k"
+  },
+  {
+    "name": "Bradley Cross",
+    "position": "DF",
+    "club": "Kaizer Chiefs",
+    "age": 25,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€650k"
+  }
+]

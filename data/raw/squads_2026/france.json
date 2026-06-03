@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Brice Samba",
+    "position": "GK",
+    "club": "Rennes",
+    "age": 32,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Malo Gusto",
+    "position": "DF",
+    "club": "Chelsea",
+    "age": 23,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Lucas Digne",
+    "position": "DF",
+    "club": "Aston Villa",
+    "age": 32,
+    "caps": 56,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Dayot Upamecano",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 27,
+    "caps": 36,
+    "goals": 2,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Jules Koundé",
+    "position": "DF",
+    "club": "Barcelona",
+    "age": 27,
+    "caps": 46,
+    "goals": 0,
+    "market_value": "€65.00m"
+  },
+  {
+    "name": "Manu Koné",
+    "position": "MF",
+    "club": "Roma",
+    "age": 25,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Ousmane Dembélé",
+    "position": "FW",
+    "club": "Paris Saint-Germain",
+    "age": 29,
+    "caps": 58,
+    "goals": 7,
+    "market_value": "€100.00m"
+  },
+  {
+    "name": "Aurélien Tchouaméni",
+    "position": "MF",
+    "club": "Real Madrid",
+    "age": 26,
+    "caps": 44,
+    "goals": 3,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Marcus Thuram",
+    "position": "FW",
+    "club": "Inter Milan",
+    "age": 28,
+    "caps": 33,
+    "goals": 3,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Kylian Mbappé (captain)",
+    "position": "FW",
+    "club": "Real Madrid",
+    "age": 27,
+    "caps": 96,
+    "goals": 56,
+    "market_value": null
+  },
+  {
+    "name": "Michael Olise",
+    "position": "FW",
+    "club": "Bayern Munich",
+    "age": 24,
+    "caps": 15,
+    "goals": 4,
+    "market_value": "€150.00m"
+  },
+  {
+    "name": "Bradley Barcola",
+    "position": "FW",
+    "club": "Paris Saint-Germain",
+    "age": 23,
+    "caps": 18,
+    "goals": 3,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "N'Golo Kanté",
+    "position": "MF",
+    "club": "Fenerbahçe",
+    "age": 35,
+    "caps": 67,
+    "goals": 2,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Adrien Rabiot",
+    "position": "MF",
+    "club": "Milan",
+    "age": 31,
+    "caps": 57,
+    "goals": 7,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Ibrahima Konaté",
+    "position": "DF",
+    "club": "Liverpool",
+    "age": 27,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Mike Maignan",
+    "position": "GK",
+    "club": "Milan",
+    "age": 30,
+    "caps": 38,
+    "goals": 0,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "William Saliba",
+    "position": "DF",
+    "club": "Arsenal",
+    "age": 25,
+    "caps": 31,
+    "goals": 0,
+    "market_value": "€100.00m"
+  },
+  {
+    "name": "Warren Zaïre-Emery",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 20,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Théo Hernandez",
+    "position": "DF",
+    "club": "Al-Hilal",
+    "age": 28,
+    "caps": 42,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Désiré Doué",
+    "position": "FW",
+    "club": "Paris Saint-Germain",
+    "age": 21,
+    "caps": 6,
+    "goals": 2,
+    "market_value": "€120.00m"
+  },
+  {
+    "name": "Lucas Hernandez",
+    "position": "DF",
+    "club": "Paris Saint-Germain",
+    "age": 30,
+    "caps": 41,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Jean-Philippe Mateta",
+    "position": "FW",
+    "club": "Crystal Palace",
+    "age": 28,
+    "caps": 3,
+    "goals": 2,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Robin Risser",
+    "position": "GK",
+    "club": "Lens",
+    "age": 21,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Rayan Cherki",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 22,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€90.00m"
+  },
+  {
+    "name": "Maghnes Akliouche",
+    "position": "MF",
+    "club": "Monaco",
+    "age": 24,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Maxence Lacroix",
+    "position": "DF",
+    "club": "Crystal Palace",
+    "age": 26,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€50.00m"
+  }
+]

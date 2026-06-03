@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Kim Seung-gyu",
+    "position": "GK",
+    "club": "FC Tokyo",
+    "age": 35,
+    "caps": 86,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Lee Han-beom",
+    "position": "DF",
+    "club": "Midtjylland",
+    "age": 23,
+    "caps": 7,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Lee Gi-hyuk",
+    "position": "MF",
+    "club": "Gangwon FC",
+    "age": 25,
+    "caps": 2,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Kim Min-jae",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 29,
+    "caps": 78,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Kim Tae-hyeon",
+    "position": "DF",
+    "club": "Kashima Antlers",
+    "age": 25,
+    "caps": 7,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Hwang In-beom",
+    "position": "MF",
+    "club": "Feyenoord",
+    "age": 29,
+    "caps": 72,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Son Heung-min (captain)",
+    "position": "FW",
+    "club": "Los Angeles FC",
+    "age": 33,
+    "caps": 143,
+    "goals": 56,
+    "market_value": null
+  },
+  {
+    "name": "Paik Seung-ho",
+    "position": "MF",
+    "club": "Birmingham City",
+    "age": 29,
+    "caps": 26,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Cho Gue-sung",
+    "position": "FW",
+    "club": "Midtjylland",
+    "age": 28,
+    "caps": 43,
+    "goals": 12,
+    "market_value": null
+  },
+  {
+    "name": "Lee Jae-sung",
+    "position": "MF",
+    "club": "Mainz 05",
+    "age": 33,
+    "caps": 104,
+    "goals": 15,
+    "market_value": null
+  },
+  {
+    "name": "Hwang Hee-chan",
+    "position": "MF",
+    "club": "Wolverhampton Wanderers",
+    "age": 30,
+    "caps": 78,
+    "goals": 17,
+    "market_value": null
+  },
+  {
+    "name": "Song Bum-keun",
+    "position": "GK",
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 28,
+    "caps": 2,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Lee Tae-seok",
+    "position": "DF",
+    "club": "Austria Wien",
+    "age": 23,
+    "caps": 14,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Cho Wi-je",
+    "position": "DF",
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 24,
+    "caps": 0,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Kim Moon-hwan",
+    "position": "DF",
+    "club": "Daejeon Hana Citizen",
+    "age": 30,
+    "caps": 35,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Park Jin-seob",
+    "position": "DF",
+    "club": "Zhejiang",
+    "age": 30,
+    "caps": 13,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Bae Jun-ho",
+    "position": "MF",
+    "club": "Stoke City",
+    "age": 22,
+    "caps": 13,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Oh Hyeon-gyu",
+    "position": "FW",
+    "club": "Beşiktaş",
+    "age": 25,
+    "caps": 26,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Lee Kang-in",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 25,
+    "caps": 46,
+    "goals": 11,
+    "market_value": null
+  },
+  {
+    "name": "Yang Hyun-jun",
+    "position": "MF",
+    "club": "Celtic",
+    "age": 24,
+    "caps": 8,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Jo Hyeon-woo",
+    "position": "GK",
+    "club": "Ulsan HD",
+    "age": 34,
+    "caps": 48,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Seol Young-woo",
+    "position": "DF",
+    "club": "Red Star Belgrade",
+    "age": 27,
+    "caps": 33,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Jens Castrop",
+    "position": "DF",
+    "club": "Borussia Mönchengladbach",
+    "age": 22,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Kim Jin-gyu",
+    "position": "MF",
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 29,
+    "caps": 21,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Eom Ji-sung",
+    "position": "MF",
+    "club": "Swansea City",
+    "age": 24,
+    "caps": 9,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Lee Dong-gyeong",
+    "position": "MF",
+    "club": "Ulsan HD",
+    "age": 28,
+    "caps": 17,
+    "goals": 3,
+    "market_value": null
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Mouhib Chamakh",
+    "position": "GK",
+    "club": "Club Africain",
+    "age": 24,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ali Abdi",
+    "position": "DF",
+    "club": "Nice",
+    "age": 32,
+    "caps": 46,
+    "goals": 7,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Montassar Talbi",
+    "position": "DF",
+    "club": "Lorient",
+    "age": 28,
+    "caps": 63,
+    "goals": 4,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Omar Rekik",
+    "position": "DF",
+    "club": "Maribor",
+    "age": 24,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Adem Arous",
+    "position": "DF",
+    "club": "Kasımpaşa",
+    "age": 21,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Dylan Bronn",
+    "position": "DF",
+    "club": "Servette",
+    "age": 30,
+    "caps": 52,
+    "goals": 2,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Elias Achouri",
+    "position": "FW",
+    "club": "Copenhagen",
+    "age": 27,
+    "caps": 29,
+    "goals": 4,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Elias Saad",
+    "position": "FW",
+    "club": "Hannover 96",
+    "age": 26,
+    "caps": 15,
+    "goals": 4,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Hazem Mastouri",
+    "position": "FW",
+    "club": "Dynamo Makhachkala",
+    "age": 28,
+    "caps": 18,
+    "goals": 4,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Hannibal Mejbri",
+    "position": "MF",
+    "club": "Burnley",
+    "age": 23,
+    "caps": 45,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Ismaël Gharbi",
+    "position": "MF",
+    "club": "FC Augsburg",
+    "age": 22,
+    "caps": 16,
+    "goals": 2,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Mortadha Ben Ouanes",
+    "position": "DF",
+    "club": "Kasımpaşa",
+    "age": 31,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Rani Khedira",
+    "position": "MF",
+    "club": "Union Berlin",
+    "age": 32,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Khalil Ayari",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 21,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Hadj Mahmoud",
+    "position": "MF",
+    "club": "Lugano",
+    "age": 26,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Aymen Dahmen",
+    "position": "GK",
+    "club": "CS Sfaxien",
+    "age": 29,
+    "caps": 37,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ellyes Skhiri (captain)",
+    "position": "MF",
+    "club": "Eintracht Frankfurt",
+    "age": 31,
+    "caps": 82,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Rayan Elloumi",
+    "position": "FW",
+    "club": "Vancouver Whitecaps FC",
+    "age": 18,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Firas Chaouat",
+    "position": "FW",
+    "club": "Club Africain",
+    "age": 30,
+    "caps": 29,
+    "goals": 6,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Yan Valery",
+    "position": "DF",
+    "club": "Young Boys",
+    "age": 27,
+    "caps": 22,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Mohamed Amine Ben Hamida",
+    "position": "DF",
+    "club": "Espérance de Tunis",
+    "age": 30,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Sabri Ben Hessen",
+    "position": "GK",
+    "club": "Étoile du Sahel",
+    "age": 29,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Moutaz Neffati",
+    "position": "DF",
+    "club": "IFK Norrköping",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Raed Chikhaoui",
+    "position": "DF",
+    "club": "US Monastir",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Anis Ben Slimane",
+    "position": "MF",
+    "club": "Norwich City",
+    "age": 25,
+    "caps": 40,
+    "goals": 4,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Sebastian Tounekti",
+    "position": "MF",
+    "club": "Celtic",
+    "age": 23,
+    "caps": 11,
+    "goals": 1,
+    "market_value": "€5.00m"
+  }
+]

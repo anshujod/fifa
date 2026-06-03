@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Diogo Costa",
+    "position": "GK",
+    "club": "Porto",
+    "age": 26,
+    "caps": 42,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Nélson Semedo",
+    "position": "DF",
+    "club": "Fenerbahçe",
+    "age": 32,
+    "caps": 48,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Rúben Dias",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 29,
+    "caps": 74,
+    "goals": 3,
+    "market_value": "€55.00m"
+  },
+  {
+    "name": "Tomás Araújo",
+    "position": "DF",
+    "club": "Benfica",
+    "age": 24,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Diogo Dalot",
+    "position": "DF",
+    "club": "Manchester United",
+    "age": 27,
+    "caps": 33,
+    "goals": 3,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Matheus Nunes",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 27,
+    "caps": 19,
+    "goals": 2,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Cristiano Ronaldo (captain)",
+    "position": "FW",
+    "club": "Al-Nassr",
+    "age": 41,
+    "caps": 226,
+    "goals": 143,
+    "market_value": null
+  },
+  {
+    "name": "Bruno Fernandes",
+    "position": "MF",
+    "club": "Manchester United",
+    "age": 31,
+    "caps": 87,
+    "goals": 28,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Gonçalo Ramos",
+    "position": "FW",
+    "club": "Paris Saint-Germain",
+    "age": 24,
+    "caps": 24,
+    "goals": 10,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Bernardo Silva",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 31,
+    "caps": 107,
+    "goals": 14,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "João Félix",
+    "position": "FW",
+    "club": "Al-Nassr",
+    "age": 26,
+    "caps": 52,
+    "goals": 12,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "José Sá",
+    "position": "GK",
+    "club": "Wolverhampton Wanderers",
+    "age": 33,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Renato Veiga",
+    "position": "DF",
+    "club": "Villarreal",
+    "age": 22,
+    "caps": 11,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Gonçalo Inácio",
+    "position": "DF",
+    "club": "Sporting CP",
+    "age": 24,
+    "caps": 20,
+    "goals": 2,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "João Neves",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 21,
+    "caps": 21,
+    "goals": 3,
+    "market_value": "€140.00m"
+  },
+  {
+    "name": "Francisco Trincão",
+    "position": "FW",
+    "club": "Sporting CP",
+    "age": 26,
+    "caps": 17,
+    "goals": 3,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Rafael Leão",
+    "position": "FW",
+    "club": "Milan",
+    "age": 27,
+    "caps": 43,
+    "goals": 5,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Pedro Neto",
+    "position": "FW",
+    "club": "Chelsea",
+    "age": 26,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€60.00m"
+  },
+  {
+    "name": "Gonçalo Guedes",
+    "position": "FW",
+    "club": "Real Sociedad",
+    "age": 29,
+    "caps": 33,
+    "goals": 7,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "João Cancelo",
+    "position": "DF",
+    "club": "Barcelona",
+    "age": 32,
+    "caps": 66,
+    "goals": 12,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Rúben Neves",
+    "position": "MF",
+    "club": "Al-Hilal",
+    "age": 29,
+    "caps": 65,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Rui Silva",
+    "position": "GK",
+    "club": "Sporting CP",
+    "age": 32,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Vitinha",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 26,
+    "caps": 37,
+    "goals": 0,
+    "market_value": "€140.00m"
+  },
+  {
+    "name": "Samú Costa",
+    "position": "DF",
+    "club": "Mallorca",
+    "age": 25,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Nuno Mendes",
+    "position": "DF",
+    "club": "Paris Saint-Germain",
+    "age": 23,
+    "caps": 43,
+    "goals": 1,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Francisco Conceição",
+    "position": "FW",
+    "club": "Juventus",
+    "age": 23,
+    "caps": 15,
+    "goals": 3,
+    "market_value": "€30.00m"
+  }
+]

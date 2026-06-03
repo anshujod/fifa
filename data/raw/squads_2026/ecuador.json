@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Hernán Galíndez",
+    "position": "GK",
+    "club": "Huracán",
+    "age": 39,
+    "caps": 34,
+    "goals": 0,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Félix Torres",
+    "position": "DF",
+    "club": "Internacional",
+    "age": 29,
+    "caps": 48,
+    "goals": 5,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Piero Hincapié",
+    "position": "DF",
+    "club": "Arsenal",
+    "age": 24,
+    "caps": 51,
+    "goals": 3,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Joel Ordóñez",
+    "position": "DF",
+    "club": "Club Brugge",
+    "age": 22,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€33.00m"
+  },
+  {
+    "name": "Jordy Alcívar",
+    "position": "MF",
+    "club": "Independiente del Valle",
+    "age": 26,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Willian Pacho",
+    "position": "DF",
+    "club": "Paris Saint-Germain",
+    "age": 24,
+    "caps": 34,
+    "goals": 2,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Pervis Estupiñán",
+    "position": "DF",
+    "club": "Milan",
+    "age": 28,
+    "caps": 53,
+    "goals": 4,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Anthony Valencia",
+    "position": "MF",
+    "club": "Antwerp",
+    "age": 22,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "John Yeboah",
+    "position": "FW",
+    "club": "Venezia",
+    "age": 25,
+    "caps": 22,
+    "goals": 3,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Kendry Páez",
+    "position": "MF",
+    "club": "River Plate",
+    "age": 19,
+    "caps": 25,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Kevin Rodríguez",
+    "position": "FW",
+    "club": "Union Saint-Gilloise",
+    "age": 26,
+    "caps": 31,
+    "goals": 2,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Moisés Ramírez",
+    "position": "GK",
+    "club": "Kifisia",
+    "age": 25,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Enner Valencia (captain)",
+    "position": "FW",
+    "club": "Pachuca",
+    "age": 36,
+    "caps": 105,
+    "goals": 49,
+    "market_value": null
+  },
+  {
+    "name": "Alan Minda",
+    "position": "MF",
+    "club": "Atlético Mineiro",
+    "age": 23,
+    "caps": 19,
+    "goals": 2,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Pedro Vite",
+    "position": "MF",
+    "club": "UNAM",
+    "age": 24,
+    "caps": 16,
+    "goals": 1,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Jordy Caicedo",
+    "position": "FW",
+    "club": "Huracán",
+    "age": 28,
+    "caps": 19,
+    "goals": 3,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Ángelo Preciado",
+    "position": "DF",
+    "club": "Atlético Mineiro",
+    "age": 28,
+    "caps": 54,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Denil Castillo",
+    "position": "MF",
+    "club": "Midtjylland",
+    "age": 22,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Gonzalo Plata",
+    "position": "FW",
+    "club": "Flamengo",
+    "age": 25,
+    "caps": 49,
+    "goals": 8,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Nilson Angulo",
+    "position": "FW",
+    "club": "Sunderland",
+    "age": 22,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Alan Franco",
+    "position": "MF",
+    "club": "Atlético Mineiro",
+    "age": 27,
+    "caps": 57,
+    "goals": 1,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Gonzalo Valle",
+    "position": "GK",
+    "club": "LDU Quito",
+    "age": 30,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Moisés Caicedo",
+    "position": "MF",
+    "club": "Chelsea",
+    "age": 24,
+    "caps": 60,
+    "goals": 3,
+    "market_value": "€100.00m"
+  },
+  {
+    "name": "Jeremy Arévalo",
+    "position": "FW",
+    "club": "VfB Stuttgart",
+    "age": 21,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Jackson Porozo",
+    "position": "DF",
+    "club": "Tijuana",
+    "age": 25,
+    "caps": 9,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Yaimar Medina",
+    "position": "DF",
+    "club": "Genk",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€4.00m"
+  }
+]

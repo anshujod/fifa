@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Jordan Pickford",
+    "position": "GK",
+    "club": "Everton",
+    "age": 32,
+    "caps": 82,
+    "goals": 0,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Ezri Konsa",
+    "position": "DF",
+    "club": "Aston Villa",
+    "age": 28,
+    "caps": 18,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Nico O'Reilly",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 21,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Declan Rice",
+    "position": "MF",
+    "club": "Arsenal",
+    "age": 27,
+    "caps": 72,
+    "goals": 6,
+    "market_value": "€120.00m"
+  },
+  {
+    "name": "John Stones",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 32,
+    "caps": 87,
+    "goals": 3,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Marc Guéhi",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 25,
+    "caps": 27,
+    "goals": 1,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Bukayo Saka",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 24,
+    "caps": 48,
+    "goals": 14,
+    "market_value": "€110.00m"
+  },
+  {
+    "name": "Elliot Anderson",
+    "position": "MF",
+    "club": "Nottingham Forest",
+    "age": 23,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Harry Kane (captain)",
+    "position": "FW",
+    "club": "Bayern Munich",
+    "age": 32,
+    "caps": 112,
+    "goals": 78,
+    "market_value": null
+  },
+  {
+    "name": "Jude Bellingham",
+    "position": "MF",
+    "club": "Real Madrid",
+    "age": 22,
+    "caps": 46,
+    "goals": 6,
+    "market_value": "€140.00m"
+  },
+  {
+    "name": "Marcus Rashford",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 28,
+    "caps": 70,
+    "goals": 18,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Tino Livramento",
+    "position": "DF",
+    "club": "Newcastle United",
+    "age": 23,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Dean Henderson",
+    "position": "GK",
+    "club": "Crystal Palace",
+    "age": 29,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Jordan Henderson",
+    "position": "MF",
+    "club": "Brentford",
+    "age": 35,
+    "caps": 89,
+    "goals": 3,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Dan Burn",
+    "position": "DF",
+    "club": "Newcastle United",
+    "age": 34,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Kobbie Mainoo",
+    "position": "MF",
+    "club": "Manchester United",
+    "age": 21,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Morgan Rogers",
+    "position": "MF",
+    "club": "Aston Villa",
+    "age": 23,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€90.00m"
+  },
+  {
+    "name": "Anthony Gordon",
+    "position": "FW",
+    "club": "Newcastle United",
+    "age": 25,
+    "caps": 17,
+    "goals": 2,
+    "market_value": "€65.00m"
+  },
+  {
+    "name": "Ollie Watkins",
+    "position": "FW",
+    "club": "Aston Villa",
+    "age": 30,
+    "caps": 20,
+    "goals": 6,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Noni Madueke",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 24,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Eberechi Eze",
+    "position": "MF",
+    "club": "Arsenal",
+    "age": 27,
+    "caps": 16,
+    "goals": 3,
+    "market_value": "€65.00m"
+  },
+  {
+    "name": "Ivan Toney",
+    "position": "FW",
+    "club": "Al-Ahli",
+    "age": 30,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "James Trafford",
+    "position": "GK",
+    "club": "Manchester City",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Reece James",
+    "position": "DF",
+    "club": "Chelsea",
+    "age": 26,
+    "caps": 22,
+    "goals": 1,
+    "market_value": "€60.00m"
+  },
+  {
+    "name": "Djed Spence",
+    "position": "DF",
+    "club": "Tottenham Hotspur",
+    "age": 25,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Jarell Quansah",
+    "position": "DF",
+    "club": "Bayer Leverkusen",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€45.00m"
+  }
+]

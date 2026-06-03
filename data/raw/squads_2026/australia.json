@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Mathew Ryan (captain)",
+    "position": "GK",
+    "club": "Levante",
+    "age": 34,
+    "caps": 104,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Miloš Degenek",
+    "position": "DF",
+    "club": "APOEL",
+    "age": 32,
+    "caps": 56,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Alessandro Circati",
+    "position": "DF",
+    "club": "Parma",
+    "age": 22,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Jacob Italiano",
+    "position": "DF",
+    "club": "GAK",
+    "age": 24,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Jordan Bos",
+    "position": "DF",
+    "club": "Feyenoord",
+    "age": 23,
+    "caps": 26,
+    "goals": 4,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Jason Geria",
+    "position": "DF",
+    "club": "Albirex Niigata",
+    "age": 33,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Mathew Leckie",
+    "position": "FW",
+    "club": "Melbourne City",
+    "age": 35,
+    "caps": 79,
+    "goals": 14,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Connor Metcalfe",
+    "position": "MF",
+    "club": "FC St. Pauli",
+    "age": 26,
+    "caps": 35,
+    "goals": 1,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Mohamed Touré",
+    "position": "FW",
+    "club": "Norwich City",
+    "age": 22,
+    "caps": 9,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Ajdin Hrustic",
+    "position": "FW",
+    "club": "Heracles Almelo",
+    "age": 29,
+    "caps": 37,
+    "goals": 4,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Awer Mabil",
+    "position": "FW",
+    "club": "Castellón",
+    "age": 30,
+    "caps": 38,
+    "goals": 10,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Paul Izzo",
+    "position": "GK",
+    "club": "Randers",
+    "age": 31,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Aiden O'Neill",
+    "position": "MF",
+    "club": "New York City FC",
+    "age": 27,
+    "caps": 30,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Cammy Devlin",
+    "position": "MF",
+    "club": "Heart of Midlothian",
+    "age": 28,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Kai Trewin",
+    "position": "DF",
+    "club": "New York City FC",
+    "age": 25,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Aziz Behich",
+    "position": "DF",
+    "club": "Melbourne City",
+    "age": 35,
+    "caps": 83,
+    "goals": 3,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Nestory Irankunda",
+    "position": "FW",
+    "club": "Watford",
+    "age": 20,
+    "caps": 14,
+    "goals": 5,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Patrick Beach",
+    "position": "GK",
+    "club": "Melbourne City",
+    "age": 22,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Harry Souttar",
+    "position": "DF",
+    "club": "Leicester City",
+    "age": 27,
+    "caps": 37,
+    "goals": 11,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Cristian Volpato",
+    "position": "FW",
+    "club": "Sassuolo",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Cameron Burgess",
+    "position": "DF",
+    "club": "Swansea City",
+    "age": 30,
+    "caps": 26,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Jackson Irvine",
+    "position": "MF",
+    "club": "FC St. Pauli",
+    "age": 33,
+    "caps": 81,
+    "goals": 14,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Nishan Velupillay",
+    "position": "FW",
+    "club": "Melbourne Victory",
+    "age": 25,
+    "caps": 7,
+    "goals": 3,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Paul Okon-Engstler",
+    "position": "MF",
+    "club": "Sydney FC",
+    "age": 21,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Lucas Herrington",
+    "position": "DF",
+    "club": "Colorado Rapids",
+    "age": 18,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Tete Yengi",
+    "position": "FW",
+    "club": "Machida Zelvia",
+    "age": 25,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€450k"
+  }
+]

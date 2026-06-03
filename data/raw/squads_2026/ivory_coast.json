@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Yahia Fofana",
+    "position": "GK",
+    "club": "Çaykur Rizespor",
+    "age": 25,
+    "caps": 34,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Ousmane Diomande",
+    "position": "DF",
+    "club": "Sporting CP",
+    "age": 22,
+    "caps": 14,
+    "goals": 1,
+    "market_value": "€42.00m"
+  },
+  {
+    "name": "Ghislain Konan",
+    "position": "DF",
+    "club": "Gil Vicente",
+    "age": 30,
+    "caps": 53,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Jean Michaël Seri",
+    "position": "MF",
+    "club": "Maribor",
+    "age": 34,
+    "caps": 65,
+    "goals": 4,
+    "market_value": "€100k"
+  },
+  {
+    "name": "Wilfried Singo",
+    "position": "DF",
+    "club": "Galatasaray",
+    "age": 25,
+    "caps": 33,
+    "goals": 1,
+    "market_value": "€23.00m"
+  },
+  {
+    "name": "Seko Fofana",
+    "position": "MF",
+    "club": "Porto",
+    "age": 31,
+    "caps": 31,
+    "goals": 7,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Odilon Kossounou",
+    "position": "DF",
+    "club": "Atalanta",
+    "age": 25,
+    "caps": 35,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Franck Kessié (captain)",
+    "position": "MF",
+    "club": "Al-Ahli",
+    "age": 29,
+    "caps": 102,
+    "goals": 15,
+    "market_value": null
+  },
+  {
+    "name": "Ange-Yoan Bonny",
+    "position": "FW",
+    "club": "Inter Milan",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Simon Adingra",
+    "position": "FW",
+    "club": "Monaco",
+    "age": 24,
+    "caps": 28,
+    "goals": 5,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Yan Diomande",
+    "position": "FW",
+    "club": "RB Leipzig",
+    "age": 19,
+    "caps": 9,
+    "goals": 3,
+    "market_value": "€90.00m"
+  },
+  {
+    "name": "Elye Wahi",
+    "position": "FW",
+    "club": "Nice",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Christopher Opéri",
+    "position": "DF",
+    "club": "İstanbul Başakşehir",
+    "age": 29,
+    "caps": 11,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Oumar Diakité",
+    "position": "FW",
+    "club": "Cercle Brugge",
+    "age": 22,
+    "caps": 28,
+    "goals": 6,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Amad Diallo",
+    "position": "FW",
+    "club": "Manchester United",
+    "age": 23,
+    "caps": 18,
+    "goals": 5,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Mohamed Koné",
+    "position": "GK",
+    "club": "Charleroi",
+    "age": 24,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Guéla Doué",
+    "position": "DF",
+    "club": "Strasbourg",
+    "age": 23,
+    "caps": 19,
+    "goals": 2,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Ibrahim Sangaré",
+    "position": "MF",
+    "club": "Nottingham Forest",
+    "age": 28,
+    "caps": 57,
+    "goals": 12,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Nicolas Pépé",
+    "position": "FW",
+    "club": "Villarreal",
+    "age": 31,
+    "caps": 54,
+    "goals": 12,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Emmanuel Agbadou",
+    "position": "DF",
+    "club": "Beşiktaş",
+    "age": 28,
+    "caps": 19,
+    "goals": 2,
+    "market_value": "€16.00m"
+  },
+  {
+    "name": "Evan Ndicka",
+    "position": "DF",
+    "club": "Roma",
+    "age": 26,
+    "caps": 28,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Evann Guessand",
+    "position": "FW",
+    "club": "Crystal Palace",
+    "age": 24,
+    "caps": 21,
+    "goals": 4,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Alban Lafont",
+    "position": "GK",
+    "club": "Panathinaikos",
+    "age": 27,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Bazoumana Touré",
+    "position": "FW",
+    "club": "TSG Hoffenheim",
+    "age": 20,
+    "caps": 5,
+    "goals": 2,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Parfait Guiagon",
+    "position": "MF",
+    "club": "Charleroi",
+    "age": 25,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Christ Inao Oulaï",
+    "position": "MF",
+    "club": "Trabzonspor",
+    "age": 20,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€23.00m"
+  }
+]

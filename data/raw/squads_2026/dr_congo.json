@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Lionel Mpasi",
+    "position": "GK",
+    "club": "Le Havre",
+    "age": 31,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Aaron Wan-Bissaka",
+    "position": "DF",
+    "club": "West Ham United",
+    "age": 28,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Steve Kapuadi",
+    "position": "DF",
+    "club": "Widzew Łódź",
+    "age": 28,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Axel Tuanzebe",
+    "position": "DF",
+    "club": "Burnley",
+    "age": 28,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Dylan Batubinsika",
+    "position": "DF",
+    "club": "AEL",
+    "age": 30,
+    "caps": 14,
+    "goals": 1,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Ngal'ayel Mukau",
+    "position": "MF",
+    "club": "Lille",
+    "age": 21,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Nathanaël Mbuku",
+    "position": "MF",
+    "club": "Montpellier",
+    "age": 24,
+    "caps": 17,
+    "goals": 2,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Samuel Moutoussamy",
+    "position": "MF",
+    "club": "Atromitos",
+    "age": 29,
+    "caps": 56,
+    "goals": 0,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Brian Cipenga",
+    "position": "FW",
+    "club": "Castellón",
+    "age": 28,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Théo Bongonda",
+    "position": "MF",
+    "club": "Spartak Moscow",
+    "age": 30,
+    "caps": 37,
+    "goals": 7,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Gaël Kakuta",
+    "position": "FW",
+    "club": "AEL",
+    "age": 34,
+    "caps": 30,
+    "goals": 5,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Joris Kayembe",
+    "position": "DF",
+    "club": "Genk",
+    "age": 31,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Meschak Elia",
+    "position": "FW",
+    "club": "Alanyaspor",
+    "age": 28,
+    "caps": 68,
+    "goals": 12,
+    "market_value": null
+  },
+  {
+    "name": "Noah Sadiki",
+    "position": "MF",
+    "club": "Sunderland",
+    "age": 21,
+    "caps": 18,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Aaron Tshibola",
+    "position": "MF",
+    "club": "Kilmarnock",
+    "age": 31,
+    "caps": 16,
+    "goals": 1,
+    "market_value": "€150k"
+  },
+  {
+    "name": "Timothy Fayulu",
+    "position": "GK",
+    "club": "Noah",
+    "age": 26,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Cédric Bakambu",
+    "position": "FW",
+    "club": "Real Betis",
+    "age": 35,
+    "caps": 68,
+    "goals": 21,
+    "market_value": "€1.40m"
+  },
+  {
+    "name": "Charles Pickel",
+    "position": "MF",
+    "club": "Espanyol",
+    "age": 29,
+    "caps": 33,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Fiston Mayele",
+    "position": "FW",
+    "club": "Pyramids",
+    "age": 31,
+    "caps": 37,
+    "goals": 6,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Yoane Wissa",
+    "position": "FW",
+    "club": "Newcastle United",
+    "age": 29,
+    "caps": 36,
+    "goals": 9,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Matthieu Epolo",
+    "position": "GK",
+    "club": "Standard Liège",
+    "age": 21,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Chancel Mbemba (captain)",
+    "position": "DF",
+    "club": "Lille",
+    "age": 31,
+    "caps": 107,
+    "goals": 7,
+    "market_value": null
+  },
+  {
+    "name": "Simon Banza",
+    "position": "FW",
+    "club": "Al-Jazira",
+    "age": 29,
+    "caps": 14,
+    "goals": 2,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Gédéon Kalulu",
+    "position": "DF",
+    "club": "Aris Limassol",
+    "age": 28,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Edo Kayembe",
+    "position": "MF",
+    "club": "Watford",
+    "age": 28,
+    "caps": 41,
+    "goals": 2,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Arthur Masuaku",
+    "position": "DF",
+    "club": "Lens",
+    "age": 32,
+    "caps": 44,
+    "goals": 4,
+    "market_value": "€2.00m"
+  }
+]

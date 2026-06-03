@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Matěj Kovář",
+    "position": "GK",
+    "club": "PSV Eindhoven",
+    "age": 26,
+    "caps": 19,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "David Zima",
+    "position": "DF",
+    "club": "Slavia Prague",
+    "age": 25,
+    "caps": 24,
+    "goals": 1,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Tomáš Holeš",
+    "position": "DF",
+    "club": "Slavia Prague",
+    "age": 33,
+    "caps": 40,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Robin Hranáč",
+    "position": "DF",
+    "club": "TSG Hoffenheim",
+    "age": 26,
+    "caps": 13,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Vladimír Coufal",
+    "position": "DF",
+    "club": "TSG Hoffenheim",
+    "age": 33,
+    "caps": 61,
+    "goals": 2,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Štěpán Chaloupek",
+    "position": "DF",
+    "club": "Slavia Prague",
+    "age": 23,
+    "caps": 4,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Ladislav Krejčí (captain)",
+    "position": "DF",
+    "club": "Wolverhampton Wanderers",
+    "age": 27,
+    "caps": 26,
+    "goals": 5,
+    "market_value": null
+  },
+  {
+    "name": "Vladimír Darida",
+    "position": "MF",
+    "club": "Hradec Králové",
+    "age": 35,
+    "caps": 78,
+    "goals": 8,
+    "market_value": "€375k"
+  },
+  {
+    "name": "Adam Hložek",
+    "position": "FW",
+    "club": "TSG Hoffenheim",
+    "age": 23,
+    "caps": 42,
+    "goals": 5,
+    "market_value": null
+  },
+  {
+    "name": "Patrik Schick",
+    "position": "FW",
+    "club": "Bayer Leverkusen",
+    "age": 30,
+    "caps": 52,
+    "goals": 25,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Jan Kuchta",
+    "position": "FW",
+    "club": "Sparta Prague",
+    "age": 29,
+    "caps": 31,
+    "goals": 3,
+    "market_value": "€2.70m"
+  },
+  {
+    "name": "Lukáš Červ",
+    "position": "MF",
+    "club": "Viktoria Plzeň",
+    "age": 25,
+    "caps": 16,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Mojmír Chytil",
+    "position": "FW",
+    "club": "Slavia Prague",
+    "age": 27,
+    "caps": 22,
+    "goals": 6,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "David Jurásek",
+    "position": "DF",
+    "club": "Slavia Prague",
+    "age": 25,
+    "caps": 17,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Pavel Šulc",
+    "position": "FW",
+    "club": "Lyon",
+    "age": 25,
+    "caps": 20,
+    "goals": 5,
+    "market_value": null
+  },
+  {
+    "name": "Jindřich Staněk",
+    "position": "GK",
+    "club": "Slavia Prague",
+    "age": 30,
+    "caps": 14,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Lukáš Provod",
+    "position": "MF",
+    "club": "Slavia Prague",
+    "age": 29,
+    "caps": 37,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Michal Sadílek",
+    "position": "MF",
+    "club": "Slavia Prague",
+    "age": 27,
+    "caps": 34,
+    "goals": 1,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Tomáš Chorý",
+    "position": "FW",
+    "club": "Slavia Prague",
+    "age": 31,
+    "caps": 21,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Jaroslav Zelený",
+    "position": "DF",
+    "club": "Sparta Prague",
+    "age": 33,
+    "caps": 22,
+    "goals": 0,
+    "market_value": "€600k"
+  },
+  {
+    "name": "David Douděra",
+    "position": "DF",
+    "club": "Slavia Prague",
+    "age": 28,
+    "caps": 16,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Tomáš Souček",
+    "position": "MF",
+    "club": "West Ham United",
+    "age": 31,
+    "caps": 89,
+    "goals": 17,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Lukáš Horníček",
+    "position": "GK",
+    "club": "Braga",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Alexandr Sojka",
+    "position": "MF",
+    "club": "Viktoria Plzeň",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€2.30m"
+  },
+  {
+    "name": "Hugo Sochůrek",
+    "position": "MF",
+    "club": "Sparta Prague",
+    "age": 18,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Denis Višinský",
+    "position": "FW",
+    "club": "Viktoria Plzeň",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  }
+]

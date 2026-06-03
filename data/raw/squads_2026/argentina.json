@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Juan Musso",
+    "position": "GK",
+    "club": "Atlético Madrid",
+    "age": 32,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Leonardo Balerdi",
+    "position": "DF",
+    "club": "Marseille",
+    "age": 27,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Nicolás Tagliafico",
+    "position": "DF",
+    "club": "Lyon",
+    "age": 33,
+    "caps": 75,
+    "goals": 1,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Gonzalo Montiel",
+    "position": "DF",
+    "club": "River Plate",
+    "age": 29,
+    "caps": 38,
+    "goals": 2,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Leandro Paredes",
+    "position": "MF",
+    "club": "Boca Juniors",
+    "age": 31,
+    "caps": 77,
+    "goals": 5,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Lisandro Martínez",
+    "position": "DF",
+    "club": "Manchester United",
+    "age": 28,
+    "caps": 26,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Rodrigo De Paul",
+    "position": "MF",
+    "club": "Inter Miami CF",
+    "age": 32,
+    "caps": 85,
+    "goals": 2,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Valentín Barco",
+    "position": "MF",
+    "club": "Strasbourg",
+    "age": 21,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Julián Alvarez",
+    "position": "FW",
+    "club": "Atlético Madrid",
+    "age": 26,
+    "caps": 51,
+    "goals": 14,
+    "market_value": null
+  },
+  {
+    "name": "Lionel Messi (captain)",
+    "position": "FW",
+    "club": "Inter Miami CF",
+    "age": 38,
+    "caps": 198,
+    "goals": 116,
+    "market_value": null
+  },
+  {
+    "name": "Giovani Lo Celso",
+    "position": "MF",
+    "club": "Real Betis",
+    "age": 30,
+    "caps": 65,
+    "goals": 4,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Gerónimo Rulli",
+    "position": "GK",
+    "club": "Marseille",
+    "age": 34,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Cristian Romero",
+    "position": "DF",
+    "club": "Tottenham Hotspur",
+    "age": 28,
+    "caps": 49,
+    "goals": 3,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Exequiel Palacios",
+    "position": "MF",
+    "club": "Bayer Leverkusen",
+    "age": 27,
+    "caps": 38,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Nicolás González",
+    "position": "MF",
+    "club": "Atlético Madrid",
+    "age": 28,
+    "caps": 50,
+    "goals": 6,
+    "market_value": "-"
+  },
+  {
+    "name": "Thiago Almada",
+    "position": "FW",
+    "club": "Atlético Madrid",
+    "age": 25,
+    "caps": 14,
+    "goals": 4,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Giuliano Simeone",
+    "position": "FW",
+    "club": "Atlético Madrid",
+    "age": 23,
+    "caps": 11,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Nico Paz",
+    "position": "FW",
+    "club": "Como",
+    "age": 21,
+    "caps": 8,
+    "goals": 1,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Nicolás Otamendi",
+    "position": "DF",
+    "club": "Benfica",
+    "age": 38,
+    "caps": 130,
+    "goals": 8,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Alexis Mac Allister",
+    "position": "MF",
+    "club": "Liverpool",
+    "age": 27,
+    "caps": 44,
+    "goals": 6,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "José Manuel López",
+    "position": "FW",
+    "club": "Palmeiras",
+    "age": 25,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Lautaro Martínez",
+    "position": "FW",
+    "club": "Inter Milan",
+    "age": 28,
+    "caps": 75,
+    "goals": 36,
+    "market_value": "€85.00m"
+  },
+  {
+    "name": "Emiliano Martínez",
+    "position": "GK",
+    "club": "Aston Villa",
+    "age": 33,
+    "caps": 59,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Enzo Fernández",
+    "position": "MF",
+    "club": "Chelsea",
+    "age": 25,
+    "caps": 40,
+    "goals": 6,
+    "market_value": "€90.00m"
+  },
+  {
+    "name": "Facundo Medina",
+    "position": "DF",
+    "club": "Marseille",
+    "age": 27,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Nahuel Molina",
+    "position": "DF",
+    "club": "Atlético Madrid",
+    "age": 28,
+    "caps": 58,
+    "goals": 1,
+    "market_value": "€15.00m"
+  }
+]

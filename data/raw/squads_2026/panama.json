@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Luis Mejía",
+    "position": "GK",
+    "club": "Nacional",
+    "age": 35,
+    "caps": 56,
+    "goals": 0,
+    "market_value": "€150k"
+  },
+  {
+    "name": "César Blackman",
+    "position": "DF",
+    "club": "Slovan Bratislava",
+    "age": 28,
+    "caps": 38,
+    "goals": 3,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "José Córdoba",
+    "position": "DF",
+    "club": "Norwich City",
+    "age": 25,
+    "caps": 31,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Fidel Escobar",
+    "position": "DF",
+    "club": "Saprissa",
+    "age": 31,
+    "caps": 97,
+    "goals": 4,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Edgardo Fariña",
+    "position": "DF",
+    "club": "Pari Nizhny Novgorod",
+    "age": 24,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Cristian Martínez",
+    "position": "MF",
+    "club": "Ironi Kiryat Shmona",
+    "age": 29,
+    "caps": 64,
+    "goals": 2,
+    "market_value": "-"
+  },
+  {
+    "name": "José Luis Rodríguez",
+    "position": "MF",
+    "club": "Juárez",
+    "age": 27,
+    "caps": 68,
+    "goals": 8,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Adalberto Carrasquilla",
+    "position": "MF",
+    "club": "UNAM",
+    "age": 27,
+    "caps": 73,
+    "goals": 3,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Tomás Rodríguez",
+    "position": "FW",
+    "club": "Saprissa",
+    "age": 27,
+    "caps": 12,
+    "goals": 3,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Ismael Díaz",
+    "position": "MF",
+    "club": "León",
+    "age": 29,
+    "caps": 55,
+    "goals": 17,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Yoel Bárcenas",
+    "position": "MF",
+    "club": "Mazatlán",
+    "age": 32,
+    "caps": 102,
+    "goals": 10,
+    "market_value": "€650k"
+  },
+  {
+    "name": "César Samudio",
+    "position": "GK",
+    "club": "Marathón",
+    "age": 32,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Jiovany Ramos",
+    "position": "DF",
+    "club": "Puerto Cabello",
+    "age": 29,
+    "caps": 21,
+    "goals": 1,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Carlos Harvey",
+    "position": "DF",
+    "club": "Minnesota United FC",
+    "age": 26,
+    "caps": 26,
+    "goals": 3,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Eric Davis",
+    "position": "DF",
+    "club": "Plaza Amador",
+    "age": 35,
+    "caps": 105,
+    "goals": 9,
+    "market_value": "-"
+  },
+  {
+    "name": "Andrés Andrade",
+    "position": "DF",
+    "club": "LASK",
+    "age": 27,
+    "caps": 48,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "José Fajardo",
+    "position": "FW",
+    "club": "Universidad Católica",
+    "age": 32,
+    "caps": 66,
+    "goals": 17,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Cecilio Waterman",
+    "position": "FW",
+    "club": "Universidad de Concepción",
+    "age": 35,
+    "caps": 53,
+    "goals": 14,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Alberto Quintero",
+    "position": "MF",
+    "club": "Plaza Amador",
+    "age": 38,
+    "caps": 140,
+    "goals": 7,
+    "market_value": "-"
+  },
+  {
+    "name": "Aníbal Godoy (captain)",
+    "position": "MF",
+    "club": "San Diego FC",
+    "age": 36,
+    "caps": 159,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "César Yanis",
+    "position": "MF",
+    "club": "Cobresal",
+    "age": 30,
+    "caps": 55,
+    "goals": 5,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Orlando Mosquera",
+    "position": "GK",
+    "club": "Al-Fayha",
+    "age": 31,
+    "caps": 47,
+    "goals": 0,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Michael Amir Murillo",
+    "position": "DF",
+    "club": "Beşiktaş",
+    "age": 30,
+    "caps": 92,
+    "goals": 9,
+    "market_value": null
+  },
+  {
+    "name": "Azarias Londoño",
+    "position": "FW",
+    "club": "Universidad Católica",
+    "age": 24,
+    "caps": 10,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Roderick Miller",
+    "position": "DF",
+    "club": "Turan Tovuz",
+    "age": 34,
+    "caps": 49,
+    "goals": 2,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Jorge Gutiérrez",
+    "position": "DF",
+    "club": "Deportivo La Guaira",
+    "age": 27,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "-"
+  }
+]

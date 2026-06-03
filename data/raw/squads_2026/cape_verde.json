@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Vozinha",
+    "position": "GK",
+    "club": "Chaves",
+    "age": 40,
+    "caps": 86,
+    "goals": 0,
+    "market_value": "€50k"
+  },
+  {
+    "name": "Stopira",
+    "position": "DF",
+    "club": "Torreense",
+    "age": 38,
+    "caps": 61,
+    "goals": 4,
+    "market_value": "€50k"
+  },
+  {
+    "name": "Diney",
+    "position": "DF",
+    "club": "Al-Bataeh",
+    "age": 31,
+    "caps": 30,
+    "goals": 2,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Roberto Lopes",
+    "position": "DF",
+    "club": "Shamrock Rovers",
+    "age": 33,
+    "caps": 45,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Logan Costa",
+    "position": "DF",
+    "club": "Villarreal",
+    "age": 25,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Kevin Pina",
+    "position": "MF",
+    "club": "Krasnodar",
+    "age": 29,
+    "caps": 31,
+    "goals": 3,
+    "market_value": "-"
+  },
+  {
+    "name": "Jovane Cabral",
+    "position": "MF",
+    "club": "Estrela Amadora",
+    "age": 27,
+    "caps": 26,
+    "goals": 2,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "João Paulo",
+    "position": "MF",
+    "club": "FCSB",
+    "age": 28,
+    "caps": 41,
+    "goals": 1,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Gilson Benchimol",
+    "position": "FW",
+    "club": "Akron Tolyatti",
+    "age": 24,
+    "caps": 22,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Jamiro Monteiro",
+    "position": "MF",
+    "club": "PEC Zwolle",
+    "age": 32,
+    "caps": 54,
+    "goals": 5,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Garry Rodrigues",
+    "position": "MF",
+    "club": "Apollon Limassol",
+    "age": 35,
+    "caps": 59,
+    "goals": 9,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Márcio Rosa",
+    "position": "GK",
+    "club": "Montana",
+    "age": 29,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Sidny Lopes Cabral",
+    "position": "DF",
+    "club": "Benfica",
+    "age": 23,
+    "caps": 9,
+    "goals": 3,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Deroy Duarte",
+    "position": "MF",
+    "club": "Ludogorets Razgrad",
+    "age": 26,
+    "caps": 30,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Laros Duarte",
+    "position": "MF",
+    "club": "Puskás Akadémia",
+    "age": 29,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Yannick Semedo",
+    "position": "MF",
+    "club": "Farense",
+    "age": 30,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Willy Semedo",
+    "position": "MF",
+    "club": "Omonia",
+    "age": 32,
+    "caps": 37,
+    "goals": 2,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Telmo Arcanjo",
+    "position": "MF",
+    "club": "Vitória de Guimarães",
+    "age": 24,
+    "caps": 15,
+    "goals": 1,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Dailon Livramento",
+    "position": "FW",
+    "club": "Casa Pia",
+    "age": 25,
+    "caps": 21,
+    "goals": 7,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ryan Mendes (captain)",
+    "position": "FW",
+    "club": "Iğdır",
+    "age": 36,
+    "caps": 97,
+    "goals": 22,
+    "market_value": null
+  },
+  {
+    "name": "Nuno da Costa",
+    "position": "MF",
+    "club": "İstanbul Başakşehir",
+    "age": 35,
+    "caps": 8,
+    "goals": 1,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Steven Moreira",
+    "position": "DF",
+    "club": "Columbus Crew",
+    "age": 31,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "CJ dos Santos",
+    "position": "GK",
+    "club": "San Diego FC",
+    "age": 25,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Wagner Pina",
+    "position": "DF",
+    "club": "Trabzonspor",
+    "age": 23,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€11.00m"
+  },
+  {
+    "name": "Kelvin Pires",
+    "position": "DF",
+    "club": "SJK",
+    "age": 26,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Hélio Varela",
+    "position": "MF",
+    "club": "Maccabi Tel Aviv",
+    "age": 24,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€1.20m"
+  }
+]

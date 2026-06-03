@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Zion Suzuki",
+    "position": "GK",
+    "club": "Parma",
+    "age": 23,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Yukinari Sugawara",
+    "position": "DF",
+    "club": "Werder Bremen",
+    "age": 25,
+    "caps": 21,
+    "goals": 2,
+    "market_value": "€5.50m"
+  },
+  {
+    "name": "Shōgo Taniguchi",
+    "position": "DF",
+    "club": "Sint-Truiden",
+    "age": 34,
+    "caps": 38,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Kō Itakura",
+    "position": "DF",
+    "club": "Ajax",
+    "age": 29,
+    "caps": 40,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Yūto Nagatomo",
+    "position": "DF",
+    "club": "FC Tokyo",
+    "age": 39,
+    "caps": 145,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Wataru Endo (captain)",
+    "position": "MF",
+    "club": "Liverpool",
+    "age": 33,
+    "caps": 73,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Ao Tanaka",
+    "position": "MF",
+    "club": "Leeds United",
+    "age": 27,
+    "caps": 38,
+    "goals": 8,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Takefusa Kubo",
+    "position": "MF",
+    "club": "Real Sociedad",
+    "age": 25,
+    "caps": 49,
+    "goals": 7,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Keisuke Gotō",
+    "position": "FW",
+    "club": "Sint-Truiden",
+    "age": 21,
+    "caps": 4,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Ritsu Dōan",
+    "position": "MF",
+    "club": "Eintracht Frankfurt",
+    "age": 27,
+    "caps": 65,
+    "goals": 11,
+    "market_value": null
+  },
+  {
+    "name": "Daizen Maeda",
+    "position": "MF",
+    "club": "Celtic",
+    "age": 28,
+    "caps": 27,
+    "goals": 4,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Keisuke Ōsako",
+    "position": "GK",
+    "club": "Sanfrecce Hiroshima",
+    "age": 26,
+    "caps": 11,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Keito Nakamura",
+    "position": "MF",
+    "club": "Reims",
+    "age": 25,
+    "caps": 25,
+    "goals": 10,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Junya Itō",
+    "position": "MF",
+    "club": "Genk",
+    "age": 33,
+    "caps": 69,
+    "goals": 15,
+    "market_value": null
+  },
+  {
+    "name": "Daichi Kamada",
+    "position": "MF",
+    "club": "Crystal Palace",
+    "age": 29,
+    "caps": 49,
+    "goals": 12,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Tsuyoshi Watanabe",
+    "position": "DF",
+    "club": "Feyenoord",
+    "age": 29,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Yuito Suzuki",
+    "position": "MF",
+    "club": "SC Freiburg",
+    "age": 24,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€24.00m"
+  },
+  {
+    "name": "Ayase Ueda",
+    "position": "FW",
+    "club": "Feyenoord",
+    "age": 27,
+    "caps": 39,
+    "goals": 16,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Kōki Ogawa",
+    "position": "FW",
+    "club": "NEC",
+    "age": 28,
+    "caps": 15,
+    "goals": 11,
+    "market_value": null
+  },
+  {
+    "name": "Ayumu Seko",
+    "position": "DF",
+    "club": "Le Havre",
+    "age": 26,
+    "caps": 14,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Hiroki Itō",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 27,
+    "caps": 24,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Takehiro Tomiyasu",
+    "position": "DF",
+    "club": "Ajax",
+    "age": 27,
+    "caps": 43,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Tomoki Hayakawa",
+    "position": "GK",
+    "club": "Kashima Antlers",
+    "age": 27,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Kaishū Sano",
+    "position": "MF",
+    "club": "Mainz 05",
+    "age": 25,
+    "caps": 13,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Junnosuke Suzuki",
+    "position": "DF",
+    "club": "Copenhagen",
+    "age": 22,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Kento Shiogai",
+    "position": "FW",
+    "club": "VfL Wolfsburg",
+    "age": 21,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€8.00m"
+  }
+]

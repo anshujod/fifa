@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Gregor Kobel",
+    "position": "GK",
+    "club": "Borussia Dortmund",
+    "age": 28,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Miro Muheim",
+    "position": "DF",
+    "club": "Hamburger SV",
+    "age": 28,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Silvan Widmer",
+    "position": "DF",
+    "club": "Mainz 05",
+    "age": 33,
+    "caps": 59,
+    "goals": 5,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Nico Elvedi",
+    "position": "DF",
+    "club": "Borussia Mönchengladbach",
+    "age": 29,
+    "caps": 66,
+    "goals": 3,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Manuel Akanji",
+    "position": "DF",
+    "club": "Inter Milan",
+    "age": 30,
+    "caps": 80,
+    "goals": 4,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Denis Zakaria",
+    "position": "MF",
+    "club": "Monaco",
+    "age": 29,
+    "caps": 64,
+    "goals": 3,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Breel Embolo",
+    "position": "FW",
+    "club": "Rennes",
+    "age": 29,
+    "caps": 86,
+    "goals": 24,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Remo Freuler",
+    "position": "MF",
+    "club": "Bologna",
+    "age": 34,
+    "caps": 87,
+    "goals": 11,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Johan Manzambi",
+    "position": "MF",
+    "club": "SC Freiburg",
+    "age": 20,
+    "caps": 11,
+    "goals": 3,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Granit Xhaka (captain)",
+    "position": "MF",
+    "club": "Sunderland",
+    "age": 33,
+    "caps": 145,
+    "goals": 17,
+    "market_value": null
+  },
+  {
+    "name": "Dan Ndoye",
+    "position": "FW",
+    "club": "Nottingham Forest",
+    "age": 25,
+    "caps": 30,
+    "goals": 7,
+    "market_value": "€32.00m"
+  },
+  {
+    "name": "Yvon Mvogo",
+    "position": "GK",
+    "club": "Lorient",
+    "age": 32,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Ricardo Rodriguez",
+    "position": "DF",
+    "club": "Real Betis",
+    "age": 33,
+    "caps": 137,
+    "goals": 9,
+    "market_value": "-"
+  },
+  {
+    "name": "Ardon Jashari",
+    "position": "MF",
+    "club": "Milan",
+    "age": 23,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Djibril Sow",
+    "position": "MF",
+    "club": "Sevilla",
+    "age": 29,
+    "caps": 51,
+    "goals": 0,
+    "market_value": "€7.50m"
+  },
+  {
+    "name": "Christian Fassnacht",
+    "position": "FW",
+    "club": "Young Boys",
+    "age": 32,
+    "caps": 22,
+    "goals": 5,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Rubén Vargas",
+    "position": "FW",
+    "club": "Sevilla",
+    "age": 27,
+    "caps": 61,
+    "goals": 11,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Eray Cömert",
+    "position": "DF",
+    "club": "Valencia",
+    "age": 28,
+    "caps": 21,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Noah Okafor",
+    "position": "FW",
+    "club": "Leeds United",
+    "age": 26,
+    "caps": 24,
+    "goals": 2,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Michel Aebischer",
+    "position": "MF",
+    "club": "Pisa",
+    "age": 29,
+    "caps": 39,
+    "goals": 2,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Marvin Keller",
+    "position": "GK",
+    "club": "Young Boys",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Fabian Rieder",
+    "position": "MF",
+    "club": "FC Augsburg",
+    "age": 24,
+    "caps": 27,
+    "goals": 1,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Zeki Amdouni",
+    "position": "FW",
+    "club": "Burnley",
+    "age": 25,
+    "caps": 28,
+    "goals": 11,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Aurèle Amenda",
+    "position": "DF",
+    "club": "Eintracht Frankfurt",
+    "age": 22,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Luca Jaquez",
+    "position": "DF",
+    "club": "VfB Stuttgart",
+    "age": 23,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Cedric Itten",
+    "position": "FW",
+    "club": "Fortuna Düsseldorf",
+    "age": 29,
+    "caps": 14,
+    "goals": 5,
+    "market_value": "€1.80m"
+  }
+]

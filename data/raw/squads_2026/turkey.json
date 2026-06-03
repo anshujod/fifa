@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Mert Günok",
+    "position": "GK",
+    "club": "Fenerbahçe",
+    "age": 37,
+    "caps": 37,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Zeki Çelik",
+    "position": "DF",
+    "club": "Roma",
+    "age": 29,
+    "caps": 60,
+    "goals": 3,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Merih Demiral",
+    "position": "DF",
+    "club": "Al-Ahli",
+    "age": 28,
+    "caps": 61,
+    "goals": 6,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Çağlar Söyüncü",
+    "position": "DF",
+    "club": "Fenerbahçe",
+    "age": 30,
+    "caps": 60,
+    "goals": 2,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Salih Özcan",
+    "position": "MF",
+    "club": "Borussia Dortmund",
+    "age": 28,
+    "caps": 29,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Orkun Kökçü",
+    "position": "MF",
+    "club": "Beşiktaş",
+    "age": 25,
+    "caps": 49,
+    "goals": 4,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Kerem Aktürkoğlu",
+    "position": "FW",
+    "club": "Fenerbahçe",
+    "age": 27,
+    "caps": 51,
+    "goals": 15,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Arda Güler",
+    "position": "FW",
+    "club": "Real Madrid",
+    "age": 21,
+    "caps": 28,
+    "goals": 6,
+    "market_value": "€90.00m"
+  },
+  {
+    "name": "Deniz Gül",
+    "position": "FW",
+    "club": "Porto",
+    "age": 21,
+    "caps": 7,
+    "goals": 2,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Hakan Çalhanoğlu (captain)",
+    "position": "MF",
+    "club": "Inter Milan",
+    "age": 32,
+    "caps": 104,
+    "goals": 22,
+    "market_value": null
+  },
+  {
+    "name": "Kenan Yıldız",
+    "position": "FW",
+    "club": "Juventus",
+    "age": 21,
+    "caps": 28,
+    "goals": 5,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Altay Bayındır",
+    "position": "GK",
+    "club": "Manchester United",
+    "age": 28,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Eren Elmalı",
+    "position": "DF",
+    "club": "Galatasaray",
+    "age": 25,
+    "caps": 22,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Abdülkerim Bardakcı",
+    "position": "DF",
+    "club": "Galatasaray",
+    "age": 31,
+    "caps": 26,
+    "goals": 2,
+    "market_value": "€6.50m"
+  },
+  {
+    "name": "Ozan Kabak",
+    "position": "DF",
+    "club": "TSG Hoffenheim",
+    "age": 26,
+    "caps": 29,
+    "goals": 2,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "İsmail Yüksek",
+    "position": "MF",
+    "club": "Fenerbahçe",
+    "age": 27,
+    "caps": 31,
+    "goals": 1,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "İrfan Can Kahveci",
+    "position": "FW",
+    "club": "Kasımpaşa",
+    "age": 30,
+    "caps": 46,
+    "goals": 6,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Mert Müldür",
+    "position": "DF",
+    "club": "Fenerbahçe",
+    "age": 27,
+    "caps": 44,
+    "goals": 3,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Yunus Akgün",
+    "position": "FW",
+    "club": "Galatasaray",
+    "age": 25,
+    "caps": 18,
+    "goals": 3,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Ferdi Kadıoğlu",
+    "position": "DF",
+    "club": "Brighton & Hove Albion",
+    "age": 26,
+    "caps": 30,
+    "goals": 2,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Barış Alper Yılmaz",
+    "position": "FW",
+    "club": "Galatasaray",
+    "age": 26,
+    "caps": 34,
+    "goals": 3,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Kaan Ayhan",
+    "position": "MF",
+    "club": "Galatasaray",
+    "age": 31,
+    "caps": 73,
+    "goals": 5,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Uğurcan Çakır",
+    "position": "GK",
+    "club": "Galatasaray",
+    "age": 30,
+    "caps": 38,
+    "goals": 0,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Oğuz Aydın",
+    "position": "FW",
+    "club": "Fenerbahçe",
+    "age": 25,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Samet Akaydin",
+    "position": "DF",
+    "club": "Çaykur Rizespor",
+    "age": 32,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Can Uzun",
+    "position": "FW",
+    "club": "Eintracht Frankfurt",
+    "age": 20,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€45.00m"
+  }
+]

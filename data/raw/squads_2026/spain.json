@@ -1,0 +1,236 @@
+[
+  {
+    "name": "David Raya",
+    "position": "GK",
+    "club": "Arsenal",
+    "age": 30,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Marc Pubill",
+    "position": "DF",
+    "club": "Atlético Madrid",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Álex Grimaldo",
+    "position": "DF",
+    "club": "Bayer Leverkusen",
+    "age": 30,
+    "caps": 12,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Eric García",
+    "position": "DF",
+    "club": "Barcelona",
+    "age": 25,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Marcos Llorente",
+    "position": "DF",
+    "club": "Atlético Madrid",
+    "age": 31,
+    "caps": 23,
+    "goals": 0,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Mikel Merino",
+    "position": "MF",
+    "club": "Arsenal",
+    "age": 29,
+    "caps": 41,
+    "goals": 10,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Ferran Torres",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 26,
+    "caps": 55,
+    "goals": 23,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Fabián Ruiz",
+    "position": "MF",
+    "club": "Paris Saint-Germain",
+    "age": 30,
+    "caps": 41,
+    "goals": 6,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Gavi",
+    "position": "MF",
+    "club": "Barcelona",
+    "age": 21,
+    "caps": 28,
+    "goals": 5,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Dani Olmo",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 28,
+    "caps": 48,
+    "goals": 12,
+    "market_value": "€60.00m"
+  },
+  {
+    "name": "Yéremy Pino",
+    "position": "FW",
+    "club": "Crystal Palace",
+    "age": 23,
+    "caps": 21,
+    "goals": 4,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Pedro Porro",
+    "position": "DF",
+    "club": "Tottenham Hotspur",
+    "age": 26,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Joan Garcia",
+    "position": "GK",
+    "club": "Barcelona",
+    "age": 25,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Aymeric Laporte",
+    "position": "DF",
+    "club": "Athletic Bilbao",
+    "age": 32,
+    "caps": 44,
+    "goals": 2,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Álex Baena",
+    "position": "MF",
+    "club": "Atlético Madrid",
+    "age": 24,
+    "caps": 15,
+    "goals": 2,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Rodri (captain)",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 29,
+    "caps": 61,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Nico Williams",
+    "position": "FW",
+    "club": "Athletic Bilbao",
+    "age": 23,
+    "caps": 30,
+    "goals": 6,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Martín Zubimendi",
+    "position": "MF",
+    "club": "Arsenal",
+    "age": 27,
+    "caps": 25,
+    "goals": 3,
+    "market_value": "€75.00m"
+  },
+  {
+    "name": "Lamine Yamal",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 18,
+    "caps": 25,
+    "goals": 6,
+    "market_value": "€200.00m"
+  },
+  {
+    "name": "Pedri",
+    "position": "MF",
+    "club": "Barcelona",
+    "age": 23,
+    "caps": 40,
+    "goals": 5,
+    "market_value": "€150.00m"
+  },
+  {
+    "name": "Mikel Oyarzabal",
+    "position": "FW",
+    "club": "Real Sociedad",
+    "age": 29,
+    "caps": 52,
+    "goals": 24,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Pau Cubarsí",
+    "position": "DF",
+    "club": "Barcelona",
+    "age": 19,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Unai Simón",
+    "position": "GK",
+    "club": "Athletic Bilbao",
+    "age": 29,
+    "caps": 57,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Marc Cucurella",
+    "position": "DF",
+    "club": "Chelsea",
+    "age": 27,
+    "caps": 23,
+    "goals": 1,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Víctor Muñoz",
+    "position": "FW",
+    "club": "Osasuna",
+    "age": 22,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Borja Iglesias",
+    "position": "FW",
+    "club": "Celta Vigo",
+    "age": 33,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€3.00m"
+  }
+]

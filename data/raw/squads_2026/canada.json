@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Dayne St. Clair",
+    "position": "GK",
+    "club": "Inter Miami CF",
+    "age": 29,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Alistair Johnston",
+    "position": "DF",
+    "club": "Celtic",
+    "age": 27,
+    "caps": 57,
+    "goals": 1,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Alfie Jones",
+    "position": "DF",
+    "club": "Middlesbrough",
+    "age": 28,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Luc de Fougerolles",
+    "position": "DF",
+    "club": "Dender",
+    "age": 20,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Joel Waterman",
+    "position": "DF",
+    "club": "Chicago Fire FC",
+    "age": 30,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Mathieu Choinière",
+    "position": "MF",
+    "club": "Los Angeles FC",
+    "age": 27,
+    "caps": 23,
+    "goals": 0,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Stephen Eustáquio",
+    "position": "MF",
+    "club": "Los Angeles FC",
+    "age": 29,
+    "caps": 55,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Ismaël Koné",
+    "position": "MF",
+    "club": "Sassuolo",
+    "age": 23,
+    "caps": 39,
+    "goals": 4,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Cyle Larin",
+    "position": "FW",
+    "club": "Southampton",
+    "age": 31,
+    "caps": 89,
+    "goals": 30,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Jonathan David",
+    "position": "FW",
+    "club": "Juventus",
+    "age": 26,
+    "caps": 76,
+    "goals": 39,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Liam Millar",
+    "position": "MF",
+    "club": "Hull City",
+    "age": 26,
+    "caps": 40,
+    "goals": 1,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Tani Oluwaseyi",
+    "position": "FW",
+    "club": "Villarreal",
+    "age": 26,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Derek Cornelius",
+    "position": "DF",
+    "club": "Rangers",
+    "age": 28,
+    "caps": 43,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Jacob Shaffelburg",
+    "position": "MF",
+    "club": "Los Angeles FC",
+    "age": 26,
+    "caps": 31,
+    "goals": 6,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Moïse Bombito",
+    "position": "DF",
+    "club": "Nice",
+    "age": 26,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Maxime Crépeau",
+    "position": "GK",
+    "club": "Orlando City SC",
+    "age": 32,
+    "caps": 31,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Tajon Buchanan",
+    "position": "FW",
+    "club": "Villarreal",
+    "age": 27,
+    "caps": 59,
+    "goals": 8,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Owen Goodman",
+    "position": "GK",
+    "club": "Barnsley",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Alphonso Davies (captain)",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 25,
+    "caps": 58,
+    "goals": 15,
+    "market_value": null
+  },
+  {
+    "name": "Ali Ahmed",
+    "position": "FW",
+    "club": "Norwich City",
+    "age": 25,
+    "caps": 24,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Jonathan Osorio",
+    "position": "MF",
+    "club": "Toronto FC",
+    "age": 33,
+    "caps": 90,
+    "goals": 10,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Richie Laryea",
+    "position": "DF",
+    "club": "Toronto FC",
+    "age": 31,
+    "caps": 74,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Niko Sigur",
+    "position": "DF",
+    "club": "Hajduk Split",
+    "age": 22,
+    "caps": 18,
+    "goals": 2,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Promise David",
+    "position": "FW",
+    "club": "Union Saint-Gilloise",
+    "age": 24,
+    "caps": 9,
+    "goals": 3,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Nathan Saliba",
+    "position": "MF",
+    "club": "Anderlecht",
+    "age": 22,
+    "caps": 14,
+    "goals": 2,
+    "market_value": null
+  }
+]

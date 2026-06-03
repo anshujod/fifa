@@ -1,0 +1,236 @@
+[
+  {
+    "name": "David Ospina",
+    "position": "GK",
+    "club": "Atlético Nacional",
+    "age": 37,
+    "caps": 130,
+    "goals": 0,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Daniel Muñoz",
+    "position": "DF",
+    "club": "Crystal Palace",
+    "age": 30,
+    "caps": 45,
+    "goals": 3,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Jhon Lucumí",
+    "position": "DF",
+    "club": "Bologna",
+    "age": 27,
+    "caps": 36,
+    "goals": 1,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Santiago Arias",
+    "position": "DF",
+    "club": "Independiente",
+    "age": 34,
+    "caps": 67,
+    "goals": 0,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Kevin Castaño",
+    "position": "MF",
+    "club": "River Plate",
+    "age": 25,
+    "caps": 25,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Richard Ríos",
+    "position": "MF",
+    "club": "Benfica",
+    "age": 26,
+    "caps": 31,
+    "goals": 2,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Luis Díaz",
+    "position": "FW",
+    "club": "Bayern Munich",
+    "age": 29,
+    "caps": 73,
+    "goals": 22,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Jorge Carrascal",
+    "position": "MF",
+    "club": "Flamengo",
+    "age": 28,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Jhon Córdoba",
+    "position": "FW",
+    "club": "Krasnodar",
+    "age": 33,
+    "caps": 21,
+    "goals": 6,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "James Rodríguez (captain)",
+    "position": "MF",
+    "club": "Minnesota United FC",
+    "age": 34,
+    "caps": 125,
+    "goals": 31,
+    "market_value": null
+  },
+  {
+    "name": "Jhon Arias",
+    "position": "MF",
+    "club": "Palmeiras",
+    "age": 28,
+    "caps": 37,
+    "goals": 4,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Camilo Vargas",
+    "position": "GK",
+    "club": "Atlas",
+    "age": 37,
+    "caps": 41,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Yerry Mina",
+    "position": "DF",
+    "club": "Cagliari",
+    "age": 31,
+    "caps": 53,
+    "goals": 8,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Gustavo Puerta",
+    "position": "DF",
+    "club": "Racing Santander",
+    "age": 22,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Juan Portilla",
+    "position": "MF",
+    "club": "Athletico Paranaense",
+    "age": 27,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Jefferson Lerma",
+    "position": "MF",
+    "club": "Crystal Palace",
+    "age": 31,
+    "caps": 64,
+    "goals": 5,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Johan Mojica",
+    "position": "DF",
+    "club": "Mallorca",
+    "age": 33,
+    "caps": 44,
+    "goals": 1,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Willer Ditta",
+    "position": "DF",
+    "club": "Cruz Azul",
+    "age": 28,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€5.50m"
+  },
+  {
+    "name": "Cucho Hernández",
+    "position": "FW",
+    "club": "Real Betis",
+    "age": 27,
+    "caps": 8,
+    "goals": 2,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Juan Fernando Quintero",
+    "position": "MF",
+    "club": "River Plate",
+    "age": 33,
+    "caps": 48,
+    "goals": 6,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Jaminton Campaz",
+    "position": "FW",
+    "club": "Rosario Central",
+    "age": 26,
+    "caps": 9,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Deiver Machado",
+    "position": "DF",
+    "club": "Nantes",
+    "age": 32,
+    "caps": 15,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Davinson Sánchez",
+    "position": "DF",
+    "club": "Galatasaray",
+    "age": 29,
+    "caps": 78,
+    "goals": 4,
+    "market_value": "€16.00m"
+  },
+  {
+    "name": "Álvaro Montero",
+    "position": "GK",
+    "club": "Vélez Sarsfield",
+    "age": 31,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Luis Suárez",
+    "position": "FW",
+    "club": "Sporting CP",
+    "age": 28,
+    "caps": 11,
+    "goals": 5,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Andrés Gómez",
+    "position": "FW",
+    "club": "Vasco da Gama",
+    "age": 23,
+    "caps": 7,
+    "goals": 2,
+    "market_value": "€11.00m"
+  }
+]

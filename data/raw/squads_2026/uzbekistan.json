@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Utkir Yusupov",
+    "position": "GK",
+    "club": "Navbahor Namangan",
+    "age": 35,
+    "caps": 39,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Abdukodir Khusanov",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 22,
+    "caps": 26,
+    "goals": 0,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Khojiakbar Alijonov",
+    "position": "DF",
+    "club": "Pakhtakor",
+    "age": 29,
+    "caps": 40,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Farrukh Sayfiev",
+    "position": "DF",
+    "club": "Neftchi Fergana",
+    "age": 35,
+    "caps": 45,
+    "goals": 1,
+    "market_value": "€225k"
+  },
+  {
+    "name": "Rustam Ashurmatov",
+    "position": "DF",
+    "club": "Esteghlal",
+    "age": 29,
+    "caps": 48,
+    "goals": 1,
+    "market_value": "€750k"
+  },
+  {
+    "name": "Akmal Mozgovoy",
+    "position": "MF",
+    "club": "Pakhtakor",
+    "age": 27,
+    "caps": 24,
+    "goals": 1,
+    "market_value": "€1.40m"
+  },
+  {
+    "name": "Otabek Shukurov",
+    "position": "MF",
+    "club": "Baniyas",
+    "age": 29,
+    "caps": 83,
+    "goals": 9,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Jamshid Iskanderov",
+    "position": "MF",
+    "club": "Neftchi Fergana",
+    "age": 32,
+    "caps": 37,
+    "goals": 4,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Odiljon Hamrobekov",
+    "position": "MF",
+    "club": "Tractor",
+    "age": 30,
+    "caps": 72,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Jaloliddin Masharipov",
+    "position": "MF",
+    "club": "Esteghlal",
+    "age": 32,
+    "caps": 74,
+    "goals": 12,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Oston Urunov",
+    "position": "MF",
+    "club": "Persepolis",
+    "age": 25,
+    "caps": 41,
+    "goals": 10,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Abduvohid Nematov",
+    "position": "GK",
+    "club": "Nasaf",
+    "age": 25,
+    "caps": 8,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Sherzod Nasrullaev",
+    "position": "DF",
+    "club": "Nasaf",
+    "age": 27,
+    "caps": 30,
+    "goals": 2,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Eldor Shomurodov (captain)",
+    "position": "FW",
+    "club": "İstanbul Başakşehir",
+    "age": 30,
+    "caps": 91,
+    "goals": 44,
+    "market_value": null
+  },
+  {
+    "name": "Umar Eshmurodov",
+    "position": "DF",
+    "club": "Nasaf",
+    "age": 33,
+    "caps": 29,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Botirali Ergashev",
+    "position": "GK",
+    "club": "Neftchi Fergana",
+    "age": 30,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Dostonbek Khamdamov",
+    "position": "MF",
+    "club": "Pakhtakor",
+    "age": 29,
+    "caps": 33,
+    "goals": 5,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Abdulla Abdullaev",
+    "position": "DF",
+    "club": "Dibba",
+    "age": 28,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "-"
+  },
+  {
+    "name": "Azizjon Ganiev",
+    "position": "MF",
+    "club": "Al-Bataeh",
+    "age": 28,
+    "caps": 19,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Azizbek Amonov",
+    "position": "FW",
+    "club": "Dinamo Samarqand",
+    "age": 28,
+    "caps": 12,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Igor Sergeev",
+    "position": "FW",
+    "club": "Persepolis",
+    "age": 33,
+    "caps": 82,
+    "goals": 24,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Abbosbek Fayzullaev",
+    "position": "MF",
+    "club": "İstanbul Başakşehir",
+    "age": 22,
+    "caps": 31,
+    "goals": 8,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Sherzod Esanov",
+    "position": "MF",
+    "club": "Bukhara",
+    "age": 23,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Bekhruz Karimov",
+    "position": "DF",
+    "club": "Surkhon Termiz",
+    "age": 18,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Avazbek Ulmasaliev",
+    "position": "DF",
+    "club": "AGMK",
+    "age": 26,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Jakhongir Urozov",
+    "position": "DF",
+    "club": "Dinamo Samarqand",
+    "age": 22,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€600k"
+  }
+]

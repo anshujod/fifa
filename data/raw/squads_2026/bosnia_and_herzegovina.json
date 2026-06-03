@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Nikola Vasilj",
+    "position": "GK",
+    "club": "FC St. Pauli",
+    "age": 30,
+    "caps": 25,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Nihad Mujakić",
+    "position": "DF",
+    "club": "Gaziantep",
+    "age": 28,
+    "caps": 11,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Dennis Hadžikadunić",
+    "position": "DF",
+    "club": "Sampdoria",
+    "age": 27,
+    "caps": 31,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Tarik Muharemović",
+    "position": "DF",
+    "club": "Sassuolo",
+    "age": 23,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Sead Kolašinac",
+    "position": "DF",
+    "club": "Atalanta",
+    "age": 32,
+    "caps": 64,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Benjamin Tahirović",
+    "position": "MF",
+    "club": "Brøndby",
+    "age": 23,
+    "caps": 27,
+    "goals": 2,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Amar Dedić",
+    "position": "DF",
+    "club": "Benfica",
+    "age": 23,
+    "caps": 27,
+    "goals": 1,
+    "market_value": "€16.00m"
+  },
+  {
+    "name": "Armin Gigović",
+    "position": "MF",
+    "club": "Young Boys",
+    "age": 24,
+    "caps": 19,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Samed Baždar",
+    "position": "FW",
+    "club": "Jagiellonia Białystok",
+    "age": 22,
+    "caps": 12,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Ermedin Demirović",
+    "position": "FW",
+    "club": "VfB Stuttgart",
+    "age": 28,
+    "caps": 39,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Edin Džeko (captain)",
+    "position": "FW",
+    "club": "Schalke 04",
+    "age": 40,
+    "caps": 148,
+    "goals": 73,
+    "market_value": null
+  },
+  {
+    "name": "Mladen Jurkas",
+    "position": "GK",
+    "club": "Borac Banja Luka",
+    "age": 18,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Ivan Bašić",
+    "position": "MF",
+    "club": "Astana",
+    "age": 24,
+    "caps": 16,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Ivan Šunjić",
+    "position": "MF",
+    "club": "Pafos",
+    "age": 29,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Amar Memić",
+    "position": "MF",
+    "club": "Viktoria Plzeň",
+    "age": 25,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Amir Hadžiahmetović",
+    "position": "MF",
+    "club": "Hull City",
+    "age": 29,
+    "caps": 35,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Dženis Burnić",
+    "position": "MF",
+    "club": "Karlsruher SC",
+    "age": 28,
+    "caps": 19,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Nikola Katić",
+    "position": "DF",
+    "club": "Schalke 04",
+    "age": 29,
+    "caps": 16,
+    "goals": 1,
+    "market_value": "-"
+  },
+  {
+    "name": "Kerim Alajbegović",
+    "position": "FW",
+    "club": "Red Bull Salzburg",
+    "age": 18,
+    "caps": 9,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Esmir Bajraktarević",
+    "position": "FW",
+    "club": "PSV Eindhoven",
+    "age": 21,
+    "caps": 15,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Stjepan Radeljić",
+    "position": "DF",
+    "club": "Rijeka",
+    "age": 28,
+    "caps": 5,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Martin Zlomislić",
+    "position": "GK",
+    "club": "Rijeka",
+    "age": 27,
+    "caps": 3,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Haris Tabaković",
+    "position": "FW",
+    "club": "Borussia Mönchengladbach",
+    "age": 31,
+    "caps": 10,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Nidal Čelik",
+    "position": "DF",
+    "club": "Lens",
+    "age": 19,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Jovo Lukić",
+    "position": "FW",
+    "club": "Universitatea Cluj",
+    "age": 27,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Ermin Mahmić",
+    "position": "MF",
+    "club": "Slovan Liberec",
+    "age": 21,
+    "caps": 1,
+    "goals": 0,
+    "market_value": null
+  }
+]

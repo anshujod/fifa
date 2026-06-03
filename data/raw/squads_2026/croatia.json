@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Dominik Livaković",
+    "position": "GK",
+    "club": "Dinamo Zagreb",
+    "age": 31,
+    "caps": 74,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Josip Stanišić",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 26,
+    "caps": 30,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Marin Pongračić",
+    "position": "DF",
+    "club": "Fiorentina",
+    "age": 28,
+    "caps": 19,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Joško Gvardiol",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 24,
+    "caps": 47,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Duje Ćaleta-Car",
+    "position": "DF",
+    "club": "Real Sociedad",
+    "age": 29,
+    "caps": 38,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Josip Šutalo",
+    "position": "DF",
+    "club": "Ajax",
+    "age": 26,
+    "caps": 32,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Nikola Moro",
+    "position": "MF",
+    "club": "Bologna",
+    "age": 28,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Mateo Kovačić",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 32,
+    "caps": 112,
+    "goals": 5,
+    "market_value": null
+  },
+  {
+    "name": "Andrej Kramarić",
+    "position": "FW",
+    "club": "TSG Hoffenheim",
+    "age": 34,
+    "caps": 115,
+    "goals": 36,
+    "market_value": null
+  },
+  {
+    "name": "Luka Modrić (captain)",
+    "position": "MF",
+    "club": "Milan",
+    "age": 40,
+    "caps": 197,
+    "goals": 28,
+    "market_value": null
+  },
+  {
+    "name": "Ante Budimir",
+    "position": "FW",
+    "club": "Osasuna",
+    "age": 34,
+    "caps": 37,
+    "goals": 6,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Ivor Pandur",
+    "position": "GK",
+    "club": "Hull City",
+    "age": 26,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Nikola Vlašić",
+    "position": "MF",
+    "club": "Torino",
+    "age": 28,
+    "caps": 62,
+    "goals": 10,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Ivan Perišić",
+    "position": "FW",
+    "club": "PSV Eindhoven",
+    "age": 37,
+    "caps": 153,
+    "goals": 38,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Mario Pašalić",
+    "position": "MF",
+    "club": "Atalanta",
+    "age": 31,
+    "caps": 84,
+    "goals": 11,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Martin Baturina",
+    "position": "MF",
+    "club": "Como",
+    "age": 23,
+    "caps": 18,
+    "goals": 1,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Petar Sučić",
+    "position": "MF",
+    "club": "Inter Milan",
+    "age": 22,
+    "caps": 16,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Kristijan Jakić",
+    "position": "DF",
+    "club": "FC Augsburg",
+    "age": 29,
+    "caps": 17,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Toni Fruk",
+    "position": "MF",
+    "club": "Rijeka",
+    "age": 25,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Igor Matanović",
+    "position": "FW",
+    "club": "SC Freiburg",
+    "age": 23,
+    "caps": 8,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Luka Sučić",
+    "position": "MF",
+    "club": "Real Sociedad",
+    "age": 23,
+    "caps": 20,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Luka Vušković",
+    "position": "DF",
+    "club": "Hamburger SV",
+    "age": 19,
+    "caps": 5,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Dominik Kotarski",
+    "position": "GK",
+    "club": "Copenhagen",
+    "age": 26,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Marco Pašalić",
+    "position": "FW",
+    "club": "Orlando City SC",
+    "age": 25,
+    "caps": 14,
+    "goals": 1,
+    "market_value": "€6.50m"
+  },
+  {
+    "name": "Martin Erlić",
+    "position": "DF",
+    "club": "Midtjylland",
+    "age": 28,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Petar Musa",
+    "position": "FW",
+    "club": "FC Dallas",
+    "age": 28,
+    "caps": 11,
+    "goals": 1,
+    "market_value": "€12.00m"
+  }
+]

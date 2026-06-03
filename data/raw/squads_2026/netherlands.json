@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Bart Verbruggen",
+    "position": "GK",
+    "club": "Brighton & Hove Albion",
+    "age": 23,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Jurriën Timber",
+    "position": "DF",
+    "club": "Arsenal",
+    "age": 24,
+    "caps": 23,
+    "goals": 0,
+    "market_value": "€70.00m"
+  },
+  {
+    "name": "Marten de Roon",
+    "position": "MF",
+    "club": "Atalanta",
+    "age": 35,
+    "caps": 42,
+    "goals": 1,
+    "market_value": "€3.20m"
+  },
+  {
+    "name": "Virgil van Dijk (captain)",
+    "position": "DF",
+    "club": "Liverpool",
+    "age": 34,
+    "caps": 90,
+    "goals": 12,
+    "market_value": null
+  },
+  {
+    "name": "Nathan Aké",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 31,
+    "caps": 58,
+    "goals": 5,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Jan Paul van Hecke",
+    "position": "DF",
+    "club": "Brighton & Hove Albion",
+    "age": 26,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Justin Kluivert",
+    "position": "MF",
+    "club": "Bournemouth",
+    "age": 27,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Ryan Gravenberch",
+    "position": "MF",
+    "club": "Liverpool",
+    "age": 24,
+    "caps": 25,
+    "goals": 1,
+    "market_value": "€80.00m"
+  },
+  {
+    "name": "Wout Weghorst",
+    "position": "FW",
+    "club": "Ajax",
+    "age": 33,
+    "caps": 51,
+    "goals": 14,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Memphis Depay",
+    "position": "FW",
+    "club": "Corinthians",
+    "age": 32,
+    "caps": 108,
+    "goals": 55,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Cody Gakpo",
+    "position": "FW",
+    "club": "Liverpool",
+    "age": 27,
+    "caps": 48,
+    "goals": 19,
+    "market_value": "€60.00m"
+  },
+  {
+    "name": "Mats Wieffer",
+    "position": "DF",
+    "club": "Brighton & Hove Albion",
+    "age": 26,
+    "caps": 14,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Robin Roefs",
+    "position": "GK",
+    "club": "Sunderland",
+    "age": 23,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Tijjani Reijnders",
+    "position": "MF",
+    "club": "Manchester City",
+    "age": 27,
+    "caps": 30,
+    "goals": 7,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Micky van de Ven",
+    "position": "DF",
+    "club": "Tottenham Hotspur",
+    "age": 25,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Guus Til",
+    "position": "MF",
+    "club": "PSV Eindhoven",
+    "age": 28,
+    "caps": 6,
+    "goals": 1,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Noa Lang",
+    "position": "FW",
+    "club": "Galatasaray",
+    "age": 26,
+    "caps": 15,
+    "goals": 3,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Donyell Malen",
+    "position": "FW",
+    "club": "Roma",
+    "age": 27,
+    "caps": 51,
+    "goals": 13,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Brian Brobbey",
+    "position": "FW",
+    "club": "Sunderland",
+    "age": 24,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Teun Koopmeiners",
+    "position": "MF",
+    "club": "Juventus",
+    "age": 28,
+    "caps": 27,
+    "goals": 3,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Frenkie de Jong",
+    "position": "MF",
+    "club": "Barcelona",
+    "age": 29,
+    "caps": 64,
+    "goals": 2,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Denzel Dumfries",
+    "position": "DF",
+    "club": "Inter Milan",
+    "age": 30,
+    "caps": 71,
+    "goals": 11,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Mark Flekken",
+    "position": "GK",
+    "club": "Bayer Leverkusen",
+    "age": 32,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Crysencio Summerville",
+    "position": "FW",
+    "club": "West Ham United",
+    "age": 24,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Jorrel Hato",
+    "position": "DF",
+    "club": "Chelsea",
+    "age": 20,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Quinten Timber",
+    "position": "MF",
+    "club": "Marseille",
+    "age": 24,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€25.00m"
+  }
+]

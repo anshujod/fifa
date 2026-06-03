@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Fahad Talib",
+    "position": "GK",
+    "club": "Al-Talaba",
+    "age": 31,
+    "caps": 21,
+    "goals": 0,
+    "market_value": "€375k"
+  },
+  {
+    "name": "Rebin Sulaka",
+    "position": "DF",
+    "club": "Port",
+    "age": 34,
+    "caps": 54,
+    "goals": 1,
+    "market_value": "€100k"
+  },
+  {
+    "name": "Hussein Ali",
+    "position": "DF",
+    "club": "Pogoń Szczecin",
+    "age": 24,
+    "caps": 25,
+    "goals": 1,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Zaid Tahseen",
+    "position": "DF",
+    "club": "Pakhtakor",
+    "age": 25,
+    "caps": 26,
+    "goals": 1,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Akam Hashim",
+    "position": "DF",
+    "club": "Al-Zawraa",
+    "age": 27,
+    "caps": 12,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Manaf Younis",
+    "position": "DF",
+    "club": "Al-Shorta",
+    "age": 29,
+    "caps": 32,
+    "goals": 1,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Youssef Amyn",
+    "position": "MF",
+    "club": "AEK Larnaca",
+    "age": 22,
+    "caps": 25,
+    "goals": 2,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Ibrahim Bayesh",
+    "position": "MF",
+    "club": "Al-Dhafra",
+    "age": 26,
+    "caps": 74,
+    "goals": 8,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ali Al-Hamadi",
+    "position": "FW",
+    "club": "Luton Town",
+    "age": 24,
+    "caps": 18,
+    "goals": 5,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Mohanad Ali",
+    "position": "FW",
+    "club": "Dibba",
+    "age": 25,
+    "caps": 71,
+    "goals": 27,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Ahmed Qasem",
+    "position": "FW",
+    "club": "Nashville SC",
+    "age": 22,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Jalal Hassan (captain)",
+    "position": "GK",
+    "club": "Al-Zawraa",
+    "age": 35,
+    "caps": 100,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Ali Yousif",
+    "position": "FW",
+    "club": "Al-Talaba",
+    "age": 30,
+    "caps": 6,
+    "goals": 1,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Zidane Iqbal",
+    "position": "MF",
+    "club": "Utrecht",
+    "age": 23,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Ahmed Yahya",
+    "position": "DF",
+    "club": "Al-Shorta",
+    "age": 30,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Amir Al-Ammari",
+    "position": "MF",
+    "club": "Cracovia",
+    "age": 28,
+    "caps": 49,
+    "goals": 3,
+    "market_value": "€850k"
+  },
+  {
+    "name": "Ali Jasim",
+    "position": "FW",
+    "club": "Al-Najma",
+    "age": 22,
+    "caps": 35,
+    "goals": 2,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Aymen Hussein",
+    "position": "FW",
+    "club": "Al-Karma",
+    "age": 30,
+    "caps": 93,
+    "goals": 33,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Kevin Yakob",
+    "position": "MF",
+    "club": "AGF",
+    "age": 25,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€850k"
+  },
+  {
+    "name": "Aimar Sher",
+    "position": "MF",
+    "club": "Sarpsborg 08",
+    "age": 23,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Marko Farji",
+    "position": "FW",
+    "club": "Venezia",
+    "age": 22,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Ahmed Basil",
+    "position": "GK",
+    "club": "Al-Shorta",
+    "age": 29,
+    "caps": 14,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Merchas Doski",
+    "position": "DF",
+    "club": "Viktoria Plzeň",
+    "age": 26,
+    "caps": 30,
+    "goals": 0,
+    "market_value": "€1.70m"
+  },
+  {
+    "name": "Zaid Ismail",
+    "position": "MF",
+    "club": "Al-Talaba",
+    "age": 24,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Mustafa Saadoon",
+    "position": "DF",
+    "club": "Al-Shorta",
+    "age": 25,
+    "caps": 15,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Frans Putros",
+    "position": "DF",
+    "club": "Persib",
+    "age": 32,
+    "caps": 26,
+    "goals": 0,
+    "market_value": null
+  }
+]

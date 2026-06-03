@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Melvin Mastil",
+    "position": "GK",
+    "club": "Stade Nyonnais",
+    "age": 26,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Aïssa Mandi",
+    "position": "DF",
+    "club": "Lille",
+    "age": 34,
+    "caps": 116,
+    "goals": 7,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Achref Abada",
+    "position": "DF",
+    "club": "USM Alger",
+    "age": 26,
+    "caps": 6,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Mohamed Amine Tougai",
+    "position": "DF",
+    "club": "Espérance de Tunis",
+    "age": 26,
+    "caps": 28,
+    "goals": 2,
+    "market_value": "€1.30m"
+  },
+  {
+    "name": "Zineddine Belaïd",
+    "position": "DF",
+    "club": "JS Kabylie",
+    "age": 27,
+    "caps": 9,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Ramiz Zerrouki",
+    "position": "MF",
+    "club": "Twente",
+    "age": 28,
+    "caps": 51,
+    "goals": 3,
+    "market_value": "€6.50m"
+  },
+  {
+    "name": "Riyad Mahrez (captain)",
+    "position": "FW",
+    "club": "Al-Ahli",
+    "age": 35,
+    "caps": 113,
+    "goals": 38,
+    "market_value": null
+  },
+  {
+    "name": "Houssem Aouar",
+    "position": "MF",
+    "club": "Al-Ittihad",
+    "age": 27,
+    "caps": 19,
+    "goals": 6,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Amine Gouiri",
+    "position": "FW",
+    "club": "Marseille",
+    "age": 26,
+    "caps": 21,
+    "goals": 8,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Farès Chaïbi",
+    "position": "MF",
+    "club": "Eintracht Frankfurt",
+    "age": 23,
+    "caps": 28,
+    "goals": 3,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Anis Hadj Moussa",
+    "position": "FW",
+    "club": "Feyenoord",
+    "age": 24,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€23.00m"
+  },
+  {
+    "name": "Nadhir Benbouali",
+    "position": "FW",
+    "club": "Győri ETO",
+    "age": 26,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Jaouen Hadjam",
+    "position": "DF",
+    "club": "Young Boys",
+    "age": 23,
+    "caps": 16,
+    "goals": 3,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Hicham Boudaoui",
+    "position": "MF",
+    "club": "Nice",
+    "age": 26,
+    "caps": 32,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Rayan Aït-Nouri",
+    "position": "DF",
+    "club": "Manchester City",
+    "age": 25,
+    "caps": 27,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Oussama Benbot",
+    "position": "GK",
+    "club": "USM Alger",
+    "age": 31,
+    "caps": 2,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Rafik Belghali",
+    "position": "DF",
+    "club": "Hellas Verona",
+    "age": 24,
+    "caps": 11,
+    "goals": 1,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Mohamed Amoura",
+    "position": "FW",
+    "club": "VfL Wolfsburg",
+    "age": 26,
+    "caps": 44,
+    "goals": 19,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Nabil Bentaleb",
+    "position": "MF",
+    "club": "Lille",
+    "age": 31,
+    "caps": 58,
+    "goals": 6,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Adil Boulbina",
+    "position": "FW",
+    "club": "Al-Duhail",
+    "age": 23,
+    "caps": 10,
+    "goals": 6,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Ramy Bensebaini",
+    "position": "DF",
+    "club": "Borussia Dortmund",
+    "age": 31,
+    "caps": 81,
+    "goals": 7,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Ibrahim Maza",
+    "position": "MF",
+    "club": "Bayer Leverkusen",
+    "age": 20,
+    "caps": 15,
+    "goals": 2,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Luca Zidane",
+    "position": "GK",
+    "club": "Granada",
+    "age": 28,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Yacine Titraoui",
+    "position": "MF",
+    "club": "Charleroi",
+    "age": 22,
+    "caps": 5,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Farès Ghedjemis",
+    "position": "FW",
+    "club": "Frosinone",
+    "age": 23,
+    "caps": 1,
+    "goals": 1,
+    "market_value": "€5.50m"
+  },
+  {
+    "name": "Samir Chergui",
+    "position": "DF",
+    "club": "Paris FC",
+    "age": 27,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€3.00m"
+  }
+]

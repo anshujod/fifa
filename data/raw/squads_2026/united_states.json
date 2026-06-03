@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Matt Turner",
+    "position": "GK",
+    "club": "New England Revolution",
+    "age": 31,
+    "caps": 54,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Sergiño Dest",
+    "position": "DF",
+    "club": "PSV Eindhoven",
+    "age": 25,
+    "caps": 38,
+    "goals": 3,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Chris Richards",
+    "position": "DF",
+    "club": "Crystal Palace",
+    "age": 26,
+    "caps": 36,
+    "goals": 3,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Tyler Adams",
+    "position": "MF",
+    "club": "Bournemouth",
+    "age": 27,
+    "caps": 53,
+    "goals": 2,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Antonee Robinson",
+    "position": "DF",
+    "club": "Fulham",
+    "age": 28,
+    "caps": 53,
+    "goals": 4,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Auston Trusty",
+    "position": "DF",
+    "club": "Celtic",
+    "age": 27,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Giovanni Reyna",
+    "position": "MF",
+    "club": "Borussia Mönchengladbach",
+    "age": 23,
+    "caps": 37,
+    "goals": 9,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Weston McKennie",
+    "position": "MF",
+    "club": "Juventus",
+    "age": 27,
+    "caps": 65,
+    "goals": 12,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Ricardo Pepi",
+    "position": "FW",
+    "club": "PSV Eindhoven",
+    "age": 23,
+    "caps": 36,
+    "goals": 13,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Christian Pulisic",
+    "position": "FW",
+    "club": "Milan",
+    "age": 27,
+    "caps": 85,
+    "goals": 33,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Brenden Aaronson",
+    "position": "FW",
+    "club": "Leeds United",
+    "age": 25,
+    "caps": 57,
+    "goals": 9,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Miles Robinson",
+    "position": "DF",
+    "club": "FC Cincinnati",
+    "age": 29,
+    "caps": 39,
+    "goals": 3,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Tim Ream (captain)",
+    "position": "DF",
+    "club": "Charlotte FC",
+    "age": 38,
+    "caps": 81,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Sebastian Berhalter",
+    "position": "MF",
+    "club": "Vancouver Whitecaps FC",
+    "age": 25,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Cristian Roldan",
+    "position": "MF",
+    "club": "Seattle Sounders FC",
+    "age": 31,
+    "caps": 46,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Alex Freeman",
+    "position": "DF",
+    "club": "Villarreal",
+    "age": 21,
+    "caps": 16,
+    "goals": 2,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Malik Tillman",
+    "position": "MF",
+    "club": "Bayer Leverkusen",
+    "age": 24,
+    "caps": 29,
+    "goals": 3,
+    "market_value": "€30.00m"
+  },
+  {
+    "name": "Maximilian Arfsten",
+    "position": "DF",
+    "club": "Columbus Crew",
+    "age": 25,
+    "caps": 19,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Haji Wright",
+    "position": "FW",
+    "club": "Coventry City",
+    "age": 28,
+    "caps": 20,
+    "goals": 7,
+    "market_value": "€16.00m"
+  },
+  {
+    "name": "Folarin Balogun",
+    "position": "FW",
+    "club": "Monaco",
+    "age": 24,
+    "caps": 26,
+    "goals": 9,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Timothy Weah",
+    "position": "FW",
+    "club": "Marseille",
+    "age": 26,
+    "caps": 50,
+    "goals": 7,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Mark McKenzie",
+    "position": "DF",
+    "club": "Toulouse",
+    "age": 27,
+    "caps": 28,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Joe Scally",
+    "position": "DF",
+    "club": "Borussia Mönchengladbach",
+    "age": 23,
+    "caps": 25,
+    "goals": 0,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Matt Freese",
+    "position": "GK",
+    "club": "New York City FC",
+    "age": 27,
+    "caps": 14,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Chris Brady",
+    "position": "GK",
+    "club": "Chicago Fire FC",
+    "age": 22,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Alejandro Zendejas",
+    "position": "FW",
+    "club": "América",
+    "age": 28,
+    "caps": 14,
+    "goals": 2,
+    "market_value": null
+  }
+]

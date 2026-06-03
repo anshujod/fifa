@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Alireza Beiranvand",
+    "position": "GK",
+    "club": "Tractor",
+    "age": 33,
+    "caps": 85,
+    "goals": 0,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Saleh Hardani",
+    "position": "DF",
+    "club": "Esteghlal",
+    "age": 27,
+    "caps": 17,
+    "goals": 1,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ehsan Hajsafi (captain)",
+    "position": "DF",
+    "club": "Sepahan",
+    "age": 36,
+    "caps": 145,
+    "goals": 7,
+    "market_value": null
+  },
+  {
+    "name": "Shojae Khalilzadeh",
+    "position": "DF",
+    "club": "Tractor",
+    "age": 37,
+    "caps": 57,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Milad Mohammadi",
+    "position": "DF",
+    "club": "Persepolis",
+    "age": 32,
+    "caps": 75,
+    "goals": 1,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Saeid Ezatolahi",
+    "position": "MF",
+    "club": "Shabab Al-Ahli",
+    "age": 29,
+    "caps": 82,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Alireza Jahanbakhsh",
+    "position": "MF",
+    "club": "Dender",
+    "age": 32,
+    "caps": 98,
+    "goals": 17,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Mohammad Mohebi",
+    "position": "MF",
+    "club": "Rostov",
+    "age": 27,
+    "caps": 36,
+    "goals": 14,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Mehdi Taremi",
+    "position": "FW",
+    "club": "Olympiacos",
+    "age": 33,
+    "caps": 104,
+    "goals": 60,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Mehdi Ghayedi",
+    "position": "FW",
+    "club": "Al-Nasr",
+    "age": 27,
+    "caps": 29,
+    "goals": 10,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Ali Alipour",
+    "position": "FW",
+    "club": "Persepolis",
+    "age": 30,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€1.70m"
+  },
+  {
+    "name": "Payam Niazmand",
+    "position": "GK",
+    "club": "Persepolis",
+    "age": 31,
+    "caps": 15,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Hossein Kanaanizadegan",
+    "position": "DF",
+    "club": "Persepolis",
+    "age": 32,
+    "caps": 64,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Saman Ghoddos",
+    "position": "MF",
+    "club": "Kalba",
+    "age": 32,
+    "caps": 67,
+    "goals": 3,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Rouzbeh Cheshmi",
+    "position": "MF",
+    "club": "Esteghlal",
+    "age": 32,
+    "caps": 40,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Mehdi Torabi",
+    "position": "MF",
+    "club": "Tractor",
+    "age": 31,
+    "caps": 52,
+    "goals": 7,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Aria Yousefi",
+    "position": "DF",
+    "club": "Sepahan",
+    "age": 24,
+    "caps": 13,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Amirhossein Hosseinzadeh",
+    "position": "FW",
+    "club": "Tractor",
+    "age": 25,
+    "caps": 17,
+    "goals": 5,
+    "market_value": "€2.20m"
+  },
+  {
+    "name": "Ali Nemati",
+    "position": "DF",
+    "club": "Foolad",
+    "age": 30,
+    "caps": 16,
+    "goals": 0,
+    "market_value": "-"
+  },
+  {
+    "name": "Shahriyar Moghanlou",
+    "position": "FW",
+    "club": "Kalba",
+    "age": 31,
+    "caps": 20,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Mohammad Ghorbani",
+    "position": "MF",
+    "club": "Al-Wahda",
+    "age": 24,
+    "caps": 15,
+    "goals": 0,
+    "market_value": "€1.20m"
+  },
+  {
+    "name": "Hossein Hosseini",
+    "position": "GK",
+    "club": "Sepahan",
+    "age": 33,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Ramin Rezaeian",
+    "position": "DF",
+    "club": "Foolad",
+    "age": 36,
+    "caps": 73,
+    "goals": 7,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Dennis Eckert",
+    "position": "FW",
+    "club": "Standard Liège",
+    "age": 29,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Danial Eiri",
+    "position": "DF",
+    "club": "Malavan",
+    "age": 22,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Amirmohammad Razzaghinia",
+    "position": "MF",
+    "club": "Esteghlal",
+    "age": 20,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€1.20m"
+  }
+]

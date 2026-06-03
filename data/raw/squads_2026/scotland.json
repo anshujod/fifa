@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Angus Gunn",
+    "position": "GK",
+    "club": "Nottingham Forest",
+    "age": 30,
+    "caps": 21,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Aaron Hickey",
+    "position": "DF",
+    "club": "Brentford",
+    "age": 24,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€16.00m"
+  },
+  {
+    "name": "Andy Robertson (captain)",
+    "position": "DF",
+    "club": "Liverpool",
+    "age": 32,
+    "caps": 93,
+    "goals": 4,
+    "market_value": null
+  },
+  {
+    "name": "Scott McTominay",
+    "position": "MF",
+    "club": "Napoli",
+    "age": 29,
+    "caps": 69,
+    "goals": 14,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Grant Hanley",
+    "position": "DF",
+    "club": "Hibernian",
+    "age": 34,
+    "caps": 67,
+    "goals": 2,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Kieran Tierney",
+    "position": "DF",
+    "club": "Celtic",
+    "age": 29,
+    "caps": 55,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "John McGinn",
+    "position": "MF",
+    "club": "Aston Villa",
+    "age": 31,
+    "caps": 85,
+    "goals": 20,
+    "market_value": "€13.00m"
+  },
+  {
+    "name": "Tyler Fletcher",
+    "position": "MF",
+    "club": "Manchester United",
+    "age": 19,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Lyndon Dykes",
+    "position": "FW",
+    "club": "Charlton Athletic",
+    "age": 30,
+    "caps": 51,
+    "goals": 10,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Ché Adams",
+    "position": "FW",
+    "club": "Torino",
+    "age": 29,
+    "caps": 46,
+    "goals": 11,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Ryan Christie",
+    "position": "MF",
+    "club": "Bournemouth",
+    "age": 31,
+    "caps": 67,
+    "goals": 10,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Liam Kelly",
+    "position": "GK",
+    "club": "Rangers",
+    "age": 30,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Jack Hendry",
+    "position": "DF",
+    "club": "Al-Ettifaq",
+    "age": 31,
+    "caps": 37,
+    "goals": 3,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Ross Stewart",
+    "position": "FW",
+    "club": "Southampton",
+    "age": 29,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "John Souttar",
+    "position": "DF",
+    "club": "Rangers",
+    "age": 29,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Dominic Hyam",
+    "position": "DF",
+    "club": "Wrexham",
+    "age": 30,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Ben Gannon-Doak",
+    "position": "FW",
+    "club": "Bournemouth",
+    "age": 20,
+    "caps": 13,
+    "goals": 1,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "George Hirst",
+    "position": "FW",
+    "club": "Ipswich Town",
+    "age": 27,
+    "caps": 9,
+    "goals": 1,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Lewis Ferguson",
+    "position": "MF",
+    "club": "Bologna",
+    "age": 26,
+    "caps": 23,
+    "goals": 1,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Lawrence Shankland",
+    "position": "FW",
+    "club": "Heart of Midlothian",
+    "age": 30,
+    "caps": 19,
+    "goals": 6,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Craig Gordon",
+    "position": "GK",
+    "club": "Heart of Midlothian",
+    "age": 43,
+    "caps": 84,
+    "goals": 0,
+    "market_value": "€25k"
+  },
+  {
+    "name": "Nathan Patterson",
+    "position": "DF",
+    "club": "Everton",
+    "age": 24,
+    "caps": 26,
+    "goals": 1,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Kenny McLean",
+    "position": "MF",
+    "club": "Norwich City",
+    "age": 34,
+    "caps": 57,
+    "goals": 3,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Anthony Ralston",
+    "position": "DF",
+    "club": "Celtic",
+    "age": 27,
+    "caps": 26,
+    "goals": 1,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Findlay Curtis",
+    "position": "FW",
+    "club": "Kilmarnock",
+    "age": 20,
+    "caps": 2,
+    "goals": 1,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Scott McKenna",
+    "position": "DF",
+    "club": "Dinamo Zagreb",
+    "age": 29,
+    "caps": 50,
+    "goals": 1,
+    "market_value": "€4.00m"
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Yazeed Abulaila",
+    "position": "GK",
+    "club": "Al-Hussein",
+    "age": 33,
+    "caps": 75,
+    "goals": 0,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Mohammad Abu Hashish",
+    "position": "DF",
+    "club": "Al-Karma",
+    "age": 31,
+    "caps": 55,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Abdallah Nasib",
+    "position": "DF",
+    "club": "Al-Zawraa",
+    "age": 32,
+    "caps": 64,
+    "goals": 3,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Husam Abu Dahab",
+    "position": "DF",
+    "club": "Al-Faisaly",
+    "age": 26,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Yazan Al-Arab",
+    "position": "DF",
+    "club": "FC Seoul",
+    "age": 30,
+    "caps": 79,
+    "goals": 3,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Amer Jamous",
+    "position": "MF",
+    "club": "Al-Zawraa",
+    "age": 23,
+    "caps": 18,
+    "goals": 1,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Mohammad Abu Zrayq",
+    "position": "FW",
+    "club": "Raja Casablanca",
+    "age": 28,
+    "caps": 40,
+    "goals": 5,
+    "market_value": null
+  },
+  {
+    "name": "Noor Al-Rawabdeh",
+    "position": "MF",
+    "club": "Selangor",
+    "age": 29,
+    "caps": 67,
+    "goals": 3,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Ali Olwan",
+    "position": "FW",
+    "club": "Al-Sailiya",
+    "age": 26,
+    "caps": 65,
+    "goals": 29,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Musa Al-Taamari",
+    "position": "FW",
+    "club": "Rennes",
+    "age": 29,
+    "caps": 91,
+    "goals": 24,
+    "market_value": null
+  },
+  {
+    "name": "Odeh Al-Fakhouri",
+    "position": "FW",
+    "club": "Pyramids",
+    "age": 20,
+    "caps": 9,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Nour Bani Attiah",
+    "position": "GK",
+    "club": "Al-Faisaly",
+    "age": 33,
+    "caps": 4,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Mahmoud Al-Mardi",
+    "position": "FW",
+    "club": "Al-Hussein",
+    "age": 32,
+    "caps": 88,
+    "goals": 9,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Rajaei Ayed",
+    "position": "MF",
+    "club": "Al-Hussein",
+    "age": 32,
+    "caps": 72,
+    "goals": 0,
+    "market_value": "€325k"
+  },
+  {
+    "name": "Ibrahim Sadeh",
+    "position": "MF",
+    "club": "Al-Karma",
+    "age": 26,
+    "caps": 56,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Mo Abualnadi",
+    "position": "DF",
+    "club": "Selangor",
+    "age": 25,
+    "caps": 17,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Salim Obaid",
+    "position": "DF",
+    "club": "Al-Hussein",
+    "age": 34,
+    "caps": 10,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Ibrahim Sabra",
+    "position": "FW",
+    "club": "Lokomotiva Zagreb",
+    "age": 20,
+    "caps": 9,
+    "goals": 1,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Saed Al-Rosan",
+    "position": "DF",
+    "club": "Al-Hussein",
+    "age": 29,
+    "caps": 20,
+    "goals": 2,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Mohannad Abu Taha",
+    "position": "MF",
+    "club": "Al-Quwa Al-Jawiya",
+    "age": 23,
+    "caps": 28,
+    "goals": 1,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Nizar Al-Rashdan",
+    "position": "MF",
+    "club": "Qatar SC",
+    "age": 27,
+    "caps": 46,
+    "goals": 4,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Abdallah Al-Fakhouri",
+    "position": "GK",
+    "club": "Al-Wehdat",
+    "age": 26,
+    "caps": 11,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Ihsan Haddad (captain)",
+    "position": "DF",
+    "club": "Al-Hussein",
+    "age": 32,
+    "caps": 91,
+    "goals": 2,
+    "market_value": null
+  },
+  {
+    "name": "Ali Azaizeh",
+    "position": "FW",
+    "club": "Al-Shabab",
+    "age": 22,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€200k"
+  },
+  {
+    "name": "Mohammad Al-Dawoud",
+    "position": "MF",
+    "club": "Al-Wehdat",
+    "age": 34,
+    "caps": 12,
+    "goals": 1,
+    "market_value": "€150k"
+  },
+  {
+    "name": "Anas Badawi",
+    "position": "DF",
+    "club": "Al-Faisaly",
+    "age": 28,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€200k"
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Manuel Neuer",
+    "position": "GK",
+    "club": "Bayern Munich",
+    "age": 40,
+    "caps": 124,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "position": "DF",
+    "club": "Real Madrid",
+    "age": 33,
+    "caps": 82,
+    "goals": 3,
+    "market_value": "€9.00m"
+  },
+  {
+    "name": "Waldemar Anton",
+    "position": "DF",
+    "club": "Borussia Dortmund",
+    "age": 29,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€18.00m"
+  },
+  {
+    "name": "Jonathan Tah",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 30,
+    "caps": 46,
+    "goals": 1,
+    "market_value": "€28.00m"
+  },
+  {
+    "name": "Aleksandar Pavlović",
+    "position": "MF",
+    "club": "Bayern Munich",
+    "age": 22,
+    "caps": 10,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Joshua Kimmich (captain)",
+    "position": "DF",
+    "club": "Bayern Munich",
+    "age": 31,
+    "caps": 109,
+    "goals": 10,
+    "market_value": null
+  },
+  {
+    "name": "Kai Havertz",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 27,
+    "caps": 57,
+    "goals": 21,
+    "market_value": "€55.00m"
+  },
+  {
+    "name": "Leon Goretzka",
+    "position": "MF",
+    "club": "Bayern Munich",
+    "age": 31,
+    "caps": 69,
+    "goals": 15,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Jamie Leweling",
+    "position": "MF",
+    "club": "VfB Stuttgart",
+    "age": 25,
+    "caps": 4,
+    "goals": 1,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Jamal Musiala",
+    "position": "MF",
+    "club": "Bayern Munich",
+    "age": 23,
+    "caps": 41,
+    "goals": 9,
+    "market_value": "€100.00m"
+  },
+  {
+    "name": "Nick Woltemade",
+    "position": "FW",
+    "club": "Newcastle United",
+    "age": 24,
+    "caps": 11,
+    "goals": 4,
+    "market_value": "€55.00m"
+  },
+  {
+    "name": "Oliver Baumann",
+    "position": "GK",
+    "club": "TSG Hoffenheim",
+    "age": 36,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Pascal Groß",
+    "position": "MF",
+    "club": "Brighton & Hove Albion",
+    "age": 34,
+    "caps": 18,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Maximilian Beier",
+    "position": "FW",
+    "club": "Borussia Dortmund",
+    "age": 23,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Nico Schlotterbeck",
+    "position": "DF",
+    "club": "Borussia Dortmund",
+    "age": 26,
+    "caps": 26,
+    "goals": 0,
+    "market_value": "€55.00m"
+  },
+  {
+    "name": "Angelo Stiller",
+    "position": "MF",
+    "club": "VfB Stuttgart",
+    "age": 25,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Florian Wirtz",
+    "position": "MF",
+    "club": "Liverpool",
+    "age": 23,
+    "caps": 40,
+    "goals": 11,
+    "market_value": "€100.00m"
+  },
+  {
+    "name": "Nathaniel Brown",
+    "position": "DF",
+    "club": "Eintracht Frankfurt",
+    "age": 22,
+    "caps": 4,
+    "goals": 0,
+    "market_value": "€40.00m"
+  },
+  {
+    "name": "Leroy Sané",
+    "position": "MF",
+    "club": "Galatasaray",
+    "age": 30,
+    "caps": 75,
+    "goals": 16,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Nadiem Amiri",
+    "position": "MF",
+    "club": "Mainz 05",
+    "age": 29,
+    "caps": 10,
+    "goals": 1,
+    "market_value": "€17.00m"
+  },
+  {
+    "name": "Alexander Nübel",
+    "position": "GK",
+    "club": "VfB Stuttgart",
+    "age": 29,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "David Raum",
+    "position": "DF",
+    "club": "RB Leipzig",
+    "age": 28,
+    "caps": 36,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Felix Nmecha",
+    "position": "MF",
+    "club": "Borussia Dortmund",
+    "age": 25,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Malick Thiaw",
+    "position": "DF",
+    "club": "Newcastle United",
+    "age": 24,
+    "caps": 5,
+    "goals": 0,
+    "market_value": "€45.00m"
+  },
+  {
+    "name": "Lennart Karl",
+    "position": "MF",
+    "club": "Bayern Munich",
+    "age": 18,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€60.00m"
+  },
+  {
+    "name": "Deniz Undav",
+    "position": "FW",
+    "club": "VfB Stuttgart",
+    "age": 29,
+    "caps": 8,
+    "goals": 6,
+    "market_value": "€22.00m"
+  }
+]

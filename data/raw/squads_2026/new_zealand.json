@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Max Crocombe",
+    "position": "GK",
+    "club": "Millwall",
+    "age": 32,
+    "caps": 23,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Tim Payne",
+    "position": "DF",
+    "club": "Wellington Phoenix",
+    "age": 32,
+    "caps": 50,
+    "goals": 3,
+    "market_value": "€350k"
+  },
+  {
+    "name": "Francis de Vries",
+    "position": "DF",
+    "club": "Auckland FC",
+    "age": 31,
+    "caps": 19,
+    "goals": 1,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Tyler Bindon",
+    "position": "DF",
+    "club": "Sheffield United",
+    "age": 21,
+    "caps": 24,
+    "goals": 3,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Michael Boxall",
+    "position": "DF",
+    "club": "Minnesota United FC",
+    "age": 37,
+    "caps": 62,
+    "goals": 1,
+    "market_value": "€150k"
+  },
+  {
+    "name": "Joe Bell",
+    "position": "MF",
+    "club": "Viking",
+    "age": 27,
+    "caps": 31,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Matthew Garbett",
+    "position": "MF",
+    "club": "Peterborough United",
+    "age": 24,
+    "caps": 36,
+    "goals": 5,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Marko Stamenić",
+    "position": "MF",
+    "club": "Swansea City",
+    "age": 24,
+    "caps": 38,
+    "goals": 3,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Chris Wood (captain)",
+    "position": "FW",
+    "club": "Nottingham Forest",
+    "age": 34,
+    "caps": 89,
+    "goals": 45,
+    "market_value": null
+  },
+  {
+    "name": "Sarpreet Singh",
+    "position": "MF",
+    "club": "Wellington Phoenix",
+    "age": 27,
+    "caps": 27,
+    "goals": 3,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Elijah Just",
+    "position": "MF",
+    "club": "Motherwell",
+    "age": 26,
+    "caps": 43,
+    "goals": 9,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Alex Paulsen",
+    "position": "GK",
+    "club": "Lechia Gdańsk",
+    "age": 23,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€750k"
+  },
+  {
+    "name": "Liberato Cacace",
+    "position": "DF",
+    "club": "Wrexham",
+    "age": 25,
+    "caps": 36,
+    "goals": 1,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Alex Rufer",
+    "position": "MF",
+    "club": "Wellington Phoenix",
+    "age": 29,
+    "caps": 25,
+    "goals": 0,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Nando Pijnaker",
+    "position": "DF",
+    "club": "Auckland FC",
+    "age": 27,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Finn Surman",
+    "position": "DF",
+    "club": "Portland Timbers",
+    "age": 22,
+    "caps": 18,
+    "goals": 2,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Kosta Barbarouses",
+    "position": "FW",
+    "club": "Western Sydney Wanderers",
+    "age": 36,
+    "caps": 75,
+    "goals": 10,
+    "market_value": "€300k"
+  },
+  {
+    "name": "Ben Waine",
+    "position": "FW",
+    "club": "Port Vale",
+    "age": 25,
+    "caps": 31,
+    "goals": 9,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Ben Old",
+    "position": "MF",
+    "club": "Saint-Étienne",
+    "age": 23,
+    "caps": 23,
+    "goals": 2,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Callum McCowatt",
+    "position": "MF",
+    "club": "Silkeborg",
+    "age": 27,
+    "caps": 31,
+    "goals": 4,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Jesse Randall",
+    "position": "FW",
+    "club": "Auckland FC",
+    "age": 23,
+    "caps": 10,
+    "goals": 2,
+    "market_value": "€900k"
+  },
+  {
+    "name": "Michael Woud",
+    "position": "GK",
+    "club": "Auckland FC",
+    "age": 27,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€400k"
+  },
+  {
+    "name": "Ryan Thomas",
+    "position": "MF",
+    "club": "PEC Zwolle",
+    "age": 31,
+    "caps": 25,
+    "goals": 3,
+    "market_value": "€650k"
+  },
+  {
+    "name": "Callan Elliot",
+    "position": "DF",
+    "club": "Auckland FC",
+    "age": 26,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€450k"
+  },
+  {
+    "name": "Lachlan Bayliss",
+    "position": "MF",
+    "club": "Newcastle Jets",
+    "age": 23,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€550k"
+  },
+  {
+    "name": "Tommy Smith",
+    "position": "DF",
+    "club": "Braintree Town",
+    "age": 36,
+    "caps": 56,
+    "goals": 2,
+    "market_value": "-"
+  }
+]

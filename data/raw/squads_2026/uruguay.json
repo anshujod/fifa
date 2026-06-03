@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Sergio Rochet",
+    "position": "GK",
+    "club": "Internacional",
+    "age": 33,
+    "caps": 35,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "José María Giménez (captain)",
+    "position": "DF",
+    "club": "Atlético Madrid",
+    "age": 31,
+    "caps": 99,
+    "goals": 8,
+    "market_value": null
+  },
+  {
+    "name": "Sebastián Cáceres",
+    "position": "DF",
+    "club": "América",
+    "age": 26,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Ronald Araújo",
+    "position": "DF",
+    "club": "Barcelona",
+    "age": 27,
+    "caps": 27,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Manuel Ugarte",
+    "position": "MF",
+    "club": "Manchester United",
+    "age": 25,
+    "caps": 36,
+    "goals": 1,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Rodrigo Bentancur",
+    "position": "MF",
+    "club": "Tottenham Hotspur",
+    "age": 28,
+    "caps": 74,
+    "goals": 3,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Nicolás de la Cruz",
+    "position": "MF",
+    "club": "Flamengo",
+    "age": 29,
+    "caps": 34,
+    "goals": 5,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Federico Valverde",
+    "position": "MF",
+    "club": "Real Madrid",
+    "age": 27,
+    "caps": 73,
+    "goals": 9,
+    "market_value": "€120.00m"
+  },
+  {
+    "name": "Darwin Núñez",
+    "position": "FW",
+    "club": "Al-Hilal",
+    "age": 26,
+    "caps": 38,
+    "goals": 13,
+    "market_value": "€25.00m"
+  },
+  {
+    "name": "Giorgian de Arrascaeta",
+    "position": "MF",
+    "club": "Flamengo",
+    "age": 32,
+    "caps": 60,
+    "goals": 13,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Facundo Pellistri",
+    "position": "FW",
+    "club": "Panathinaikos",
+    "age": 24,
+    "caps": 39,
+    "goals": 2,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Santiago Mele",
+    "position": "GK",
+    "club": "Monterrey",
+    "age": 28,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Guillermo Varela",
+    "position": "DF",
+    "club": "Flamengo",
+    "age": 33,
+    "caps": 28,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Agustín Canobbio",
+    "position": "MF",
+    "club": "Fluminense",
+    "age": 27,
+    "caps": 15,
+    "goals": 1,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Emiliano Martínez",
+    "position": "MF",
+    "club": "Palmeiras",
+    "age": 26,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Mathías Olivera",
+    "position": "DF",
+    "club": "Napoli",
+    "age": 28,
+    "caps": 35,
+    "goals": 2,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Matías Viña",
+    "position": "DF",
+    "club": "River Plate",
+    "age": 28,
+    "caps": 43,
+    "goals": 1,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Brian Rodríguez",
+    "position": "FW",
+    "club": "América",
+    "age": 26,
+    "caps": 32,
+    "goals": 4,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Rodrigo Aguirre",
+    "position": "FW",
+    "club": "UANL",
+    "age": 31,
+    "caps": 10,
+    "goals": 3,
+    "market_value": "€2.30m"
+  },
+  {
+    "name": "Maximiliano Araújo",
+    "position": "MF",
+    "club": "Sporting CP",
+    "age": 26,
+    "caps": 28,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Federico Viñas",
+    "position": "FW",
+    "club": "Oviedo",
+    "age": 27,
+    "caps": 11,
+    "goals": 2,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Joaquín Piquerez",
+    "position": "MF",
+    "club": "Palmeiras",
+    "age": 27,
+    "caps": 19,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Fernando Muslera",
+    "position": "GK",
+    "club": "Estudiantes",
+    "age": 39,
+    "caps": 134,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "Santiago Bueno",
+    "position": "DF",
+    "club": "Wolverhampton Wanderers",
+    "age": 27,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Juan Manuel Sanabria",
+    "position": "MF",
+    "club": "Real Salt Lake",
+    "age": 26,
+    "caps": 5,
+    "goals": 1,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Rodrigo Zalazar",
+    "position": "MF",
+    "club": "Braga",
+    "age": 26,
+    "caps": 8,
+    "goals": 2,
+    "market_value": "€30.00m"
+  }
+]

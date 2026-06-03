@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Raúl Rangel",
+    "position": "GK",
+    "club": "Guadalajara",
+    "age": 26,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€6.50m"
+  },
+  {
+    "name": "Jorge Sánchez",
+    "position": "DF",
+    "club": "PAOK",
+    "age": 28,
+    "caps": 58,
+    "goals": 3,
+    "market_value": "€2.20m"
+  },
+  {
+    "name": "César Montes",
+    "position": "DF",
+    "club": "Lokomotiv Moscow",
+    "age": 29,
+    "caps": 66,
+    "goals": 4,
+    "market_value": "€7.50m"
+  },
+  {
+    "name": "Edson Álvarez (captain)",
+    "position": "DF",
+    "club": "Fenerbahçe",
+    "age": 28,
+    "caps": 97,
+    "goals": 7,
+    "market_value": null
+  },
+  {
+    "name": "Johan Vásquez",
+    "position": "DF",
+    "club": "Genoa",
+    "age": 27,
+    "caps": 45,
+    "goals": 2,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Érik Lira",
+    "position": "MF",
+    "club": "Cruz Azul",
+    "age": 26,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Luis Romo",
+    "position": "MF",
+    "club": "Guadalajara",
+    "age": 31,
+    "caps": 62,
+    "goals": 4,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Álvaro Fidalgo",
+    "position": "MF",
+    "club": "Real Betis",
+    "age": 29,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Raúl Jiménez",
+    "position": "FW",
+    "club": "Fulham",
+    "age": 35,
+    "caps": 123,
+    "goals": 44,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Alexis Vega",
+    "position": "FW",
+    "club": "Toluca",
+    "age": 28,
+    "caps": 51,
+    "goals": 7,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Santiago Giménez",
+    "position": "FW",
+    "club": "Milan",
+    "age": 25,
+    "caps": 47,
+    "goals": 6,
+    "market_value": null
+  },
+  {
+    "name": "Carlos Acevedo",
+    "position": "GK",
+    "club": "Santos Laguna",
+    "age": 30,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€2.80m"
+  },
+  {
+    "name": "Guillermo Ochoa",
+    "position": "GK",
+    "club": "AEL Limassol",
+    "age": 40,
+    "caps": 152,
+    "goals": 0,
+    "market_value": "€250k"
+  },
+  {
+    "name": "Armando González",
+    "position": "FW",
+    "club": "Guadalajara",
+    "age": 23,
+    "caps": 7,
+    "goals": 1,
+    "market_value": "€15.00m"
+  },
+  {
+    "name": "Israel Reyes",
+    "position": "DF",
+    "club": "América",
+    "age": 26,
+    "caps": 33,
+    "goals": 2,
+    "market_value": "€6.50m"
+  },
+  {
+    "name": "Julián Quiñones",
+    "position": "FW",
+    "club": "Al-Qadsiah",
+    "age": 29,
+    "caps": 21,
+    "goals": 2,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Orbelín Pineda",
+    "position": "MF",
+    "club": "AEK Athens",
+    "age": 30,
+    "caps": 91,
+    "goals": 12,
+    "market_value": "€7.00m"
+  },
+  {
+    "name": "Obed Vargas",
+    "position": "MF",
+    "club": "Atlético Madrid",
+    "age": 20,
+    "caps": 6,
+    "goals": 0,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Gilberto Mora",
+    "position": "MF",
+    "club": "Tijuana",
+    "age": 17,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Mateo Chávez",
+    "position": "DF",
+    "club": "AZ",
+    "age": 22,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "César Huerta",
+    "position": "FW",
+    "club": "Anderlecht",
+    "age": 25,
+    "caps": 26,
+    "goals": 3,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Guillermo Martínez",
+    "position": "FW",
+    "club": "UNAM",
+    "age": 31,
+    "caps": 11,
+    "goals": 3,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Jesús Gallardo",
+    "position": "DF",
+    "club": "Toluca",
+    "age": 31,
+    "caps": 120,
+    "goals": 3,
+    "market_value": "€2.80m"
+  },
+  {
+    "name": "Luis Chávez",
+    "position": "MF",
+    "club": "Dynamo Moscow",
+    "age": 30,
+    "caps": 44,
+    "goals": 4,
+    "market_value": "€6.00m"
+  },
+  {
+    "name": "Roberto Alvarado",
+    "position": "FW",
+    "club": "Guadalajara",
+    "age": 27,
+    "caps": 66,
+    "goals": 5,
+    "market_value": "€7.50m"
+  },
+  {
+    "name": "Brian Gutiérrez",
+    "position": "MF",
+    "club": "Guadalajara",
+    "age": 22,
+    "caps": 6,
+    "goals": 2,
+    "market_value": "€8.00m"
+  }
+]

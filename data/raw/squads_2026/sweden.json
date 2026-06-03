@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Jacob Widell Zetterström",
+    "position": "GK",
+    "club": "Derby County",
+    "age": 27,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Gustaf Lagerbielke",
+    "position": "DF",
+    "club": "Braga",
+    "age": 26,
+    "caps": 10,
+    "goals": 2,
+    "market_value": "€10.00m"
+  },
+  {
+    "name": "Victor Lindelöf (captain)",
+    "position": "DF",
+    "club": "Aston Villa",
+    "age": 31,
+    "caps": 76,
+    "goals": 3,
+    "market_value": null
+  },
+  {
+    "name": "Isak Hien",
+    "position": "DF",
+    "club": "Atalanta",
+    "age": 27,
+    "caps": 28,
+    "goals": 0,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Gabriel Gudmundsson",
+    "position": "DF",
+    "club": "Leeds United",
+    "age": 27,
+    "caps": 23,
+    "goals": 0,
+    "market_value": "€20.00m"
+  },
+  {
+    "name": "Herman Johansson",
+    "position": "DF",
+    "club": "FC Dallas",
+    "age": 28,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Lucas Bergvall",
+    "position": "MF",
+    "club": "Tottenham Hotspur",
+    "age": 20,
+    "caps": 9,
+    "goals": 0,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Daniel Svensson",
+    "position": "DF",
+    "club": "Borussia Dortmund",
+    "age": 24,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€22.00m"
+  },
+  {
+    "name": "Alexander Isak",
+    "position": "FW",
+    "club": "Liverpool",
+    "age": 26,
+    "caps": 57,
+    "goals": 17,
+    "market_value": "€85.00m"
+  },
+  {
+    "name": "Benjamin Nygren",
+    "position": "MF",
+    "club": "Celtic",
+    "age": 24,
+    "caps": 10,
+    "goals": 3,
+    "market_value": "€14.00m"
+  },
+  {
+    "name": "Anthony Elanga",
+    "position": "FW",
+    "club": "Newcastle United",
+    "age": 24,
+    "caps": 29,
+    "goals": 6,
+    "market_value": "€32.00m"
+  },
+  {
+    "name": "Viktor Johansson",
+    "position": "GK",
+    "club": "Stoke City",
+    "age": 27,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€12.00m"
+  },
+  {
+    "name": "Ken Sema",
+    "position": "MF",
+    "club": "Pafos",
+    "age": 32,
+    "caps": 33,
+    "goals": 5,
+    "market_value": "€800k"
+  },
+  {
+    "name": "Hjalmar Ekdal",
+    "position": "DF",
+    "club": "Burnley",
+    "age": 27,
+    "caps": 12,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Carl Starfelt",
+    "position": "DF",
+    "club": "Celta Vigo",
+    "age": 31,
+    "caps": 17,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Jesper Karlström",
+    "position": "MF",
+    "club": "Udinese",
+    "age": 30,
+    "caps": 24,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Viktor Gyökeres",
+    "position": "FW",
+    "club": "Arsenal",
+    "age": 28,
+    "caps": 32,
+    "goals": 19,
+    "market_value": "€65.00m"
+  },
+  {
+    "name": "Yasin Ayari",
+    "position": "MF",
+    "club": "Brighton & Hove Albion",
+    "age": 22,
+    "caps": 20,
+    "goals": 3,
+    "market_value": "€35.00m"
+  },
+  {
+    "name": "Mattias Svanberg",
+    "position": "MF",
+    "club": "VfL Wolfsburg",
+    "age": 27,
+    "caps": 40,
+    "goals": 2,
+    "market_value": "€8.00m"
+  },
+  {
+    "name": "Eric Smith",
+    "position": "DF",
+    "club": "FC St. Pauli",
+    "age": 29,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€5.00m"
+  },
+  {
+    "name": "Alexander Bernhardsson",
+    "position": "DF",
+    "club": "Holstein Kiel",
+    "age": 27,
+    "caps": 10,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Besfort Zeneli",
+    "position": "MF",
+    "club": "Union Saint-Gilloise",
+    "age": 23,
+    "caps": 7,
+    "goals": 0,
+    "market_value": "€4.50m"
+  },
+  {
+    "name": "Kristoffer Nordfeldt",
+    "position": "GK",
+    "club": "AIK",
+    "age": 36,
+    "caps": 20,
+    "goals": 0,
+    "market_value": "€175k"
+  },
+  {
+    "name": "Elliot Stroud",
+    "position": "DF",
+    "club": "Mjällby AIF",
+    "age": 23,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Gustaf Nilsson",
+    "position": "FW",
+    "club": "Club Brugge",
+    "age": 29,
+    "caps": 9,
+    "goals": 3,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Taha Ali",
+    "position": "FW",
+    "club": "Malmö FF",
+    "age": 27,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.20m"
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Mohamed El Shenawy",
+    "position": "GK",
+    "club": "Al Ahly",
+    "age": 37,
+    "caps": 76,
+    "goals": 0,
+    "market_value": "€500k"
+  },
+  {
+    "name": "Yasser Ibrahim",
+    "position": "DF",
+    "club": "Al Ahly",
+    "age": 33,
+    "caps": 16,
+    "goals": 1,
+    "market_value": "-"
+  },
+  {
+    "name": "Mohamed Hany",
+    "position": "DF",
+    "club": "Al Ahly",
+    "age": 30,
+    "caps": 41,
+    "goals": 0,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Hossam Abdelmaguid",
+    "position": "DF",
+    "club": "Zamalek",
+    "age": 25,
+    "caps": 13,
+    "goals": 0,
+    "market_value": "€2.00m"
+  },
+  {
+    "name": "Ramy Rabia",
+    "position": "DF",
+    "club": "Al-Ain",
+    "age": 33,
+    "caps": 44,
+    "goals": 5,
+    "market_value": "€600k"
+  },
+  {
+    "name": "Mohamed Abdelmonem",
+    "position": "DF",
+    "club": "Nice",
+    "age": 27,
+    "caps": 35,
+    "goals": 3,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Trézéguet",
+    "position": "FW",
+    "club": "Al Ahly",
+    "age": 31,
+    "caps": 95,
+    "goals": 23,
+    "market_value": null
+  },
+  {
+    "name": "Emam Ashour",
+    "position": "MF",
+    "club": "Al Ahly",
+    "age": 28,
+    "caps": 28,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Hamza Abdelkarim",
+    "position": "FW",
+    "club": "Barcelona",
+    "age": 18,
+    "caps": 1,
+    "goals": 0,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Mohamed Salah (captain)",
+    "position": "FW",
+    "club": "Liverpool",
+    "age": 33,
+    "caps": 115,
+    "goals": 67,
+    "market_value": null
+  },
+  {
+    "name": "Mostafa Ziko",
+    "position": "MF",
+    "club": "Pyramids",
+    "age": 29,
+    "caps": 1,
+    "goals": 1,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Haissem Hassan",
+    "position": "FW",
+    "club": "Oviedo",
+    "age": 24,
+    "caps": 3,
+    "goals": 0,
+    "market_value": "€4.00m"
+  },
+  {
+    "name": "Ahmed Fatouh",
+    "position": "DF",
+    "club": "Zamalek",
+    "age": 28,
+    "caps": 38,
+    "goals": 1,
+    "market_value": "€1.00m"
+  },
+  {
+    "name": "Hamdy Fathy",
+    "position": "MF",
+    "club": "Al-Wakrah",
+    "age": 31,
+    "caps": 62,
+    "goals": 3,
+    "market_value": "€1.80m"
+  },
+  {
+    "name": "Karim Hafez",
+    "position": "DF",
+    "club": "Pyramids",
+    "age": 30,
+    "caps": 8,
+    "goals": 0,
+    "market_value": "€700k"
+  },
+  {
+    "name": "El Mahdy Soliman",
+    "position": "GK",
+    "club": "Zamalek",
+    "age": 39,
+    "caps": 0,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Mohanad Lasheen",
+    "position": "MF",
+    "club": "Pyramids",
+    "age": 30,
+    "caps": 22,
+    "goals": 0,
+    "market_value": "€3.00m"
+  },
+  {
+    "name": "Nabil Emad",
+    "position": "MF",
+    "club": "Al-Najma",
+    "age": 30,
+    "caps": 12,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Marwan Attia",
+    "position": "MF",
+    "club": "Al Ahly",
+    "age": 27,
+    "caps": 33,
+    "goals": 1,
+    "market_value": null
+  },
+  {
+    "name": "Ibrahim Adel",
+    "position": "FW",
+    "club": "Nordsjælland",
+    "age": 25,
+    "caps": 23,
+    "goals": 3,
+    "market_value": "€2.50m"
+  },
+  {
+    "name": "Mahmoud Saber",
+    "position": "MF",
+    "club": "ZED",
+    "age": 24,
+    "caps": 15,
+    "goals": 1,
+    "market_value": "€1.50m"
+  },
+  {
+    "name": "Omar Marmoush",
+    "position": "FW",
+    "club": "Manchester City",
+    "age": 27,
+    "caps": 48,
+    "goals": 11,
+    "market_value": "€50.00m"
+  },
+  {
+    "name": "Mostafa Shobeir",
+    "position": "GK",
+    "club": "Al Ahly",
+    "age": 26,
+    "caps": 8,
+    "goals": 0,
+    "market_value": null
+  },
+  {
+    "name": "Tarek Alaa",
+    "position": "DF",
+    "club": "ZED",
+    "age": 24,
+    "caps": 2,
+    "goals": 0,
+    "market_value": "-"
+  },
+  {
+    "name": "Zizo",
+    "position": "FW",
+    "club": "Al Ahly",
+    "age": 30,
+    "caps": 62,
+    "goals": 5,
+    "market_value": "€3.50m"
+  },
+  {
+    "name": "Mohamed Alaa",
+    "position": "GK",
+    "club": "El Gouna",
+    "age": 27,
+    "caps": 0,
+    "goals": 0,
+    "market_value": "€1.20m"
+  }
+]
