@@ -1,0 +1,32 @@
+{
+  "n_simulations": 10000,
+  "n_successful": 10000,
+  "n_failed": 0,
+  "n_workers": 8,
+  "base_seed": 2026,
+  "elapsed_seconds": 124.91,
+  "sim_per_second": 80.1,
+  "fast_mode": true,
+  "champion_top5": [
+    {
+      "team": "Spain",
+      "p_winner": 0.1769
+    },
+    {
+      "team": "Argentina",
+      "p_winner": 0.1331
+    },
+    {
+      "team": "England",
+      "p_winner": 0.0785
+    },
+    {
+      "team": "France",
+      "p_winner": 0.0764
+    },
+    {
+      "team": "Netherlands",
+      "p_winner": 0.0467
+    }
+  ]
+}

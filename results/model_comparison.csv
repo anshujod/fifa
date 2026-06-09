@@ -1,0 +1,8 @@
+model,accuracy,log_loss,brier_score,train_matches,test_matches,holdout_year
+ensemble_calibrated,0.6286,0.8007,0.1571,45804,1656,2024
+ensemble,0.6304,0.8113,0.158,7250,1656,2024
+xgboost,0.6281,0.8224,0.1607,7250,2358,2023
+logistic_regression,0.6264,0.8233,0.1608,7250,2358,2023
+random_forest,0.6251,0.8376,0.1635,7250,2358,2023
+lightgbm,0.6086,0.8505,0.1669,7250,2358,2023
+elo_baseline,0.6059,0.8732,0.1703,7250,2358,2023

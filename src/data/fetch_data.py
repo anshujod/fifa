@@ -3,6 +3,7 @@ fetch_data.py — Data ingestion pipeline for FIFA World Cup 2026 Predictor.
 
 Functions:
     get_elo_ratings()       → Load, clean, and return Elo ratings DataFrame
+    get_fifa_rankings()     → Derive FIFA-style rankings from Elo snapshot data
     get_match_results()     → Load cleaned international match results DataFrame
 
 All outputs conform to lowercase snake_case column naming and are ready for
@@ -273,6 +274,69 @@ def get_elo_ratings(
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║  get_fifa_rankings                                                      ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+def get_fifa_rankings(
+    elo_path: Path | str | None = None,
+    save: bool = True,
+) -> pd.DataFrame:
+    """
+    Derive a FIFA-style rankings snapshot from the Elo ratings data.
+
+    The eloratings.net snapshot already contains an ordinal rank (column 0)
+    and Elo points per team.  This function reshapes that into the standard
+    FIFA rankings schema and optionally saves it as
+    ``data/raw/fifa_rankings.csv``.
+
+    Parameters
+    ----------
+    elo_path : Path or str, optional
+        Path to the processed Elo ratings CSV.
+        Default: ``data/processed/elo_ratings.csv``
+    save : bool
+        If True, persist the result to ``data/raw/fifa_rankings.csv``.
+
+    Returns
+    -------
+    pd.DataFrame
+        Columns::
+
+            rank        – ordinal rank (1 = best)
+            team        – standardised team name
+            points      – Elo rating used as ranking points
+            rank_change – rank change over the last year (from Elo snapshot)
+            date        – snapshot date (ISO string)
+    """
+    elo_path = Path(elo_path) if elo_path else PROCESSED_DIR / "elo_ratings.csv"
+
+    if not elo_path.exists():
+        log.info("Processed Elo not found; calling get_elo_ratings() first.")
+        get_elo_ratings(save=True)
+
+    log.info("Deriving FIFA rankings from %s", elo_path)
+    elo_df = pd.read_csv(elo_path)
+
+    rankings = pd.DataFrame({
+        "rank":        elo_df["rank"],
+        "team":        elo_df["team"],
+        "points":      elo_df["elo_rating"],
+        "rank_change": elo_df["rank_change_1y"],
+        "date":        elo_df["date"],
+    })
+
+    rankings = rankings.sort_values("rank").reset_index(drop=True)
+
+    log.info("FIFA rankings derived: %d teams", len(rankings))
+
+    if save:
+        out_path = RAW_DIR / "fifa_rankings.csv"
+        rankings.to_csv(out_path, index=False)
+        log.info("Saved FIFA rankings → %s", out_path)
+
+    return rankings
+
+
+# ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║  get_match_results                                                      ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 def get_match_results(
@@ -424,6 +488,12 @@ def main() -> None:
         .to_string(index=False)
     )
     print(f"\n  → {len(elo_df)} teams rated")
+
+    # 3. FIFA rankings
+    rankings_df = get_fifa_rankings()
+    print("\n🏆 FIFA Rankings (top 20):")
+    print(rankings_df.head(20).to_string(index=False))
+    print(f"\n  → {len(rankings_df)} teams ranked")
 
     # 3. Quick merge demo
     print("\n🔗 Merge demo (latest Elo for each match team):")
