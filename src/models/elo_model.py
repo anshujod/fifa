@@ -1,18 +1,3 @@
-"""
-elo_model.py — Baseline Elo Model for FIFA World Cup 2026 Predictor.
-
-Computes Elo ratings dynamically through historical matches.
-Serves as the benchmark model for Phase 3 (Machine Learning).
-
-Features:
-- Expected win probability: P(home) = 1 / (1 + 10^((elo_away - elo_home)/400))
-- Variable K-factors: K=32 (World Cup), K=20 (Qualifiers/Continental), K=10 (Friendlies)
-- Uses Logistic Regression on `elo_diff` to map to H/D/A probabilities for log-loss benchmarking.
-
-Usage:
-    python -m src.models.elo_model
-"""
-
 from __future__ import annotations
 
 import logging

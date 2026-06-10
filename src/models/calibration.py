@@ -1,22 +1,3 @@
-"""
-calibration.py — Probability Calibration for Ensemble Model (Task 3.6).
-
-Applies two calibration methods to the raw ensemble probabilities:
-    1. Platt Scaling      — fits a logistic regression on top of raw probas
-    2. Isotonic Regression — non-parametric monotone fit (more flexible)
-
-Calibration is trained on 2023 val set and evaluated on 2024+ holdout.
-Calibration curves (reliability diagrams) are saved to results/.
-
-Output:
-    models/saved/ensemble_calibrated.joblib  — best calibrator + ensemble
-    results/calibration_curves.png           — reliability diagrams
-    results/model_comparison.csv             — updated with calibrated row
-
-Usage:
-    python -m src.models.calibration
-"""
-
 from __future__ import annotations
 
 import logging

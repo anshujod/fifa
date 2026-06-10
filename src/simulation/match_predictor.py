@@ -1,16 +1,3 @@
-"""
-match_predictor.py — Match prediction interface for the simulator.
-
-Wraps the calibrated ensemble + Poisson model and builds feature rows
-for arbitrary team matchups using the most recent team snapshots from
-the historical feature store.
-
-Usage:
-    predictor = MatchPredictor.load()
-    p_home, p_draw, p_away = predictor.predict_proba("Spain", "Argentina")
-    home_goals, away_goals = predictor.simulate_scoreline("Spain", "Argentina", rng=rng)
-"""
-
 from __future__ import annotations
 
 import logging

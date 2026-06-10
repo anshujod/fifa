@@ -1,30 +1,3 @@
-"""
-knockout.py — FIFA World Cup 2026 Knockout Stage Simulator (Task 4.3).
-
-Simulates the complete knockout bracket:
-    Round of 32 (16 matches) → Round of 16 (8) → Quarter-finals (4)
-    → Semi-finals (2) → Final (1)
-
-For each knockout match:
-    1.  Simulate a 90-minute scoreline using the Poisson model (λ_home, λ_away).
-    2.  If draw → simulate 30 minutes of extra time at ET_GOAL_RATE_FACTOR × λ.
-    3.  If still level → simulate a full penalty shootout via penalties.py
-        (per-kick rates: 75% base, adjusted by historical data / specialist table).
-
-Seeding constraint enforced via the bracket structure:
-    Spain   (Group F) → LEFT half  — can only meet Argentina in the Final.
-    Argentina (Group A) → RIGHT half — same.
-
-Bracket progression:
-    Adjacent R32 pairs (M49+M50, M51+M52, …, M63+M64) feed R16 slots 1–8.
-    Adjacent R16 pairs (1+2, 3+4, …) feed QF, then SF, then Final.
-
-Usage:
-    from src.simulation.knockout import simulate_knockout, print_knockout_results
-    result = simulate_knockout(bracket, predictor, rng=np.random.default_rng(42))
-    print_knockout_results(result)
-"""
-
 from __future__ import annotations
 
 import logging
@@ -429,15 +402,15 @@ def main() -> None:
                         for t in (r32_map[mid].home, r32_map[mid].away)}
 
     # Find Spain and Argentina in the bracket
-    group_f_teams = {"Spain", "Cape Verde", "Saudi Arabia", "Uruguay"}  # Group F
-    group_a_teams = {"Algeria", "Argentina", "Austria", "Jordan"}        # Group A
+    group_h_teams = {"Spain", "Cape Verde", "Saudi Arabia", "Uruguay"}   # Group H
+    group_j_teams = {"Algeria", "Argentina", "Austria", "Jordan"}        # Group J
 
-    spain_team  = left_half_teams  & group_f_teams
-    arg_team    = right_half_teams & group_a_teams
-    cross_check = (left_half_teams & group_a_teams) | (right_half_teams & group_f_teams)
+    spain_team  = left_half_teams  & group_h_teams
+    arg_team    = right_half_teams & group_j_teams
+    cross_check = (left_half_teams & group_j_teams) | (right_half_teams & group_h_teams)
 
-    log.info("Seeding check — Spain (Group F) in LEFT half:  %s", spain_team or "(eliminated)")
-    log.info("Seeding check — Argentina (Group A) in RIGHT half: %s", arg_team or "(eliminated)")
+    log.info("Seeding check — Spain (Group H) in LEFT half:  %s", spain_team or "(eliminated)")
+    log.info("Seeding check — Argentina (Group J) in RIGHT half: %s", arg_team or "(eliminated)")
     if cross_check:
         log.warning("Seeding violation detected: %s", cross_check)
 

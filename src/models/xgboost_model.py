@@ -1,15 +1,3 @@
-"""
-xgboost_model.py — XGBoost Match Outcome Classifier (Task 3.2).
-
-Target: 3-class classification {Home Win, Draw, Away Win}
-Input: Full feature vector from Phase 2 (via FeaturePipeline)
-Cross-validation: Time-series split (Train <= Y, Validate == Y+1)
-Tuning: Optuna for hyperparameters
-
-Usage:
-    python -m src.models.xgboost_model
-"""
-
 from __future__ import annotations
 
 import logging
@@ -18,7 +6,6 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
-import optuna
 import xgboost as xgb
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import log_loss, accuracy_score
@@ -138,7 +125,8 @@ class XGBoostOutcomeModel:
 
             return np.mean(cv_scores)
 
-        # 4. Run Optuna
+        # 4. Run Optuna  (lazy import — not needed at inference time)
+        import optuna  # noqa: PLC0415
         log.info("Starting Optuna tuning (%d trials)...", n_trials)
         optuna.logging.set_verbosity(optuna.logging.WARNING)
         study = optuna.create_study(direction="minimize")

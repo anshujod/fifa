@@ -1,19 +1,3 @@
-"""
-additional_models.py — Random Forest, LightGBM, Logistic Regression (Task 3.4).
-
-Trains three classifiers on the same feature matrix and time-series split
-used by the XGBoost model, evaluates each on a 2023+ holdout set, and writes
-a comparison CSV to results/model_comparison.csv.
-
-Metrics per model:
-    accuracy     – fraction of correctly predicted outcomes
-    log_loss     – cross-entropy (lower is better)
-    brier_score  – mean squared error of probability predictions
-
-Usage:
-    python -m src.models.additional_models
-"""
-
 from __future__ import annotations
 
 import logging

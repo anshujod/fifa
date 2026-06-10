@@ -1,21 +1,3 @@
-"""
-encoder.py — Team Encoding & Representation (Task 2.5).
-
-Builds ML-ready representations of matches avoiding simple label encoding.
-Implements a FeaturePipeline that assembles match features for model training
-and future match prediction.
-
-Strategies:
-    - TeamStrengthEncoder: Encodes teams via their rolling stats snapshot.
-    - EloEmbedding: Continuous Elo score as a numeric feature.
-    - ConfederationEncoder: One-hot encodes confederations.
-
-Usage:
-    from src.features.encoder import FeaturePipeline
-    pipeline = FeaturePipeline()
-    X, y = pipeline.prepare_training_data()
-"""
-
 from __future__ import annotations
 
 import logging

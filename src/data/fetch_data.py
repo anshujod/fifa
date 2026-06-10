@@ -62,7 +62,6 @@ TEAM_NAME_MAP: dict[str, str] = {
     "St. Vincent and the Grenadines": "Saint Vincent and the Grenadines",
     "Kyrgyz Republic": "Kyrgyzstan",
     "Brunei Darussalam": "Brunei",
-    "Cape Verde": "Cabo Verde",
     "Cabo Verde": "Cape Verde",  # results.csv uses Cape Verde
     "Republic of Ireland": "Ireland",
     "Eswatini": "Eswatini",

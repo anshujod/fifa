@@ -1,0 +1,19 @@
+{
+  "home": "Spain",
+  "away": "Argentina",
+  "outcome_class": "H",
+  "n_samples": 500,
+  "shap_version": "0.52.0",
+  "top_features": [
+    "elo_diff",
+    "h2h_goals_diff",
+    "wc_experience_diff",
+    "expected_goals_away",
+    "neutral_venue",
+    "expected_goals_home",
+    "h2h_matches",
+    "away_elo_before",
+    "feat_form_decay_diff",
+    "h2h_win_pct"
+  ]
+}

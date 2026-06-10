@@ -1,30 +1,3 @@
-"""
-third_place.py — Third-Place Qualification & 32-Team Bracket Builder (Task 4.2).
-
-FIFA World Cup 2026 advancement rules:
-    • Top 2 from each of 12 groups → 24 automatic qualifiers
-    • Best 8 of 12 third-place teams → 8 additional qualifiers
-    • Total: 32 teams advance to the Round of 32
-
-Third-place tiebreaker order (FIFA 2026):
-    1. Points
-    2. Goal difference (all group matches)
-    3. Goals scored (all group matches)
-    4. Fair play record (yellow −1, red −3)
-    5. Drawing of lots (random)
-
-Bracket assignment:
-    The 32-team R32 bracket follows the official FIFA 2026 structure.
-    Group winners and runners-up are placed in fixed slots.
-    The 8 best third-place teams fill the remaining 8 slots, assigned
-    according to FIFA's published table that maps which combination of
-    groups the third-place teams qualified from → which bracket slots
-    they occupy.
-
-Usage:
-    from src.simulation.third_place import build_bracket, BracketSlot
-"""
-
 from __future__ import annotations
 
 import logging
@@ -57,7 +30,7 @@ class ThirdPlaceTeam:
             -rec.points,
             -rec.goal_diff,
             -rec.goals_for,
-            rec.fair_play,   # fair_play is already negative; sort ascending = worse last
+            -rec.fair_play,   # fair_play is negative (more cards = lower); negate so fewer cards sorts first
         )
 
 
@@ -104,7 +77,8 @@ def _resolve_lots(
                 shuffled = [thirds[k] for k in indices]
                 thirds[i:j] = shuffled
             else:
-                random.shuffle(thirds[i:j])
+                random.shuffle(cluster)
+                thirds[i:j] = cluster
         i = j
 
 
@@ -132,15 +106,15 @@ def get_qualifiers(
 #
 #   Left half of bracket (R32 matches 1-8 feed into R16 left):
 #     Match 49:  1A  vs  2C           Match 50: 1B  vs  2D
-#     Match 51:  1E  vs  2G           Match 52: 1F  vs  2H
-#     Match 53:  1I  vs  2K           Match 54: 1J  vs  2L
+#     Match 51:  1E  vs  2G           Match 52: 1F  vs  2H  ← Spain runner-up
+#     Match 53:  1I  vs  2K           Match 54: 1H  vs  2L  ← Spain winner
 #     Match 55:  1C  vs  2E           Match 56: 1D  vs  2F
 #
 #   Right half of bracket (R32 matches 9-16 feed into R16 right):
-#     Match 57:  1G  vs  2I           Match 58: 1H  vs  2J
-#     Match 59:  1K  vs  2A           Match 60: 1L  vs  2B
-#     Match 61: 3rd  vs  3rd          Match 62: 3rd  vs  3rd
-#     Match 63: 3rd  vs  3rd          Match 64: 3rd  vs  3rd
+#     Match 57:  1G  vs  3rd          Match 58: 1J  vs  3rd  ← Argentina winner
+#     Match 59:  1K  vs  3rd          Match 60: 1L  vs  3rd
+#     Match 61: 2J   vs  3rd          Match 62: 2B  vs  3rd  ← Argentina runner-up
+#     Match 63: 2I   vs  3rd          Match 64: 2A  vs  3rd
 #
 # Note: The exact assignment of third-place teams to the 8 open slots depends
 # on which combination of groups they qualified from.  FIFA uses a lookup
@@ -151,66 +125,65 @@ def get_qualifiers(
 #   • 8 matches: group winner vs runner-up (from different groups)
 #   • 4 matches: group winner vs 3rd-place team
 #   • 4 matches: runner-up vs 3rd-place team
-# This gives 8+4+4 = 16 matches and (8+4)×2 + (4+4)×... = 32 unique teams.
+# This gives 8+4+4 = 16 matches → 32 unique teams.
 #
-# Winners used in W-vs-R matches:   A, B, C, D, E, F, I, J  (8)
+# Winners used in W-vs-R matches:   A, B, C, D, E, F, H, I  (8)
 # Runners-up used in W-vs-R matches: C, D, E, F, G, H, K, L  (8)
-# Remaining winners (face 3rd-place): G, H, K, L              (4)
+# Remaining winners (face 3rd-place): G, J, K, L              (4)
 # Remaining runners-up (face 3rd-place): A, B, I, J           (4)
 # 3rd-place teams: 8 (fill the 8 open slots)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Seeding constraint
 # ─────────────────────────────────────────────────────────────────────────────
-# Spain (Group F) and Argentina (Group A) must land in OPPOSITE bracket halves
+# Spain (Group H) and Argentina (Group J) must land in OPPOSITE bracket halves
 # so they can only meet in the Final.
 #
 # LEFT half  (M49–M56) → feeds QF_1 & QF_2 → SF_1 → Final
 # RIGHT half (M57–M64) → feeds QF_3 & QF_4 → SF_2 → Final
 #
 # Anchoring:
-#   Spain  (1F or 2F) → LEFT  half  (M52: 1F vs 2G  |  M55: 1C vs 2F)
-#   Argentina (1A or 2A) → RIGHT half  (M57: 1A vs 3rd  |  M61: 2A vs 3rd)
+#   Spain     (1H or 2H) → LEFT  half  (M54: 1H vs 2L  |  M52: 1F vs 2H)
+#   Argentina (1J or 2J) → RIGHT half  (M58: 1J vs 3rd  |  M61: 2J vs 3rd)
 #
-# Consequence: Group G winner (1G) moves from right-half W-vs-3rd (old M57)
-#   to LEFT-half W-vs-R (new M49: 1G vs 2D), replacing 1A which was there.
-#   Group D runner-up (2D) is still M49's opponent — no change there.
+# Consequence: Group J winner (1J) moves from LEFT-half W-vs-R (old M54)
+#   to RIGHT-half W-vs-3rd (new M58: 1J vs 3rd).
+#   Group H winner (1H) fills M54 in the LEFT half.
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Fixed: 8 winner-vs-runner-up R32 matches (all in the LEFT half, M49–M56)
-# Seeding note: Group A and Group G are swapped vs the naive cross-pairing
-# so that Argentina (Group A) ends up in the RIGHT half regardless of whether
-# they finish 1st or 2nd.
+# Seeding note: Spain (Group H) appears in both M52 (runner-up) and M54 (winner),
+# ensuring Spain stays in the LEFT half regardless of whether they finish 1st or 2nd.
 FIXED_R32: list[tuple[str, str, str]] = [
     # (match_id, winner_slot, runner_up_slot)
-    ("R32_M49", "1G", "2D"),   # Group G winner vs Group D runner-up (LEFT)
-    ("R32_M50", "1B", "2C"),
-    ("R32_M51", "1E", "2H"),
-    ("R32_M52", "1F", "2G"),   # ← Spain winner here (LEFT)
-    ("R32_M53", "1I", "2L"),
-    ("R32_M54", "1J", "2K"),
-    ("R32_M55", "1C", "2F"),   # ← Spain runner-up here (LEFT)
-    ("R32_M56", "1D", "2E"),
+    ("R32_M49", "1A", "2C"),
+    ("R32_M50", "1B", "2D"),
+    ("R32_M51", "1E", "2G"),
+    ("R32_M52", "1F", "2H"),   # ← Spain runner-up (2H) here (LEFT)
+    ("R32_M53", "1I", "2K"),
+    ("R32_M54", "1H", "2L"),   # ← Spain winner (1H) here (LEFT)
+    ("R32_M55", "1C", "2E"),
+    ("R32_M56", "1D", "2F"),
 ]
 
 # 4 open slots where remaining winners face 3rd-place teams (RIGHT half).
-# Group A winner (Argentina if they top group) is placed here → RIGHT half.
+# Group J winner (Argentina if they top group) is placed here → RIGHT half.
 # (match_id, winner_slot, forbidden_group for the 3rd-place team)
 _WINNER_VS_3RD: list[tuple[str, str, str]] = [
-    ("R32_M57", "1A", "A"),   # ← Argentina winner here (RIGHT)
-    ("R32_M58", "1H", "H"),
+    ("R32_M57", "1G", "G"),
+    ("R32_M58", "1J", "J"),   # ← Argentina winner (1J) here (RIGHT)
     ("R32_M59", "1K", "K"),
     ("R32_M60", "1L", "L"),
 ]
 
 # 4 open slots where remaining runners-up face 3rd-place teams (RIGHT half).
-# Group A runner-up (Argentina if they finish 2nd) is placed here → RIGHT half.
+# Group J runner-up (Argentina if they finish 2nd) is placed here → RIGHT half.
 # (match_id, runner_up_slot, forbidden_group for the 3rd-place team)
 _RUNNER_VS_3RD: list[tuple[str, str, str]] = [
-    ("R32_M61", "2A", "A"),   # ← Argentina runner-up here (RIGHT)
+    ("R32_M61", "2J", "J"),   # ← Argentina runner-up (2J) here (RIGHT)
     ("R32_M62", "2B", "B"),
     ("R32_M63", "2I", "I"),
-    ("R32_M64", "2J", "J"),
+    ("R32_M64", "2A", "A"),
 ]
 
 

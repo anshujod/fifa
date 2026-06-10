@@ -1,23 +1,3 @@
-"""
-squad_features.py — Squad-Level Features for 2026 World Cup (Task 2.3).
-
-Tournament-level static features computed from the 48 WC2026 rosters.
-These features capture squad quality, depth, experience, and star power.
-
-Features per team:
-    squad_market_value_total   — total squad market value (€M)
-    avg_player_age             — average age across the squad
-    star_player_market_value   — top 3 players combined value (€M)
-    key_player_caps            — avg caps of top 11 players (by value)
-    top_scorer_goals           — goals tally of primary striker
-    injury_flag                — binary: key player absent (manual input)
-    squad_depth_score          — positional balance metric
-    experience_score           — normalised squad experience
-
-Usage:
-    python -m src.features.squad_features
-"""
-
 from __future__ import annotations
 
 import json

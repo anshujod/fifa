@@ -1,17 +1,3 @@
-"""
-h2h_features.py — Head-to-Head & Contextual Features (Task 2.2).
-
-Computes per-match features that capture:
-    - Direct H2H history between the two teams
-    - Elo ratings (already present — re-exported for completeness)
-    - Continental/confederation strength
-    - World Cup experience
-    - Neutral venue flag
-
-Usage:
-    python -m src.features.h2h_features
-"""
-
 from __future__ import annotations
 
 import logging
@@ -39,7 +25,7 @@ CONFEDERATION: dict[str, str] = {
         "Belgium", "Bosnia and Herzegovina", "Bulgaria", "Croatia", "Cyprus",
         "Czech Republic", "Czechia", "Denmark", "England", "Estonia",
         "Faroe Islands", "Finland", "France", "Georgia", "Germany", "Gibraltar",
-        "Greece", "Hungary", "Iceland", "Israel", "Italy", "Kazakhstan",
+        "Greece", "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Kazakhstan",
         "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg",
         "Malta", "Moldova", "Monaco", "Montenegro", "Netherlands",
         "North Macedonia", "Northern Ireland", "Norway", "Poland", "Portugal",

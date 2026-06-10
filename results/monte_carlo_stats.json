@@ -4,29 +4,29 @@
   "n_failed": 0,
   "n_workers": 8,
   "base_seed": 2026,
-  "elapsed_seconds": 124.91,
-  "sim_per_second": 80.1,
+  "elapsed_seconds": 112.83,
+  "sim_per_second": 88.6,
   "fast_mode": true,
   "champion_top5": [
     {
       "team": "Spain",
-      "p_winner": 0.1769
+      "p_winner": 0.1782
     },
     {
       "team": "Argentina",
-      "p_winner": 0.1331
+      "p_winner": 0.1334
     },
     {
       "team": "England",
-      "p_winner": 0.0785
+      "p_winner": 0.0721
     },
     {
       "team": "France",
-      "p_winner": 0.0764
+      "p_winner": 0.0713
     },
     {
       "team": "Netherlands",
-      "p_winner": 0.0467
+      "p_winner": 0.0551
     }
   ]
 }

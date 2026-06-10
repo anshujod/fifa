@@ -1,22 +1,3 @@
-"""
-poisson_model.py — Poisson Goal Prediction Model (Task 3.3).
-
-Predicts λ_home and λ_away (expected goals) using PoissonRegressor,
-applies Dixon-Coles correction for low-scoring scorelines, and derives
-win/draw/loss probabilities by integrating over the joint score distribution.
-
-Key components:
-    PoissonGoalModel.fit()              — train two PoissonRegressors (home/away goals)
-    PoissonGoalModel.predict_lambda()   — predict (λ_home, λ_away) for a feature matrix
-    PoissonGoalModel.score_matrix()     — full P(i, j) scoreline distribution with DC correction
-    PoissonGoalModel.predict_proba()    — P(Home Win), P(Draw), P(Away Win)
-    PoissonGoalModel.simulate_scoreline() — sample a single scoreline from the distribution
-    PoissonGoalModel.save() / .load()   — serialise/deserialise to disk
-
-Usage:
-    python -m src.models.poisson_model
-"""
-
 from __future__ import annotations
 
 import logging

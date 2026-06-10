@@ -1,28 +1,3 @@
-"""
-group_stage.py — FIFA World Cup 2026 Group Stage Simulator (Task 4.1).
-
-Simulates all 12 groups (A–L), each with 4 teams and 6 matches.
-For each match:
-    1. Calibrated ensemble predicts P(H), P(D), P(A)
-    2. Poisson model samples an actual scoreline
-    3. Standings are updated with points, GD, GS, cards
-After all group matches:
-    4. Teams are ranked using the full FIFA 2026 tiebreaker chain
-
-FIFA 2026 Tiebreaker order (within tied group):
-    1. Points
-    2. Goal difference (all group matches)
-    3. Goals scored (all group matches)
-    4. H2H points (among tied teams only)
-    5. H2H goal difference
-    6. H2H goals scored
-    7. Fair play (yellow −1, red −3, yellow+red −4)
-    8. Drawing of lots (random)
-
-Usage:
-    from src.simulation.group_stage import simulate_group, simulate_all_groups, WC2026_GROUPS
-"""
-
 from __future__ import annotations
 
 import logging
@@ -44,18 +19,20 @@ log = logging.getLogger(__name__)
 # ─────────────────────────────────────────────────────────────────────────────
 
 WC2026_GROUPS: dict[str, list[str]] = {
-    "A": ["Algeria",    "Argentina",  "Austria",     "Jordan"],
-    "B": ["Australia",  "Paraguay",   "Turkey",      "United States"],
-    "C": ["Belgium",    "Egypt",      "Iran",        "New Zealand"],
-    "D": ["Bosnia and Herzegovina", "Canada", "Qatar", "Switzerland"],
-    "E": ["Brazil",     "Haiti",      "Morocco",     "Scotland"],
-    "F": ["Cape Verde", "Saudi Arabia", "Spain",     "Uruguay"],
-    "G": ["Colombia",   "DR Congo",   "Portugal",    "Uzbekistan"],
-    "H": ["Croatia",    "England",    "Ghana",       "Panama"],
-    "I": ["Curaçao",    "Ecuador",    "Germany",     "Ivory Coast"],
-    "J": ["Czech Republic", "Mexico", "South Africa", "South Korea"],
-    "K": ["France",     "Iraq",       "Norway",      "Senegal"],
-    "L": ["Japan",      "Netherlands", "Sweden",     "Tunisia"],
+    # Official draw – December 2025, Washington D.C.
+    # Host nations: Mexico (A1), Canada (B1), United States (D1)
+    "A": ["Czech Republic",  "Mexico",       "South Africa", "South Korea"],
+    "B": ["Bosnia and Herzegovina", "Canada", "Qatar",       "Switzerland"],
+    "C": ["Brazil",          "Haiti",        "Morocco",      "Scotland"],
+    "D": ["Australia",       "Paraguay",     "Turkey",       "United States"],
+    "E": ["Curaçao",         "Ecuador",      "Germany",      "Ivory Coast"],
+    "F": ["Japan",           "Netherlands",  "Sweden",       "Tunisia"],
+    "G": ["Belgium",         "Egypt",        "Iran",         "New Zealand"],
+    "H": ["Cape Verde",      "Saudi Arabia", "Spain",        "Uruguay"],
+    "I": ["France",          "Iraq",         "Norway",       "Senegal"],
+    "J": ["Algeria",         "Argentina",    "Austria",      "Jordan"],
+    "K": ["Colombia",        "DR Congo",     "Portugal",     "Uzbekistan"],
+    "L": ["Croatia",         "England",      "Ghana",        "Panama"],
 }
 
 

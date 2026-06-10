@@ -1,24 +1,3 @@
-"""
-poisson_features.py — Poisson Goal Prediction Features (Task 2.4).
-
-Computes attack strength and defence weakness for both home and away teams,
-and calculates expected goals (xG) based on a simplified Dixon-Coles model.
-
-Features:
-    - home_attack_strength, away_attack_strength
-    - home_defence_weakness, away_defence_weakness
-    - expected_goals_home, expected_goals_away
-
-Formulas (per match, using rolling historical stats):
-    attack_strength = team_avg_goals_scored / global_avg_goals
-    defence_weakness = team_avg_goals_conceded / global_avg_goals
-    expected_goals_home = home_attack * away_defence * global_avg_home_goals
-    expected_goals_away = away_attack * home_defence * global_avg_away_goals
-
-Usage:
-    python -m src.features.poisson_features
-"""
-
 from __future__ import annotations
 
 import logging

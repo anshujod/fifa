@@ -1,21 +1,3 @@
-"""
-team_features.py — Rolling performance features for FIFA WC2026 Predictor.
-
-For each match, computes rolling statistics for both home and away teams
-using their previous N matches. Features include:
-
-    - goals_scored_avg_5 / _10       — average goals scored
-    - goals_conceded_avg_5 / _10     — average goals conceded
-    - win_pct_last_5 / _10           — win percentage
-    - clean_sheet_ratio_last_10      — proportion of clean sheets
-    - form_score                     — weighted W=3, D=1, L=0 (recent 2x)
-    - Exponential time-decay variants (λ = 0.005)
-    - Separate competitive vs friendly stats
-
-Usage:
-    python -m src.features.team_features
-"""
-
 from __future__ import annotations
 
 import logging

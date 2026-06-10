@@ -1,30 +1,3 @@
-"""
-penalties.py — FIFA Penalty Shootout Simulator (Task 4.3).
-
-Simulates a full penalty shootout kick-by-kick using FIFA rules:
-    • Each team takes up to 5 kicks alternately
-    • Early elimination: stop as soon as the winner is mathematically decided
-    • Sudden death if still level after 5 kicks each
-    • Per-kick conversion rates derived from historical shootout data
-
-Per-kick conversion rate model:
-    base_rate = 0.75  (≈ tournament average from UEFA/FIFA research)
-
-    For teams with ≥ 3 historical shootouts:
-        kick_rate = clip(0.75 + (win_rate − 0.50) × WIN_TO_KICK_SLOPE, 0.60, 0.90)
-
-    For teams with < 3 shootouts OR no data:
-        kick_rate = clip(0.75 + SPECIALIST_ADJUSTMENTS.get(team, 0.0), 0.60, 0.90)
-
-    The slope 0.15 maps a 50% shootout win rate → 0.75 kick rate, and
-    a 75% win rate → ~0.79 kick rate (verified by simulation).
-
-Usage:
-    from src.simulation.penalties import simulate_shootout
-    result = simulate_shootout("Germany", "England", rng)
-    print(result.winner, result.score_summary())
-"""
-
 from __future__ import annotations
 
 import logging
@@ -105,7 +78,6 @@ SPECIALIST_ADJUSTMENTS: dict[str, float] = {
     "Scotland":          +0.01,   # 100% but only n=2
     "Belgium":            0.00,   # 100% but only n=2 (limited data)
     "Haiti":              0.00,   # n=2
-    "Panama":            +0.02,
     "Curaçao":           -0.03,   # 0% in 2 shootouts
     "Austria":           -0.02,   # 0% in 2 shootouts
     "South Africa":      -0.01,   # 46% win rate (large sample)

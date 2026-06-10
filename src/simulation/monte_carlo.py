@@ -1,44 +1,3 @@
-"""
-monte_carlo.py — Monte Carlo Tournament Runner (Task 4.4).
-
-Runs N full tournament simulations in parallel, each covering all 103 matches:
-    72 group-stage matches (12 groups × 6)
-    31 knockout matches   (16 + 8 + 4 + 2 + 1)
-
-For each of the 48 WC 2026 teams, tracks:
-    p_group_qualify   — P(advance from group stage)
-    p_round_of_32     — P(win R32 match = reach R16)
-    p_round_of_16     — P(reach R16)  [= p_round_of_32]
-    p_quarter_final   — P(reach QF)
-    p_semi_final      — P(reach SF)
-    p_final           — P(reach the Final)
-    p_winner          — P(win the World Cup)
-
-Parallelism
------------
-Uses multiprocessing.Pool with a per-worker initializer that loads the
-MatchPredictor once per process.  Scoreline simulation uses fast Poisson
-direct-sampling (skips the Dixon-Coles score matrix, ~8× speed gain).
-Target: 10 000 simulations in < 5 minutes on a modern laptop.
-
-Outputs
--------
-results/monte_carlo_probabilities.csv   — per-team probabilities + CIs
-results/monte_carlo_stats.json          — run metadata (n_sims, timing…)
-
-Usage
------
-    # Default 10 000 simulations
-    python -m src.simulation.monte_carlo
-
-    # Quick 500-sim test
-    python -m src.simulation.monte_carlo --n 500
-
-    # Programmatic
-    from src.simulation.monte_carlo import run_monte_carlo
-    df, stats = run_monte_carlo(n_simulations=10_000)
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -447,7 +406,7 @@ def main() -> None:
     args = _parse_args()
 
     log.info("=" * 60)
-    log.info("TASK 4.4 — Monte Carlo Tournament Runner")
+    log.info("Monte Carlo Tournament Runner")
     log.info("=" * 60)
 
     df, stats = run_monte_carlo(
@@ -471,7 +430,7 @@ def main() -> None:
     print(f"    Elapsed      : {stats['elapsed_seconds']:.1f}s")
     print(f"    Speed        : {stats['sim_per_second']:.1f} sim/s")
     print()
-    print("  ✅  Task 4.4 — Monte Carlo complete.")
+    print("Monte Carlo complete.")
 
 
 if __name__ == "__main__":

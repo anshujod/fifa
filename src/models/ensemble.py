@@ -1,14 +1,3 @@
-"""
-ensemble.py — Weighted Ensemble Model (Task 3.5).
-
-Combines Elo + XGBoost + Poisson + LightGBM via a soft probability average.
-Ensemble weights are optimised using Nelder-Mead on a 2021-2022 validation
-set (completely separate from the 2023+ holdout used for final comparison).
-
-Usage:
-    python -m src.models.ensemble
-"""
-
 from __future__ import annotations
 
 import logging
@@ -19,7 +8,7 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 from sklearn.metrics import accuracy_score, brier_score_loss, log_loss
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 from src.features.encoder import FeaturePipeline, MATCH_FEATURES_CSV
 from src.models.elo_model import EloModel
@@ -70,12 +59,10 @@ class _DataBundle:
 
 def _load_bundles() -> tuple[_DataBundle, _DataBundle, StandardScaler, LabelEncoder]:
     """
-    Build val (2021-2022) and holdout (2023+) DataBundles from the feature store.
-    A single StandardScaler and LabelEncoder are fit on the training set (< 2021)
+    Build val (2023) and holdout (2024+) DataBundles from the feature store.
+    A single StandardScaler and LabelEncoder are fit on the training set (< 2023)
     and applied consistently to all splits.
     """
-    from sklearn.preprocessing import StandardScaler
-
     mf_full = pd.read_csv(MATCH_FEATURES_CSV, parse_dates=["date"])
     mf_full = mf_full[mf_full["is_played"] & mf_full["is_competitive"]
                       & (mf_full["year"] >= START_YEAR)].reset_index(drop=True)
@@ -93,16 +80,17 @@ def _load_bundles() -> tuple[_DataBundle, _DataBundle, StandardScaler, LabelEnco
     hold_mask  = years >= HOLDOUT_YEAR
 
     # Fit scaler & label encoder on training portion only
+    # Use boolean array indexing (iloc with bool masks is deprecated in pandas 3+)
     scaler = StandardScaler()
-    scaler.fit(X_all.iloc[train_mask])
+    scaler.fit(X_all[train_mask])
 
     le = LabelEncoder()
-    le.fit(y_all.iloc[train_mask])
+    le.fit(y_all[train_mask])
 
     def _bundle(mask):
         return _DataBundle(
-            mf=mf_full.iloc[mask].reset_index(drop=True),
-            X_pipeline=X_all.iloc[mask].reset_index(drop=True),
+            mf=mf_full[mask].reset_index(drop=True),
+            X_pipeline=X_all[mask].reset_index(drop=True),
             scaler=scaler,
             label_encoder=le,
         )
@@ -323,7 +311,8 @@ def main() -> None:
     log.info("=" * 60)
 
     # 1. Load data
-    log.info("Building val (2021-2022) and holdout (2023+) bundles...")
+    log.info("Building val (%d-%d) and holdout (%d+) bundles...",
+             VAL_YEARS[0], VAL_YEARS[1], HOLDOUT_YEAR)
     val_bundle, hold_bundle, scaler, le = _load_bundles()
     log.info("Val: %d matches | Holdout: %d matches",
              len(val_bundle.mf), len(hold_bundle.mf))
