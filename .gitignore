@@ -10,6 +10,15 @@ venv/
 .ipynb_checkpoints/
 
 data/external/
-data/processed/
+
+# processed data is regenerable — except the files the dashboard needs at runtime
+data/processed/*
+!data/processed/match_features.csv
+!data/processed/squad_features.csv
+!data/processed/match_results.csv
+!data/processed/mc_results.json
+!data/processed/elo_ratings.csv
+!data/processed/team_snapshots.csv
+!data/processed/squad_profiles.csv
 
 *.log

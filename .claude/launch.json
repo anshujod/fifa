@@ -6,6 +6,12 @@
       "runtimeExecutable": "streamlit",
       "runtimeArgs": ["run", "dashboard/app.py", "--server.port", "8590", "--server.headless", "true"],
       "port": 8590
+    },
+    {
+      "name": "anshu-os",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/anshuprakash/Downloads/anshu_new_portfolio/anshu-os", "--", "--port", "5173", "--strictPort"],
+      "port": 5173
     }
   ]
 }

@@ -1,5 +1,5 @@
 """
-model_insights.py — 🔬 Model internals: SHAP explainability, evaluation, architecture.
+model_insights.py — Model internals: SHAP explainability, evaluation, architecture.
 
 Sections
 --------
@@ -22,7 +22,8 @@ import pandas as pd
 import numpy as np
 
 from dashboard.utils.data_loader import load_feature_importance, load_mc_results_json
-from dashboard.utils.charts import plot_feature_importance, BG, CARD, GOLD
+from dashboard.utils.charts import plot_feature_importance, BG, CARD
+from dashboard.utils import theme
 
 _ROOT = Path(__file__).resolve().parents[2]
 
@@ -33,35 +34,30 @@ _ROOT = Path(__file__).resolve().parents[2]
 MODELS = [
     {
         "name":    "XGBoost Classifier",
-        "icon":    "🌳",
         "role":    "Outcome probabilities (H / D / A)",
         "features": "37 features: ELO, form, xG, H2H, confederation, WC experience",
         "weight":  "Ensemble member (stacked via logistic regression)",
     },
     {
         "name":    "LightGBM Classifier",
-        "icon":    "⚡",
         "role":    "Outcome probabilities (H / D / A)",
         "features": "Same 37-feature set as XGBoost",
         "weight":  "Ensemble member (stacked via logistic regression)",
     },
     {
         "name":    "Logistic Regression (meta-learner)",
-        "icon":    "📐",
         "role":    "Combines XGBoost + LightGBM predictions",
         "features": "Stacked soft probabilities from both models",
         "weight":  "Final outcome probability output",
     },
     {
         "name":    "Poisson Goal Model",
-        "icon":    "⚽",
         "role":    "Expected goals (λ_home, λ_away) → scoreline distribution",
         "features": "Team attack / defence strengths, home advantage, ELO adjustment",
         "weight":  "Used for simulate_scoreline() — independent of classifier",
     },
     {
         "name":    "ELO Rating System",
-        "icon":    "📊",
         "role":    "Running strength metric updated after every match",
         "features": "K-factor = 32 (WC) / 20 (competitive) / 10 (friendly); draws treated correctly",
         "weight":  "Input feature for all models + used directly in Poisson model",
@@ -83,21 +79,22 @@ CAT_DESC = {
 
 
 def render() -> None:
-    st.title("🔬 Model Insights")
-    st.caption(
-        "Understand what drives the predictions: SHAP feature importances, "
-        "the ensemble architecture, and how the models were evaluated."
+    theme.page_header(
+        title="Model Insights",
+        subtitle=(
+            "Understand what drives the predictions: SHAP feature importances, "
+            "the ensemble architecture, and how the models were evaluated."
+        ),
     )
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 1: SHAP Feature Importance
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("📌 Feature Importance — SHAP TreeExplainer")
-    st.caption(
+    theme.section(
+        "Feature Importance — SHAP TreeExplainer",
         "Mean absolute SHAP values averaged over 500 recent competitive matches "
         "and all three outcome classes (Home / Draw / Away). "
-        "Colours indicate feature category."
+        "Colours indicate feature category.",
     )
 
     n_feat = st.slider("Number of features to display", 10, 37, 20, key="mi_nfeat")
@@ -113,15 +110,15 @@ def render() -> None:
     else:
         source = imp_df["source"].iloc[0] if "source" in imp_df.columns else "?"
         if source == "SHAP":
-            st.success("✅ Using SHAP TreeExplainer values")
+            st.caption("Source: SHAP TreeExplainer values")
         else:
-            st.warning("⚠️ SHAP unavailable — showing native XGBoost gain importance instead")
+            st.warning("SHAP unavailable — showing native XGBoost gain importance instead")
 
         fig_imp = plot_feature_importance(imp_df)
         st.plotly_chart(fig_imp, use_container_width=True)
 
         # Category breakdown
-        with st.expander("📂 Category breakdown"):
+        with st.expander("Category breakdown"):
             cat_counts = imp_df.groupby("category")["importance"].agg(["sum", "count"]).reset_index()
             cat_counts.columns = ["Category", "Total Importance", "# Features"]
             cat_counts = cat_counts.sort_values("Total Importance", ascending=False)
@@ -134,7 +131,7 @@ def render() -> None:
                     st.markdown(f"**{cat}** — {desc}")
 
         # Raw table
-        with st.expander("🗃️ Raw feature importance table"):
+        with st.expander("Raw feature importance table"):
             display = imp_df.copy()
             display["importance"] = display["importance"].map("{:.6f}".format)
             st.dataframe(display, use_container_width=True, hide_index=True)
@@ -142,18 +139,16 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 2: SHAP Deep-Dive (Beeswarm / Waterfall / Dependency)
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("🐝 SHAP Deep-Dive — Task 6.2")
-    st.caption(
-        "Interactive SHAP plots powered by `shap.TreeExplainer` on the XGBoost model. "
-        "All plots are computed on 500 competitive matches (OOS 2023-2024 + WC holdout). "
-        "Use the tabs below to explore different plot types."
+    theme.section(
+        "SHAP Deep-Dive",
+        "Interactive SHAP plots computed on 500 competitive matches "
+        "(OOS 2023-2024 + WC holdout). Use the tabs to explore plot types.",
     )
 
     shap_tab1, shap_tab2, shap_tab3 = st.tabs([
-        "🐝 Beeswarm",
-        "💧 Waterfall (Single Match)",
-        "📈 Dependency Plots",
+        "Beeswarm",
+        "Waterfall (Single Match)",
+        "Dependency Plots",
     ])
 
     @st.cache_resource(show_spinner="Loading SHAP analyser …")
@@ -174,7 +169,7 @@ def render() -> None:
     shap_class = st.radio(
         "Outcome class for beeswarm / dependency / waterfall",
         options=["H", "D", "A"],
-        format_func=lambda c: {"H": "🟢 Home Win", "D": "🟡 Draw", "A": "🔴 Away Win"}[c],
+        format_func=lambda c: {"H": "Home Win", "D": "Draw", "A": "Away Win"}[c],
         horizontal=True,
         key="mi_shap_class",
     )
@@ -250,20 +245,14 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 3: Ensemble Architecture
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("🏗️ Ensemble Architecture")
+    theme.section("Ensemble Architecture")
 
     for m in MODELS:
         with st.container(border=True):
-            c1, c2 = st.columns([1, 6])
-            with c1:
-                st.markdown(f"<h2 style='text-align:center'>{m['icon']}</h2>",
-                            unsafe_allow_html=True)
-            with c2:
-                st.markdown(f"**{m['name']}**")
-                st.caption(f"Role: {m['role']}")
-                st.caption(f"Features: {m['features']}")
-                st.caption(f"Stacking: {m['weight']}")
+            st.markdown(f"**{m['name']}**")
+            st.caption(f"Role: {m['role']}")
+            st.caption(f"Features: {m['features']}")
+            st.caption(f"Stacking: {m['weight']}")
 
     st.markdown(
         """
@@ -280,8 +269,7 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 3: Model Evaluation Results
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("📋 Model Evaluation — Task 6.1")
+    theme.section("Model Evaluation")
 
     eval_path = (
         __import__("pathlib").Path(__file__).resolve().parents[2]
@@ -294,15 +282,15 @@ def render() -> None:
 
         # ── OOS tab first (the real numbers), then in-sample for reference ──
         tab_oos, tab_insample = st.tabs([
-            "✅ True Out-of-Sample (2023-2024)",
-            "⚠️ In-Sample / Reference (WC 2014-2022)",
+            "True Out-of-Sample (2023-2024)",
+            "In-Sample / Reference (WC 2014-2022)",
         ])
 
         with tab_oos:
-            st.info(
-                "**1,464 competitive matches** from 2023-2024 "
+            st.caption(
+                "1,464 competitive matches from 2023-2024 "
                 "(UEFA Euros, Copa América, Nations League, AFCON, …). "
-                "Models were trained on data ≤ 2022 — **these results are genuine**."
+                "Models were trained on data ≤ 2022 — these results are genuine."
             )
             oos = eval_report.get("oos_results", [])
             if oos:
@@ -313,8 +301,8 @@ def render() -> None:
                     "Brier":       f"{r['brier_score']:.4f}",
                     "RPS":         f"{r['rps']:.4f}",
                     "RPSS":        f"{r['rps_skill_score']:+.4f}",
-                    "LL < 0.85":   "✅" if r["beats_log_loss_target"] else "❌",
-                    "RPS < 0.19":  "✅" if r["beats_rps_target"] else "❌",
+                    "LL < 0.85":   "Pass" if r["beats_log_loss_target"] else "Miss",
+                    "RPS < 0.19":  "Pass" if r["beats_rps_target"] else "Miss",
                 } for r in oos])
                 st.dataframe(oos_df, use_container_width=True, hide_index=True)
 
@@ -324,20 +312,22 @@ def render() -> None:
                     c1, c2, c3, c4 = st.columns(4)
                     c1.metric("Ensemble Accuracy",  f"{ens_oos['accuracy']*100:.1f}%")
                     c2.metric("Ensemble Log Loss",  f"{ens_oos['log_loss']:.4f}",
-                              delta="< 0.85 ✅" if ens_oos["beats_log_loss_target"] else "≥ 0.85 ❌",
-                              delta_color="normal")
+                              delta="Beats 0.85 target" if ens_oos["beats_log_loss_target"]
+                                    else "Misses 0.85 target",
+                              delta_color="normal" if ens_oos["beats_log_loss_target"] else "inverse")
                     c3.metric("Ensemble RPS",       f"{ens_oos['rps']:.4f}",
-                              delta="< 0.19 ✅" if ens_oos["beats_rps_target"] else "≥ 0.19 ❌",
-                              delta_color="normal")
+                              delta="Beats 0.19 target" if ens_oos["beats_rps_target"]
+                                    else "Misses 0.19 target",
+                              delta_color="normal" if ens_oos["beats_rps_target"] else "inverse")
                     c4.metric("Ensemble RPSS",      f"{ens_oos['rps_skill_score']:+.4f}")
             else:
                 st.warning("OOS results not found in report. Re-run evaluation to generate them.")
 
         with tab_insample:
             st.warning(
-                "⚠️ **WC 2014 / 2018 / 2022 matches (192 total) were in the training set.** "
+                "WC 2014 / 2018 / 2022 matches (192 total) were in the training set. "
                 "LightGBM 76.6% accuracy and similar tree-model numbers are in-sample artifacts "
-                "and do **not** reflect real predictive power."
+                "and do not reflect real predictive power."
             )
             in_sample = eval_report.get("results", [])
             if in_sample:
@@ -348,8 +338,8 @@ def render() -> None:
                     "Brier":       f"{r['brier_score']:.4f}",
                     "RPS":         f"{r['rps']:.4f}",
                     "RPSS":        f"{r['rps_skill_score']:+.4f}",
-                    "LL < 0.85":   "✅" if r["beats_log_loss_target"] else "❌",
-                    "RPS < 0.19":  "✅" if r["beats_rps_target"] else "❌",
+                    "LL < 0.85":   "Pass" if r["beats_log_loss_target"] else "Miss",
+                    "RPS < 0.19":  "Pass" if r["beats_rps_target"] else "Miss",
                 } for r in in_sample])
                 st.dataframe(is_df, use_container_width=True, hide_index=True)
 
@@ -380,8 +370,7 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 4: Simulation Statistics
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("📉 Monte Carlo Simulation Statistics")
+    theme.section("Monte Carlo Simulation Statistics")
 
     try:
         mc_json = load_mc_results_json()

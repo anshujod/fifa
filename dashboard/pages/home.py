@@ -1,5 +1,5 @@
 """
-home.py — 🏠 Home page: hero, KPI cards, championship race, groups.
+home.py — Home page: overview header, KPI cards, championship race, groups.
 """
 
 from __future__ import annotations
@@ -36,16 +36,16 @@ def render() -> None:
     elapsed = float(meta.get("elapsed_seconds", 0) or 0)
     sp      = n / elapsed if elapsed > 0 else 0
 
-    # ── Hero ─────────────────────────────────────────────────────────────────
-    theme.hero(
-        title_plain="World Cup 2026",
-        title_gold="Prediction Hub",
+    # ── Header ───────────────────────────────────────────────────────────────
+    theme.page_header(
+        eyebrow="FIFA World Cup 2026 · USA · Canada · Mexico",
+        title="Tournament Prediction Engine",
         subtitle=(
             "Championship probabilities from 10,000 full-tournament Monte Carlo "
             "simulations, powered by an ensemble of Poisson, XGBoost, LightGBM "
             "and Elo models."
         ),
-        badge="FIFA World Cup 2026 · USA · Canada · Mexico",
+        hero=True,
     )
 
     # ── KPI cards ────────────────────────────────────────────────────────────
@@ -56,29 +56,25 @@ def render() -> None:
 
     theme.kpi_row([
         {
-            "icon": "👑", "tint": "gold",
             "label": "Top favourite",
             "value": f"{flag(top['team'])} {top['team']}",
-            "delta": f"▲ {top['p_winner']*100:.1f}% champion · +{lead_gap:.1f} pts on {runner['team']}",
-            "delta_class": "gold",
+            "delta": f"{top['p_winner']*100:.1f}% champion · +{lead_gap:.1f} pts on {runner['team']}",
+            "delta_class": "accent",
         },
         {
-            "icon": "🎲", "tint": "",
             "label": "Simulations run",
             "value": f"{n:,}",
-            "delta": f"@ {sp:.0f} tournaments / second",
+            "delta": f"{sp:.0f} tournaments per second",
         },
         {
-            "icon": "📈", "tint": "",
-            "label": "Highest ELO",
+            "label": "Highest Elo",
             "value": f"{flag(top_elo['team'])} {int(top_elo['elo_rating'])}",
             "delta": f"{top_elo['team']} leads the rating pool",
         },
         {
-            "icon": "✓", "tint": "green",
             "label": "Model confidence",
             "value": f"{(n - n_fail)/n*100:.1f}%",
-            "delta": f"▲ {n - n_fail:,} clean runs · {n_fail} failed",
+            "delta": f"{n - n_fail:,} clean runs · {n_fail} failed",
             "delta_class": "up",
         },
     ])
@@ -86,7 +82,7 @@ def render() -> None:
     # ── Championship race ────────────────────────────────────────────────────
     theme.section(
         "Championship Race",
-        "Probability of lifting the trophy — ranked by Monte Carlo estimate.",
+        "Probability of winning the tournament — ranked by Monte Carlo estimate.",
     )
 
     col_left, col_right = st.columns([5, 6], gap="large")
@@ -109,8 +105,8 @@ def render() -> None:
 
     with col_right:
         st.markdown(
-            "<div style='height:14px'></div><div style='font-size:13px;font-weight:700;"
-            "letter-spacing:.08em;text-transform:uppercase;color:#94A3B8;"
+            "<div style='height:14px'></div><div style='font-size:11px;font-weight:600;"
+            "letter-spacing:.09em;text-transform:uppercase;color:#94A3B8;"
             "margin-bottom:10px'>Full probability table — all 48 teams</div>",
             unsafe_allow_html=True,
         )
@@ -179,8 +175,8 @@ def render() -> None:
 
     # ── Footer ───────────────────────────────────────────────────────────────
     st.markdown(
-        f"<div style='margin-top:28px;padding-top:14px;border-top:1px solid "
-        f"rgba(148,163,184,.12);font-size:12px;color:#94A3B8'>"
+        f"<div style='margin-top:32px;padding-top:14px;border-top:1px solid "
+        f"rgba(148,163,184,.10);font-size:12px;color:#94A3B8'>"
         f"Ensemble of Poisson goal model · XGBoost · LightGBM · Elo &nbsp;·&nbsp; "
         f"N = {n:,} simulations &nbsp;·&nbsp; Seed = {meta.get('base_seed', 42)}</div>",
         unsafe_allow_html=True,

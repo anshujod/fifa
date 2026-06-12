@@ -12,44 +12,51 @@ from plotly.subplots import make_subplots
 
 
 # ── colour palette ────────────────────────────────────────────────────────────
-GOLD   = "#F4C430"
-SILVER = "#C0C8D4"
-BRONZE = "#CD7F32"
-BLUE   = "#3B82F6"
-LIGHT  = "#E3F2FD"
-BG     = "rgba(0,0,0,0)"  # transparent — lets the app background show through
-CARD   = "#171F2E"        # metric card background
+ACCENT   = "#3B82F6"
+ACCENT_2 = "#60A5FA"
+SUCCESS  = "#10B981"
+WARNING  = "#F59E0B"
+ERROR    = "#EF4444"
+NEUTRAL  = "#64748B"
+TEXT     = "#F8FAFC"
+TEXT_DIM = "#94A3B8"
+BLUE     = ACCENT
+BG       = "rgba(0,0,0,0)"  # transparent — lets the app background show through
+CARD     = "#172033"        # surface background
 
-# ── global premium template (Inter, soft grid, styled tooltips) ──────────────
+# blue ramp for sequential / staged data (dark → light)
+BLUE_RAMP = ["#1E3A8A", "#1D4ED8", "#2563EB", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE"]
+
+# ── global template (Inter, soft grid, restrained colorway) ──────────────────
 pio.templates["wc_premium"] = go.layout.Template(
     layout=dict(
-        font=dict(family="Inter, -apple-system, sans-serif", color="#F9FAFB", size=13),
-        title=dict(font=dict(size=17, color="#F9FAFB")),
+        font=dict(family="Inter, -apple-system, sans-serif", color=TEXT, size=13),
+        title=dict(font=dict(size=15, color=TEXT)),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         hoverlabel=dict(
-            bgcolor="#1C2638",
-            bordercolor="rgba(148,163,184,.30)",
-            font=dict(family="Inter, sans-serif", color="#F9FAFB", size=13),
+            bgcolor="#1E293B",
+            bordercolor="rgba(148,163,184,.25)",
+            font=dict(family="Inter, sans-serif", color=TEXT, size=13),
         ),
-        xaxis=dict(gridcolor="rgba(148,163,184,.10)", zerolinecolor="rgba(148,163,184,.18)"),
-        yaxis=dict(gridcolor="rgba(148,163,184,.10)", zerolinecolor="rgba(148,163,184,.18)"),
+        xaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
+        yaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
         legend=dict(bgcolor="rgba(0,0,0,0)"),
-        colorway=["#F4C430", "#3B82F6", "#22C55E", "#A78BFA", "#F87171",
-                  "#38BDF8", "#FB923C", "#E879F9"],
+        colorway=["#3B82F6", "#60A5FA", "#10B981", "#94A3B8",
+                  "#F59E0B", "#818CF8", "#2DD4BF", "#CBD5E1"],
         margin=dict(t=56, b=44, l=56, r=24),
     )
 )
 pio.templates.default = "plotly_dark+wc_premium"
 
 STAGE_COLOURS = {
-    "p_group_qualify":  "#4CAF50",
-    "p_round_of_32":    "#8BC34A",
-    "p_round_of_16":    "#FFC107",
-    "p_quarter_final":  "#FF9800",
-    "p_semi_final":     "#F44336",
-    "p_final":          "#9C27B0",
-    "p_winner":         "#FFD700",
+    "p_group_qualify":  BLUE_RAMP[0],
+    "p_round_of_32":    BLUE_RAMP[1],
+    "p_round_of_16":    BLUE_RAMP[2],
+    "p_quarter_final":  BLUE_RAMP[3],
+    "p_semi_final":     BLUE_RAMP[4],
+    "p_final":          BLUE_RAMP[5],
+    "p_winner":         BLUE_RAMP[6],
 }
 
 STAGE_LABELS = {
@@ -70,10 +77,7 @@ STAGE_LABELS = {
 def top_favourites_bar(df: pd.DataFrame, n: int = 10) -> go.Figure:
     """Horizontal bar chart — top N teams by P(champion)."""
     top = df.nlargest(n, "p_winner").sort_values("p_winner")
-    colours = [GOLD if i == len(top) - 1 else
-               SILVER if i == len(top) - 2 else
-               BRONZE if i == len(top) - 3 else
-               BLUE
+    colours = [ACCENT if i == len(top) - 1 else "#334155"
                for i in range(len(top))]
 
     fig = go.Figure(go.Bar(
@@ -105,7 +109,8 @@ def tournament_funnel(df: pd.DataFrame, teams: list[str]) -> go.Figure:
     labels = list(STAGE_LABELS.values())
 
     fig = go.Figure()
-    palette = px.colors.qualitative.Set2
+    palette = ["#3B82F6", "#60A5FA", "#10B981", "#94A3B8", "#F59E0B",
+               "#818CF8", "#2DD4BF", "#CBD5E1"]
     for i, team in enumerate(teams):
         row = df[df["team"] == team]
         if row.empty:
@@ -145,7 +150,7 @@ def outcome_donut(p_home: float, p_draw: float, p_away: float,
     """Donut chart for match outcome probabilities."""
     labels = [f"{home} Win", "Draw", f"{away} Win"]
     values = [p_home * 100, p_draw * 100, p_away * 100]
-    colours = ["#2196F3", "#9E9E9E", "#F44336"]
+    colours = ["#3B82F6", "#475569", "#94A3B8"]
 
     fig = go.Figure(go.Pie(
         labels=labels,
@@ -236,11 +241,11 @@ def group_standings_bar(records: dict, group_id: str) -> go.Figure:
     gd    = [gd[i]    for i in order]
 
     fig = go.Figure()
-    fig.add_trace(go.Bar(name="Wins",   x=teams, y=wins,   marker_color="#4CAF50",
+    fig.add_trace(go.Bar(name="Wins",   x=teams, y=wins,   marker_color=SUCCESS,
                          hovertemplate="<b>%{x}</b><br>Wins: %{y}<extra></extra>"))
-    fig.add_trace(go.Bar(name="Draws",  x=teams, y=draws,  marker_color="#FFC107",
+    fig.add_trace(go.Bar(name="Draws",  x=teams, y=draws,  marker_color=NEUTRAL,
                          hovertemplate="<b>%{x}</b><br>Draws: %{y}<extra></extra>"))
-    fig.add_trace(go.Bar(name="Losses", x=teams, y=losses, marker_color="#F44336",
+    fig.add_trace(go.Bar(name="Losses", x=teams, y=losses, marker_color=ERROR,
                          hovertemplate="<b>%{x}</b><br>Losses: %{y}<extra></extra>"))
 
     # Annotate total points
@@ -275,8 +280,8 @@ def goals_chart(records: dict, group_id: str) -> go.Figure:
     ga     = [records[teams[i]].goals_against for i in range(len(teams))]
 
     fig = go.Figure()
-    fig.add_trace(go.Bar(name="Goals For",     x=teams, y=gf, marker_color="#4CAF50"))
-    fig.add_trace(go.Bar(name="Goals Against", x=teams, y=ga, marker_color="#F44336",
+    fig.add_trace(go.Bar(name="Goals For",     x=teams, y=gf, marker_color=ACCENT))
+    fig.add_trace(go.Bar(name="Goals Against", x=teams, y=ga, marker_color=NEUTRAL,
                          base=[-v for v in ga]))
 
     fig.update_layout(
@@ -302,7 +307,7 @@ def squad_position_pie(squad: list[dict], team: str) -> go.Figure:
     from collections import Counter
     counts = Counter(p.get("position", "?") for p in squad)
     pos_order = ["GK", "DF", "MF", "FW"]
-    colours = {"GK": "#FF9800", "DF": "#2196F3", "MF": "#4CAF50", "FW": "#F44336"}
+    colours = {"GK": "#1D4ED8", "DF": "#3B82F6", "MF": "#60A5FA", "FW": "#93C5FD"}
     labels = [p for p in pos_order if p in counts]
     values = [counts[p] for p in labels]
 
@@ -310,7 +315,7 @@ def squad_position_pie(squad: list[dict], team: str) -> go.Figure:
         labels=labels,
         values=values,
         hole=0.45,
-        marker_colors=[colours.get(p, "#9E9E9E") for p in labels],
+        marker_colors=[colours.get(p, "#64748B") for p in labels],
         textinfo="label+value",
         hovertemplate="<b>%{label}</b><br>%{value} players<extra></extra>",
     ))
@@ -346,8 +351,8 @@ def form_radar(snapshot: pd.Series, team: str) -> go.Figure:
     fig = go.Figure(go.Scatterpolar(
         r=vals, theta=cats,
         fill="toself",
-        fillcolor="rgba(33, 150, 243, 0.25)",
-        line=dict(color="#2196F3", width=2),
+        fillcolor="rgba(59, 130, 246, 0.18)",
+        line=dict(color="#3B82F6", width=2),
         name=team,
     ))
     fig.update_layout(
@@ -381,10 +386,10 @@ def probability_stage_bar(team: str, probs: dict[str, float]) -> go.Figure:
         "winner": "Champion",
     }
     colour_map = {
-        "group_qualify": "#4CAF50", "round_of_32": "#8BC34A",
-        "round_of_16": "#CDDC39",   "quarter_final": "#FFC107",
-        "semi_final": "#FF9800",    "final": "#F44336",
-        "winner": "#FFD700",
+        "group_qualify": BLUE_RAMP[0], "round_of_32": BLUE_RAMP[1],
+        "round_of_16": BLUE_RAMP[2],   "quarter_final": BLUE_RAMP[3],
+        "semi_final": BLUE_RAMP[4],    "final": BLUE_RAMP[5],
+        "winner": BLUE_RAMP[6],
     }
     labels = [label_map[s] for s in stage_order if s in probs]
     vals   = [probs[s] * 100 for s in stage_order if s in probs]
@@ -417,18 +422,18 @@ def elo_history_placeholder(team: str, elo_row: pd.Series) -> go.Figure:
     fig = go.Figure(go.Indicator(
         mode="gauge+number",
         value=elo,
-        title={"text": f"ELO Rating", "font": {"size": 16, "color": "white"}},
-        number={"font": {"color": "white", "size": 28}},
+        title={"text": "Elo Rating", "font": {"size": 14, "color": TEXT_DIM}},
+        number={"font": {"color": TEXT, "size": 28}},
         gauge={
-            "axis": {"range": [1200, 2300], "tickcolor": "white",
-                     "tickfont": {"color": "white"}},
-            "bar": {"color": "#2196F3"},
+            "axis": {"range": [1200, 2300], "tickcolor": TEXT_DIM,
+                     "tickfont": {"color": TEXT_DIM}},
+            "bar": {"color": ACCENT},
             "steps": [
-                {"range": [1200, 1700], "color": "#2A2F3F"},
-                {"range": [1700, 1900], "color": "#1E3A5F"},
-                {"range": [1900, 2300], "color": "#0D2137"},
+                {"range": [1200, 1700], "color": "#1E293B"},
+                {"range": [1700, 1900], "color": "#172033"},
+                {"range": [1900, 2300], "color": "#111827"},
             ],
-            "threshold": {"line": {"color": GOLD, "width": 4}, "value": elo},
+            "threshold": {"line": {"color": ACCENT_2, "width": 3}, "value": elo},
             "bgcolor": CARD,
         },
     ))
@@ -472,10 +477,10 @@ def plot_win_probabilities(
         "winner": "Champion",
     }
     colour_map = {
-        "group_qualify": "#4CAF50", "round_of_32": "#8BC34A",
-        "round_of_16": "#CDDC39",   "quarter_final": "#FFC107",
-        "semi_final": "#FF9800",    "final": "#F44336",
-        "winner": "#FFD700",
+        "group_qualify": BLUE_RAMP[0], "round_of_32": BLUE_RAMP[1],
+        "round_of_16": BLUE_RAMP[2],   "quarter_final": BLUE_RAMP[3],
+        "semi_final": BLUE_RAMP[4],    "final": BLUE_RAMP[5],
+        "winner": BLUE_RAMP[6],
     }
     stages  = [s for s in stage_order if s in probs]
     labels  = [label_map[s] for s in stages]
@@ -549,8 +554,11 @@ def plot_group_standings(
       4th        — dark red    (eliminated)
     """
     n_rows = len(ranking)
-    zone_fill = {0: "#0D3B0D", 1: "#0D3B0D", 2: "#3B2C0D", 3: "#3B0D0D"}
-    row_colors = [zone_fill.get(i, BG) for i in range(n_rows)]
+    zone_fill = {
+        0: "rgba(16,185,129,.08)", 1: "rgba(16,185,129,.08)",
+        2: "rgba(245,158,11,.07)", 3: "rgba(148,163,184,.04)",
+    }
+    row_colors = [zone_fill.get(i, "rgba(0,0,0,0)") for i in range(n_rows)]
 
     headers = ["Pos", "Team", "Pld", "W", "D", "L", "GF", "GA", "GD", "Pts", "Status"]
     col_data: list[list] = [[] for _ in range(len(headers))]
@@ -559,8 +567,8 @@ def plot_group_standings(
         rec = records[team]
         pts = rec.wins * 3 + rec.draws
         gd  = rec.goals_for - rec.goals_against
-        status = ("✅ Qualify" if i < 2 else
-                  "🔁 3rd Place" if i == 2 else "❌ Eliminated")
+        status = ("Qualified" if i < 2 else
+                  "Third place" if i == 2 else "Eliminated")
         row = [str(i + 1), team, rec.played, rec.wins, rec.draws,
                rec.losses, rec.goals_for, rec.goals_against,
                f"{gd:+d}", pts, status]
@@ -573,18 +581,18 @@ def plot_group_standings(
     fig = go.Figure(go.Table(
         header=dict(
             values=[f"<b>{h}</b>" for h in headers],
-            fill_color="#1A2035",
-            font=dict(color="white", size=13, family="Arial"),
+            fill_color="#1E293B",
+            font=dict(color=TEXT_DIM, size=12, family="Inter, sans-serif"),
             align=["center", "left"] + ["center"] * 9,
-            line_color="#2A2F3F",
-            height=38,
+            line_color="rgba(148,163,184,.12)",
+            height=36,
         ),
         cells=dict(
             values=col_data,
             fill_color=fill,
-            font=dict(color="white", size=12, family="Arial"),
+            font=dict(color=TEXT, size=12.5, family="Inter, sans-serif"),
             align=["center", "left"] + ["center"] * 9,
-            line_color="#2A2F3F",
+            line_color="rgba(148,163,184,.08)",
             height=34,
         ),
         columnwidth=[40, 180, 45, 40, 40, 40, 45, 45, 50, 45, 110],
@@ -592,14 +600,15 @@ def plot_group_standings(
     fig.update_layout(
         title=f"Group {group_id} — Standings",
         plot_bgcolor=BG, paper_bgcolor=BG,
-        font_color="white",
+        font_color=TEXT,
         height=270,
         margin=dict(t=50, b=30, l=10, r=10),
         annotations=[dict(
-            x=0.5, y=-0.08, xref="paper", yref="paper",
-            text="🟩 Qualified directly &nbsp; 🟨 Potential 3rd-place qualifier &nbsp; 🟥 Eliminated",
+            x=0, y=-0.08, xref="paper", yref="paper",
+            text="Top two qualify directly · third place may advance as best-ranked third",
             showarrow=False,
-            font=dict(color="#9E9E9E", size=11),
+            font=dict(color=TEXT_DIM, size=11),
+            xanchor="left",
         )],
     )
     return fig
@@ -621,21 +630,21 @@ def plot_feature_importance(imp_df: "pd.DataFrame") -> go.Figure:
         return fig
 
     CAT_COL: dict[str, str] = {
-        "ELO/Ranking":    "#2196F3",
-        "Expected Goals": "#4CAF50",
-        "Head-to-Head":   "#FF9800",
-        "Confederation":  "#9C27B0",
-        "Form/Momentum":  "#F44336",
-        "Goals":          "#00BCD4",
-        "Match Context":  "#607D8B",
-        "Other":          "#9E9E9E",
-        "Unknown":        "#9E9E9E",
+        "ELO/Ranking":    "#3B82F6",
+        "Expected Goals": "#10B981",
+        "Head-to-Head":   "#F59E0B",
+        "Confederation":  "#818CF8",
+        "Form/Momentum":  "#60A5FA",
+        "Goals":          "#2DD4BF",
+        "Match Context":  "#64748B",
+        "Other":          "#94A3B8",
+        "Unknown":        "#94A3B8",
     }
 
     def fmt(f: str) -> str:
         f = (f.replace("home_", "H:").replace("away_", "A:")
               .replace("_avg_10", "/10").replace("_avg_5", "/5")
-              .replace("_before", "").replace("_decay", "↓")
+              .replace("_before", "").replace("_decay", " decay")
               .replace("_conf_", ":").replace("feat_", "")
               .replace("_", " ").title())
         return f
@@ -705,15 +714,15 @@ def comparison_radar(
     fig = go.Figure()
     fig.add_trace(go.Scatterpolar(
         r=v1, theta=cats, fill="toself",
-        fillcolor="rgba(33,150,243,0.18)",
-        line=dict(color="#2196F3", width=2.5),
+        fillcolor="rgba(59,130,246,0.15)",
+        line=dict(color="#3B82F6", width=2),
         name=team1,
         hovertemplate=f"<b>{team1}</b><br>%{{theta}}: %{{r:.2f}}<extra></extra>",
     ))
     fig.add_trace(go.Scatterpolar(
         r=v2, theta=cats, fill="toself",
-        fillcolor="rgba(244,67,54,0.18)",
-        line=dict(color="#F44336", width=2.5),
+        fillcolor="rgba(245,158,11,0.13)",
+        line=dict(color="#F59E0B", width=2),
         name=team2,
         hovertemplate=f"<b>{team2}</b><br>%{{theta}}: %{{r:.2f}}<extra></extra>",
     ))
@@ -765,7 +774,7 @@ def wc_history_timeline(wc_df: "pd.DataFrame", team: str) -> go.Figure:
         )
         return fig
 
-    RESULT_COL = {"W": "#4CAF50", "D": "#FFC107", "L": "#F44336"}
+    RESULT_COL = {"W": "#10B981", "D": "#94A3B8", "L": "#EF4444"}
     RESULT_SYM = {"W": "circle",  "D": "diamond", "L": "x"}
 
     # Ensure date is parseable
@@ -788,9 +797,9 @@ def wc_history_timeline(wc_df: "pd.DataFrame", team: str) -> go.Figure:
             mode="markers",
             name=res,
             marker=dict(
-                size=13, color=RESULT_COL[res],
+                size=11, color=RESULT_COL[res],
                 symbol=RESULT_SYM[res],
-                line=dict(color="white", width=1.1),
+                line=dict(color="rgba(248,250,252,.35)", width=1),
             ),
             text=scores[mask],
             customdata=[[t] for t in tourn[mask]],

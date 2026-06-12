@@ -9,7 +9,7 @@ Run:
 
 Pages
 -----
-    Home              — Hero, KPI cards, championship race, groups
+    Home              — Overview, KPI cards, championship race, groups
     Match Predictor   — H2H win/draw/loss + scoreline distribution
     Group Standings   — Live group simulation + standings table
     Bracket Simulator — MC probability bracket + single tournament sim
@@ -35,7 +35,7 @@ import streamlit as st
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="WC 2026 — Prediction Engine",
-    page_icon="🏆",
+    page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
@@ -56,20 +56,22 @@ theme.inject_css()
 # ─────────────────────────────────────────────────────────────────────────────
 # Sidebar
 # ─────────────────────────────────────────────────────────────────────────────
+PAGES = [
+    "Home",
+    "Match Predictor",
+    "Group Standings",
+    "Bracket Simulator",
+    "Team Profiles",
+    "Team Comparison",
+    "Model Insights",
+]
+
 with st.sidebar:
     theme.sidebar_logo()
 
     page = st.radio(
         "Navigate",
-        options=[
-            "🏠  Home",
-            "⚔️  Match Predictor",
-            "📊  Group Standings",
-            "🏆  Bracket Simulator",
-            "👥  Team Profiles",
-            "🆚  Team Comparison",
-            "🔬  Model Insights",
-        ],
+        options=PAGES,
         key="nav_page",
         label_visibility="collapsed",
     )
@@ -86,14 +88,13 @@ with st.sidebar:
         mc = load_mc_probabilities()
         top3 = mc.nlargest(3, "p_winner")[["team", "p_winner"]]
         st.markdown(
-            "<div style='font-size:11px;font-weight:700;letter-spacing:.09em;"
-            "text-transform:uppercase;color:#94A3B8;margin:14px 0 6px 4px'>"
+            "<div style='font-size:11px;font-weight:600;letter-spacing:.09em;"
+            "text-transform:uppercase;color:#94A3B8;margin:16px 0 6px 4px'>"
             "Title favourites</div>",
             unsafe_allow_html=True,
         )
-        medals = ["🥇", "🥈", "🥉"]
         theme.sidebar_favourites([
-            {"medal": medals[i], "team": row["team"], "pct": f"{row['p_winner']*100:.1f}%"}
+            {"pos": i + 1, "team": row["team"], "pct": f"{row['p_winner']*100:.1f}%"}
             for i, (_, row) in enumerate(top3.iterrows())
         ])
     except Exception:
@@ -115,21 +116,14 @@ from dashboard.pages import (
     model_insights,
 )
 
-_page = page.strip()
+ROUTES = {
+    "Home":              home.render,
+    "Match Predictor":   match_predictor.render,
+    "Group Standings":   group_standings.render,
+    "Bracket Simulator": bracket_simulator.render,
+    "Team Profiles":     team_profiles.render,
+    "Team Comparison":   team_comparison.render,
+    "Model Insights":    model_insights.render,
+}
 
-if _page.startswith("🏠"):
-    home.render()
-elif _page.startswith("⚔️"):
-    match_predictor.render()
-elif _page.startswith("📊"):
-    group_standings.render()
-elif _page.startswith("🏆"):
-    bracket_simulator.render()
-elif _page.startswith("👥"):
-    team_profiles.render()
-elif _page.startswith("🆚"):
-    team_comparison.render()
-elif _page.startswith("🔬"):
-    model_insights.render()
-else:
-    home.render()
+ROUTES.get(page, home.render)()

@@ -1,5 +1,5 @@
 """
-team_profiles.py — 👥 Deep-dive on any team: squad, stats, historical WC performance.
+team_profiles.py — Deep-dive on any team: squad, stats, historical WC performance.
 """
 
 from __future__ import annotations
@@ -16,6 +16,7 @@ from dashboard.utils.data_loader import (
 from dashboard.utils.charts import (
     squad_position_pie, form_radar, probability_stage_bar, elo_history_placeholder,
 )
+from dashboard.utils import theme
 
 # Stage column → label
 STAGE_LABELS = {
@@ -27,8 +28,6 @@ STAGE_LABELS = {
     "final":          "Final",
     "winner":         "Champion",
 }
-
-POSITION_COLOURS = {"GK": "🟠", "DF": "🔵", "MF": "🟢", "FW": "🔴"}
 
 
 def _format_market_value(v: float | None) -> str:
@@ -88,8 +87,10 @@ def _wc_history(hist_df: pd.DataFrame, team: str) -> pd.DataFrame:
 
 
 def render() -> None:
-    st.title("👥 Team Profiles")
-    st.caption("Deep dive into any of the 48 World Cup 2026 teams.")
+    theme.page_header(
+        title="Team Profiles",
+        subtitle="Deep dive into any of the 48 World Cup 2026 teams.",
+    )
 
     all_teams    = load_all_teams()
     mc_df        = load_mc_probabilities()
@@ -128,20 +129,26 @@ def render() -> None:
 
     # ── Header ────────────────────────────────────────────────────────────────
     st.markdown("---")
-    h1, h2 = st.columns([1, 3])
-    with h1:
-        st.markdown(f"<h1 style='font-size:72px;text-align:center'>"
-                    f"{flag(team)}</h1>", unsafe_allow_html=True)
-    with h2:
-        st.markdown(f"# {team}")
-        if not mc_row.empty:
-            champ_p = mc_probs["winner"] * 100
-            group   = mc_row.iloc[0]["group"]
-            st.markdown(f"**Group {group}**  ·  🏆 P(Champion): **{champ_p:.1f}%**")
-        if not elo_row.empty:
-            elo_val  = int(elo_row.iloc[0]["elo_rating"])
-            elo_rank = int(elo_row.iloc[0]["rank"]) if "rank" in elo_row.columns else "–"
-            st.markdown(f"**ELO:** {elo_val}  (Rank #{elo_rank})")
+    meta_bits = []
+    if not mc_row.empty:
+        meta_bits.append(f"Group {mc_row.iloc[0]['group']}")
+        meta_bits.append(f"P(Champion) <b style='color:#F8FAFC'>{mc_probs['winner']*100:.1f}%</b>")
+    if not elo_row.empty:
+        elo_val  = int(elo_row.iloc[0]["elo_rating"])
+        elo_rank = int(elo_row.iloc[0]["rank"]) if "rank" in elo_row.columns else "–"
+        meta_bits.append(f"Elo <b style='color:#F8FAFC'>{elo_val}</b> · Rank #{elo_rank}")
+    meta_html = " &nbsp;·&nbsp; ".join(meta_bits)
+    st.markdown(
+        f"""
+<div style='display:flex;align-items:center;gap:18px;margin:6px 0 10px'>
+  <span style='font-size:44px;line-height:1'>{flag(team)}</span>
+  <div>
+    <div style='font-size:28px;font-weight:700;letter-spacing:-.02em;color:#F8FAFC'>{team}</div>
+    <div style='font-size:13.5px;color:#94A3B8;margin-top:4px'>{meta_html}</div>
+  </div>
+</div>""",
+        unsafe_allow_html=True,
+    )
 
     # ── Top metrics ───────────────────────────────────────────────────────────
     st.markdown("---")
@@ -190,8 +197,7 @@ def render() -> None:
             st.plotly_chart(fig_elo, use_container_width=True)
 
     # ── Squad roster ──────────────────────────────────────────────────────────
-    st.markdown("---")
-    st.subheader(f"📋 {team} — 2026 World Cup Squad")
+    theme.section(f"{team} — 2026 World Cup Squad")
 
     if squad:
         # Group by position
@@ -206,7 +212,7 @@ def render() -> None:
         all_rows = []
         for player in squad:
             all_rows.append({
-                "Pos":   POSITION_COLOURS.get(player.get("position", "?"), "⚪") + " " + player.get("position", "?"),
+                "Pos":   player.get("position", "?"),
                 "Name":  player.get("name", "?"),
                 "Club":  player.get("club", "?"),
                 "Age":   player.get("age", "?"),
@@ -245,8 +251,7 @@ def render() -> None:
                     st.info(f"No {pos} players found in squad data.")
 
         # Squad highlights
-        st.markdown("---")
-        st.subheader("⭐ Squad Highlights")
+        theme.section("Squad Highlights")
         if not sq_prof.empty:
             sp = sq_prof.iloc[0]
             hc1, hc2, hc3 = st.columns(3)
@@ -263,28 +268,21 @@ def render() -> None:
             # Most capped / valuable players
             if squad:
                 most_capped = max(squad, key=lambda p: p.get("caps", 0))
-                st.info(
-                    f"🎖️ **Most Capped:** {most_capped['name']}  "
-                    f"({most_capped.get('caps', 0)} caps, {most_capped.get('goals', 0)} goals)"
+                st.caption(
+                    f"Most capped: **{most_capped['name']}** — "
+                    f"{most_capped.get('caps', 0)} caps, {most_capped.get('goals', 0)} goals"
                 )
     else:
         st.warning(f"No squad data found for {team}.")
 
     # ── Historical WC performance ─────────────────────────────────────────────
-    st.markdown("---")
-    st.subheader(f"📅 {team} — World Cup History")
+    theme.section(f"{team} — World Cup History")
 
     try:
         hist_df = load_historical_results()
         wc_hist = _wc_history(hist_df, team)
         if not wc_hist.empty:
             st.caption(f"Last {len(wc_hist)} World Cup matches found in dataset")
-            # Colour result column
-            styled_cols = []
-            for _, r in wc_hist.iterrows():
-                res = r.get("Result", "")
-                emoji = "🟢" if res == "W" else "🔴" if res == "L" else "🟡"
-                styled_cols.append({"Date": r.get("date", ""), **{k: v for k, v in r.items() if k != "date"}})
             st.dataframe(
                 wc_hist.rename(columns={"date": "Date", "tournament": "Tournament"}),
                 use_container_width=True,
@@ -304,8 +302,10 @@ def render() -> None:
 
     # ── Confidence intervals ──────────────────────────────────────────────────
     if mc_probs:
-        st.markdown("---")
-        st.subheader("📐 Confidence Intervals (95%)")
+        theme.section(
+            "Confidence Intervals",
+            "Wilson score intervals at 95% confidence for each tournament stage.",
+        )
         try:
             from src.simulation.results_store import load_results, get_confidence_interval
             results = load_results()

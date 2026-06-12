@@ -1,5 +1,5 @@
 """
-bracket_simulator.py — 🏆 Visual knockout bracket with MC probabilities on each path.
+bracket_simulator.py — Visual knockout bracket with MC probabilities on each path.
 """
 
 from __future__ import annotations
@@ -13,6 +13,7 @@ from dashboard.utils.data_loader import (
     load_mc_probabilities, load_wc_groups, load_predictor,
     flag, flag_team,
 )
+from dashboard.utils import theme
 
 
 # ── MC stage columns ──────────────────────────────────────────────────────────
@@ -27,12 +28,12 @@ STAGE_COLS = {
 
 
 def _prob_colour(p: float) -> str:
-    """Heat colour based on MC probability."""
-    if   p >= 0.15: return "#FFD700"   # gold  — likely winner
-    elif p >= 0.08: return "#F44336"   # red   — strong contender
-    elif p >= 0.04: return "#FF9800"   # orange
-    elif p >= 0.02: return "#FFC107"   # amber
-    else:           return "#4CAF50"   # green — dark horse
+    """Blue intensity scaled to MC probability."""
+    if   p >= 0.15: return "#93C5FD"
+    elif p >= 0.08: return "#60A5FA"
+    elif p >= 0.04: return "#3B82F6"
+    elif p >= 0.02: return "#2563EB"
+    else:           return "#334155"
 
 
 def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
@@ -95,7 +96,7 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
         fig.add_annotation(
             x=round_x[col], y=1.03, xref="paper", yref="paper",
             text=f"<b>{label}</b>", showarrow=False,
-            font=dict(size=13, color="#FFD700"),
+            font=dict(size=12, color="#94A3B8"),
             xanchor="center",
         )
 
@@ -129,14 +130,14 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
                 x=[x], y=[y],
                 mode="markers+text",
                 marker=dict(
-                    size=16,
+                    size=14,
                     color=colour,
                     symbol="square",
-                    line=dict(color="white", width=1),
+                    line=dict(color="rgba(248,250,252,.25)", width=1),
                 ),
                 text=[label],
                 textposition="middle right" if col_idx < 3 else "middle left",
-                textfont=dict(size=9 if n > 8 else 11, color="white"),
+                textfont=dict(size=9 if n > 8 else 11, color="#F8FAFC"),
                 hovertemplate=f"<b>{team}</b><br>P({col_labels[col_idx]}): {p*100:.1f}%<extra></extra>",
                 showlegend=False,
             ))
@@ -145,18 +146,18 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
     champ = mc_df.nlargest(1, "p_winner").iloc[0]
     fig.add_annotation(
         x=round_x[5], y=0.5,
-        text=f"🏆 {flag(champ['team'])} <b>{champ['team']}</b>",
+        text=f"{flag(champ['team'])} <b>{champ['team']}</b>",
         showarrow=False,
-        font=dict(size=16, color="#FFD700"),
+        font=dict(size=15, color="#60A5FA"),
         xanchor="center",
         yshift=20,
     )
 
     fig.update_layout(
-        title=dict(text="WC 2026 Bracket — MC Top Teams by Round", font_size=16),
-        plot_bgcolor="#0E1117",
-        paper_bgcolor="#0E1117",
-        font_color="white",
+        title=dict(text="WC 2026 Bracket — MC Top Teams by Round", font_size=15),
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+        font_color="#F8FAFC",
         height=700,
         xaxis=dict(visible=False, range=[-0.05, 1.1]),
         yaxis=dict(visible=False, range=[-0.02, 1.1]),
@@ -197,32 +198,33 @@ def _run_single_tournament(seed: int) -> dict:
 
 
 def render() -> None:
-    st.title("🏆 Bracket Simulator")
-    st.caption(
-        "Visualise the knockout bracket using Monte Carlo probabilities, "
-        "or run a full single-seed tournament simulation."
+    theme.page_header(
+        title="Bracket Simulator",
+        subtitle=(
+            "Visualise the knockout bracket using Monte Carlo probabilities, "
+            "or run a full single-seed tournament simulation."
+        ),
     )
 
     mc_df  = load_mc_probabilities()
     groups = load_wc_groups()
 
     # ── Tab layout ────────────────────────────────────────────────────────────
-    tab_mc, tab_sim = st.tabs(["📊 MC Probability Bracket", "🎲 Single Tournament Sim"])
+    tab_mc, tab_sim = st.tabs(["Probability Bracket", "Single Tournament"])
 
     # ────────────── Tab 1: MC bracket ────────────────────────────────────────
     with tab_mc:
-        st.subheader("Most Likely Bracket Paths (MC Probabilities)")
-        st.caption(
+        theme.section(
+            "Most Likely Bracket Paths",
             "Each column shows the teams most likely to reach that round, "
-            "coloured by their championship probability."
+            "shaded by championship probability.",
         )
 
         fig = _make_bracket_figure(mc_df, groups)
         st.plotly_chart(fig, use_container_width=True)
 
         # ── Stage probability table ───────────────────────────────────────────
-        st.markdown("---")
-        st.subheader("📋 Full Stage Probability Breakdown")
+        theme.section("Stage Probability Breakdown")
         stage_cols = list(STAGE_COLS.values())
         stage_labels = list(STAGE_COLS.keys())
 
@@ -242,7 +244,10 @@ def render() -> None:
 
     # ────────────── Tab 2: Single simulation ─────────────────────────────────
     with tab_sim:
-        st.subheader("Single Full-Tournament Simulation")
+        theme.section(
+            "Single Full-Tournament Simulation",
+            "One complete tournament run — group stage through the final.",
+        )
 
         col_seed, col_btn = st.columns([2, 1])
         with col_seed:
@@ -252,7 +257,8 @@ def render() -> None:
             )
         with col_btn:
             st.markdown("<br>", unsafe_allow_html=True)
-            run_sim = st.button("▶ Run Tournament", type="primary", key="bs_run")
+            run_sim = st.button("Run tournament", type="primary", key="bs_run",
+                                use_container_width=True)
 
         if run_sim:
             with st.spinner("Simulating full tournament (R32 → Final)…"):
@@ -266,7 +272,7 @@ def render() -> None:
 
         sim = st.session_state.get("bs_sim_result")
         if sim is None:
-            st.info("Click **▶ Run Tournament** to simulate a full bracket.")
+            st.info("Run the tournament to simulate a full bracket.")
             return
 
         # ── Champion callout ──────────────────────────────────────────────────
@@ -276,27 +282,21 @@ def render() -> None:
         runner_p = float(mc_df[mc_df["team"] == runner]["p_winner"].values[0]) * 100
 
         st.markdown("---")
-        ca, cb, cc = st.columns([2, 1, 2])
-        with ca:
-            st.markdown(f"## 🥈 {flag(runner)} {runner}")
-            st.caption(f"MC P(Champion): {runner_p:.1f}%")
-        with cb:
-            st.markdown(
-                f"<h1 style='text-align:center;color:#FFD700'>🏆</h1>",
-                unsafe_allow_html=True,
-            )
-        with cc:
-            st.markdown(f"## 🥇 {flag(champ)} {champ}")
-            st.caption(f"MC P(Champion): {champ_p:.1f}%")
-
-        st.success(
-            f"🏆 **{flag(champ)} {champ}** wins the FIFA World Cup 2026!  "
-            f"Defeated {flag(runner)} {runner} in the Final."
-        )
+        theme.kpi_row([
+            {"label": "World champion",
+             "value": f"{flag(champ)} {champ}",
+             "delta": f"Pre-tournament P(Champion) {champ_p:.1f}%",
+             "delta_class": "accent"},
+            {"label": "Runner-up",
+             "value": f"{flag(runner)} {runner}",
+             "delta": f"Pre-tournament P(Champion) {runner_p:.1f}%"},
+            {"label": "Final",
+             "value": f"{champ} d. {runner}",
+             "delta": f"Seed {st.session_state.get('bs_sim_seed', sim_seed)}"},
+        ])
 
         # ── Round-by-round bracket ────────────────────────────────────────────
-        st.markdown("---")
-        st.subheader("Round-by-Round Results")
+        theme.section("Round-by-Round Results")
         round_map = [
             ("Round of 32 (R32)", sim.get("r32_winners",  [])),
             ("Round of 16 (R16)", sim.get("r16_winners",  [])),
@@ -307,7 +307,7 @@ def render() -> None:
         for round_name, winners in round_map:
             if not winners:
                 continue
-            with st.expander(f"**{round_name}** — {len(winners)} teams", expanded=True):
+            with st.expander(f"{round_name} — {len(winners)} teams", expanded=True):
                 w_cols = st.columns(min(len(winners), 8))
                 for i, team in enumerate(winners):
                     if team is None:
@@ -316,7 +316,7 @@ def render() -> None:
                     with w_cols[i % len(w_cols)]:
                         with st.container(border=True):
                             st.markdown(f"**{flag(team)} {team}**")
-                            st.caption(f"MC: {p:.1f}%")
+                            st.caption(f"MC {p:.1f}%")
 
     st.markdown("---")
     st.caption(

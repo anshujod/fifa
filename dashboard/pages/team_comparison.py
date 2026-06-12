@@ -1,5 +1,5 @@
 """
-team_comparison.py — 🆚 Side-by-side comparison of any two WC 2026 teams.
+team_comparison.py — Side-by-side comparison of any two WC 2026 teams.
 
 Sections
 --------
@@ -25,6 +25,7 @@ from dashboard.utils.data_loader import (
 from dashboard.utils.charts import (
     comparison_radar, tournament_funnel, wc_history_timeline,
 )
+from dashboard.utils import theme
 
 # ── Stage labels ──────────────────────────────────────────────────────────────
 STAGE_LABELS = {
@@ -34,8 +35,6 @@ STAGE_LABELS = {
     "winner": "Champion",
 }
 STAGE_KEYS = list(STAGE_LABELS.keys())
-
-POSITION_COLOURS = {"GK": "🟠", "DF": "🔵", "MF": "🟢", "FW": "🔴"}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -187,7 +186,7 @@ def _squad_block(team: str) -> None:
 
     all_rows = [
         {
-            f"{POSITION_COLOURS.get(p.get('position','?'), '⚪')} Pos": p.get("position", "?"),
+            "Pos":   p.get("position", "?"),
             "Name":  p.get("name", "?"),
             "Club":  p.get("club", "?"),
             "Age":   p.get("age", "?"),
@@ -216,9 +215,9 @@ def _squad_block(team: str) -> None:
     # Star player callout
     try:
         star = max(squad, key=lambda p: p.get("caps", 0))
-        st.info(
-            f"⭐ **Most capped:** {star['name']} "
-            f"({star.get('caps',0)} caps, {star.get('goals',0)} goals)"
+        st.caption(
+            f"Most capped: **{star['name']}** — "
+            f"{star.get('caps',0)} caps, {star.get('goals',0)} goals"
         )
     except Exception:
         pass
@@ -229,10 +228,12 @@ def _squad_block(team: str) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def render() -> None:
-    st.title("🆚 Team Comparison")
-    st.caption(
-        "Compare any two World Cup 2026 teams across stats, squad, H2H record, "
-        "and historical World Cup performance."
+    theme.page_header(
+        title="Team Comparison",
+        subtitle=(
+            "Compare any two World Cup 2026 teams across stats, squad, "
+            "head-to-head record, and historical World Cup performance."
+        ),
     )
 
     # ── Load shared data ──────────────────────────────────────────────────────
@@ -251,8 +252,11 @@ def render() -> None:
             format_func=flag_team, key="tc_team1",
         )
     with vs_col:
-        st.markdown("<br><br><h3 style='text-align:center'>VS</h3>",
-                    unsafe_allow_html=True)
+        st.markdown(
+            "<div style='text-align:center;margin-top:38px;font-size:13px;"
+            "font-weight:600;letter-spacing:.08em;color:#94A3B8'>VS</div>",
+            unsafe_allow_html=True,
+        )
     with col2:
         default2 = "Argentina" if "Argentina" in all_teams else all_teams[1]
         team2 = st.selectbox(
@@ -281,8 +285,7 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 1: Key Metrics
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("📊 Key Metrics Comparison")
+    theme.section("Key Metrics", "Side-by-side numbers with the stronger value highlighted.")
 
     metric_rows = []
     def _add(label, v1, v2, fmt="{}", higher_is_better=True):
@@ -340,11 +343,10 @@ def render() -> None:
     # colour "Better" column
     def _colour_row(row):
         styles = [""] * len(row)
-        idx = list(metrics_df.columns).index("Better")
         if row["Better"] == team1:
-            styles[1] = "background-color:#0D3B0D; font-weight:bold"
+            styles[1] = "background-color:rgba(16,185,129,.10); font-weight:600"
         elif row["Better"] == team2:
-            styles[2] = "background-color:#0D3B0D; font-weight:bold"
+            styles[2] = "background-color:rgba(16,185,129,.10); font-weight:600"
         return styles
 
     st.dataframe(
@@ -355,11 +357,10 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 2: Radar Chart
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("🎯 Multi-Dimensional Radar Comparison")
-    st.caption(
-        "All 8 dimensions are **normalised to 0–100** across all 48 World Cup teams.  "
-        "H2H is the historical win rate between these two specific teams."
+    theme.section(
+        "Multi-Dimensional Comparison",
+        "All 8 dimensions are normalised to 0–100 across all 48 World Cup teams. "
+        "H2H is the historical win rate between these two specific teams.",
     )
 
     ranges = _population_ranges(snap_df, elo_df, squad_prof)
@@ -370,35 +371,34 @@ def render() -> None:
     vals2 = _radar_vals(snap2, elo2, sq2, h2h_t2, ranges)
 
     categories = [
-        "⚽ Attack", "🛡️ Defence", "📈 Form",
-        "📊 ELO", "🏅 FIFA Rank",
-        "💰 Squad\nValue", "🎖️ Experience", "⚔️ H2H",
+        "Attack", "Defence", "Form",
+        "Elo", "FIFA Rank",
+        "Squad\nValue", "Experience", "H2H",
     ]
     fig_radar = comparison_radar(vals1, vals2, team1, team2, categories)
     st.plotly_chart(fig_radar, use_container_width=True)
 
     # Radar dimension explainer
-    with st.expander("ℹ️ How each dimension is calculated"):
+    with st.expander("How each dimension is calculated"):
         st.markdown(
             """
 | Dimension | Source | Notes |
 |---|---|---|
-| ⚽ Attack | Goals scored avg (last 10 matches) | Normalised across 48 teams |
-| 🛡️ Defence | Goals conceded avg (last 10) — inverted | Lower conceded = higher score |
-| 📈 Form | Win % last 10 matches | 0–100% → 0–1 |
-| 📊 ELO | Current ELO rating | Normalised to [1200–2200] range |
-| 🏅 FIFA Rank | ELO rank — inverted | Lower rank number = higher score |
-| 💰 Squad Value | Log(squad market value €) | Normalised across 48 teams |
-| 🎖️ Experience | Experience score (caps × WC apps) | Normalised across 48 teams |
-| ⚔️ H2H | Historical win rate between these two teams | 0.5 if no head-to-head data |
+| Attack | Goals scored avg (last 10 matches) | Normalised across 48 teams |
+| Defence | Goals conceded avg (last 10) — inverted | Lower conceded = higher score |
+| Form | Win % last 10 matches | 0–100% → 0–1 |
+| Elo | Current Elo rating | Normalised to [1200–2200] range |
+| FIFA Rank | Elo rank — inverted | Lower rank number = higher score |
+| Squad Value | Log(squad market value €) | Normalised across 48 teams |
+| Experience | Experience score (caps × WC apps) | Normalised across 48 teams |
+| H2H | Historical win rate between these two teams | 0.5 if no head-to-head data |
 """
         )
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 3: Tournament Probability Comparison
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("🏆 Tournament Probabilities")
+    theme.section("Tournament Probabilities")
 
     if mc1 is not None and mc2 is not None:
         fig_funnel = tournament_funnel(mc_df, [team1, team2])
@@ -415,7 +415,7 @@ def render() -> None:
                 "Stage": label,
                 f"{flag(team1)} {team1}": f"{p1*100:.1f}%",
                 f"{flag(team2)} {team2}": f"{p2*100:.1f}%",
-                "Edge": f"▲ {team1}" if p1 > p2 else (f"▲ {team2}" if p2 > p1 else "Even"),
+                "Edge": team1 if p1 > p2 else (team2 if p2 > p1 else "Even"),
             })
         st.dataframe(pd.DataFrame(prob_rows), use_container_width=True, hide_index=True)
     else:
@@ -424,8 +424,7 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 4: Squad Comparison
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("👥 Squad Comparison")
+    theme.section("Squad Comparison")
     sq_col1, sq_col2 = st.columns(2)
     with sq_col1:
         st.markdown(f"#### {flag(team1)} {team1}")
@@ -437,8 +436,7 @@ def render() -> None:
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 5: Head-to-Head History
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader(f"⚔️ Head-to-Head: {flag(team1)} {team1} vs {flag(team2)} {team2}")
+    theme.section(f"Head-to-Head — {team1} vs {team2}")
 
     total = h2h["total"]
     if total == 0:
@@ -461,14 +459,17 @@ def render() -> None:
         d_pct  = h2h["draws"] / total
         st.markdown(
             f"""
-<div style="margin:10px 0; border-radius:6px; overflow:hidden; height:18px; display:flex">
-  <div style="width:{t1_pct*100:.1f}%; background:#2196F3; min-width:1px;"></div>
-  <div style="width:{d_pct*100:.1f}%;  background:#9E9E9E; min-width:1px;"></div>
-  <div style="width:{t2_pct*100:.1f}%; background:#F44336; min-width:1px;"></div>
+<div style="margin:14px 0 0; border-radius:99px; overflow:hidden; height:10px; display:flex;
+            background:rgba(148,163,184,.12)">
+  <div style="width:{t1_pct*100:.1f}%; background:#3B82F6; min-width:1px;"></div>
+  <div style="width:{d_pct*100:.1f}%;  background:#475569; min-width:1px;"></div>
+  <div style="width:{t2_pct*100:.1f}%; background:#94A3B8; min-width:1px;"></div>
 </div>
-<p style="font-size:12px; color:#9E9E9E; text-align:center">
-  {flag(team1)} {t1_pct*100:.0f}% wins &nbsp;|&nbsp; {d_pct*100:.0f}% draws &nbsp;|&nbsp; {t2_pct*100:.0f}% wins {flag(team2)}
-</p>
+<div style="display:flex; justify-content:space-between; font-size:12px; color:#94A3B8; margin:8px 0 14px">
+  <span><b style='color:#F8FAFC'>{team1}</b> {t1_pct*100:.0f}% wins</span>
+  <span>{d_pct*100:.0f}% draws</span>
+  <span><b style='color:#F8FAFC'>{team2}</b> {t2_pct*100:.0f}% wins</span>
+</div>
 """,
             unsafe_allow_html=True,
         )
@@ -485,26 +486,25 @@ def render() -> None:
                 away_win = int(ag_val) > int(hg_val)
             except Exception:
                 pass
-            result_icon = ("🔵" if (home_win and m["home"] == team1) or
-                                    (away_win and m["away"] == team1)
-                           else "🔴" if (home_win and m["home"] == team2) or
-                                         (away_win and m["away"] == team2)
-                           else "⚪")
+            result_lbl = (f"{team1} win" if (home_win and m["home"] == team1) or
+                                            (away_win and m["away"] == team1)
+                          else f"{team2} win" if (home_win and m["home"] == team2) or
+                                                 (away_win and m["away"] == team2)
+                          else "Draw")
             match_rows.append({
                 "Date":       m["date"][:10],
                 "Home":       f"{flag(m['home'])} {m['home']}",
                 "Score":      m["score"],
                 "Away":       f"{flag(m['away'])} {m['away']}",
                 "Tournament": m["tournament"],
-                "Result":     result_icon,
+                "Result":     result_lbl,
             })
         st.dataframe(pd.DataFrame(match_rows), use_container_width=True, hide_index=True)
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 6: WC History Timeline
     # ═══════════════════════════════════════════════════════════════════════════
-    st.markdown("---")
-    st.subheader("📅 World Cup History Timeline")
+    theme.section("World Cup History Timeline")
 
     try:
         hist_df = load_historical_results()

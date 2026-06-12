@@ -1,5 +1,5 @@
 """
-group_standings.py — 📊 Simulate a group stage live and see standings.
+group_standings.py — Simulate a group stage live and see standings.
 """
 
 from __future__ import annotations
@@ -12,17 +12,16 @@ from dashboard.utils.data_loader import (
     load_wc_groups, simulate_group_live, load_mc_probabilities, flag,
 )
 from dashboard.utils.charts import group_standings_bar, goals_chart, plot_group_standings
-
-
-def _standing_emoji(rank: int) -> str:
-    return ["🥇", "🥈", "🥉", "❌"][min(rank, 3)]
+from dashboard.utils import theme
 
 
 def render() -> None:
-    st.title("📊 Group Stage Simulator")
-    st.caption(
-        "Pick a group, set a random seed, and simulate the full round-robin. "
-        "Run multiple seeds to see how standings fluctuate."
+    theme.page_header(
+        title="Group Stage Simulator",
+        subtitle=(
+            "Pick a group, set a random seed, and simulate the full round-robin. "
+            "Run multiple seeds to see how standings fluctuate."
+        ),
     )
 
     groups = load_wc_groups()
@@ -32,33 +31,41 @@ def render() -> None:
     ctrl_col, seed_col, btn_col = st.columns([2, 2, 1])
     with ctrl_col:
         group_id = st.selectbox(
-            "Select Group", sorted(groups.keys()), key="gs_group"
+            "Select group", sorted(groups.keys()), key="gs_group"
         )
     with seed_col:
         seed = st.number_input(
-            "Random Seed", min_value=0, max_value=999_999,
+            "Random seed", min_value=0, max_value=999_999,
             value=42, step=1, key="gs_seed"
         )
     with btn_col:
         st.markdown("<br>", unsafe_allow_html=True)
-        run = st.button("▶ Simulate", type="primary", key="gs_run")
+        run = st.button("Simulate", type="primary", key="gs_run",
+                        use_container_width=True)
 
     # ── MC prior probabilities for this group ─────────────────────────────────
     group_teams = groups[group_id]
     mc_group = mc_df[mc_df["team"].isin(group_teams)].copy()
 
-    st.markdown("---")
-    st.subheader(f"Group {group_id} — MC Prior Probabilities")
-    prior_cols = st.columns(len(group_teams))
-    for i, (_, row) in enumerate(
-        mc_group.sort_values("p_winner", ascending=False).iterrows()
-    ):
-        with prior_cols[i]:
-            with st.container(border=True):
-                st.markdown(f"#### {flag(row['team'])} {row['team']}")
-                st.metric("P(Champion)", f"{row['p_winner']*100:.1f}%")
-                st.metric("P(Qualify)",  f"{row['p_group_qualify']*100:.1f}%")
-                st.metric("P(R32 Win)",  f"{row['p_round_of_32']*100:.1f}%")
+    theme.section(
+        f"Group {group_id} — Monte Carlo Priors",
+        "Tournament probabilities before the simulated round-robin.",
+    )
+    theme.team_prob_cards([
+        {
+            "flag":       flag(row["team"]),
+            "team":       row["team"],
+            "main_label": "Champion",
+            "main_value": f"{row['p_winner']*100:.1f}%",
+            "metrics": [
+                ("Qualification", f"{row['p_group_qualify']*100:.1f}%"),
+                ("Round of 32",   f"{row['p_round_of_32']*100:.1f}%"),
+                ("Quarter-final", f"{row['p_quarter_final']*100:.1f}%"),
+                ("Semi-final",    f"{row['p_semi_final']*100:.1f}%"),
+            ],
+        }
+        for _, row in mc_group.sort_values("p_winner", ascending=False).iterrows()
+    ])
 
     # ── Run simulation ────────────────────────────────────────────────────────
     # Only auto-run on first ever visit; after that require button click
@@ -80,34 +87,39 @@ def render() -> None:
         st.session_state["gs_last_seed"]   = int(seed)
 
     if standings is None:
-        st.info("Click **▶ Simulate** to run the group stage.")
+        st.info("Run the simulation to see group standings.")
         return
 
-    st.markdown("---")
-    st.subheader(
-        f"Group {group_id} Simulation Results  (seed = {st.session_state['gs_last_seed']})"
+    theme.section(
+        f"Group {group_id} — Simulation Results",
+        f"Single round-robin · seed {st.session_state['gs_last_seed']}",
     )
 
     ranking = standings.ranking  # list[str] — 1st to 4th
     records = standings.records
 
-    # ── Plotly standings table (colour-coded qualification zones) ─────────────
+    # ── Standings table (colour-coded qualification zones) ────────────────────
     fig_table = plot_group_standings(records, ranking, group_id)
     st.plotly_chart(fig_table, use_container_width=True)
 
-    # ── Qualifier callout ─────────────────────────────────────────────────────
-    q1, q2, q3 = st.columns(3)
-    with q1:
-        st.success(f"🥇 **Winner:** {flag(ranking[0])} {ranking[0]}")
-    with q2:
-        st.success(f"🥈 **Runner-up:** {flag(ranking[1])} {ranking[1]}")
-    with q3:
-        st.warning(f"🔁 **3rd place:** {flag(ranking[2])} {ranking[2]} (may qualify)")
-
-    st.markdown("---")
+    # ── Qualifier summary ─────────────────────────────────────────────────────
+    theme.kpi_row([
+        {"label": "Group winner",
+         "value": f"{flag(ranking[0])} {ranking[0]}",
+         "delta": "Qualified", "delta_class": "up"},
+        {"label": "Runner-up",
+         "value": f"{flag(ranking[1])} {ranking[1]}",
+         "delta": "Qualified", "delta_class": "up"},
+        {"label": "Third place",
+         "value": f"{flag(ranking[2])} {ranking[2]}",
+         "delta": "May qualify as best third"},
+        {"label": "Fourth place",
+         "value": f"{flag(ranking[3])} {ranking[3]}",
+         "delta": "Eliminated"},
+    ])
 
     # ── Charts ────────────────────────────────────────────────────────────────
-    ch1, ch2 = st.columns(2)
+    ch1, ch2 = st.columns(2, gap="large")
     with ch1:
         fig_bar = group_standings_bar(records, group_id)
         st.plotly_chart(fig_bar, use_container_width=True)
@@ -116,8 +128,7 @@ def render() -> None:
         st.plotly_chart(fig_goals, use_container_width=True)
 
     # ── Match results grid ────────────────────────────────────────────────────
-    st.markdown("---")
-    st.subheader("🏟️ Match Results")
+    theme.section("Match Results", "All six round-robin fixtures from this simulation.")
     match_rows = []
     for mr in standings.results:
         winner = (
@@ -126,20 +137,19 @@ def render() -> None:
             "Draw"
         )
         match_rows.append({
-            "Home":        f"{flag(mr.home)} {mr.home}",
-            "Score":       f"**{mr.home_goals} – {mr.away_goals}**",
-            "Away":        f"{flag(mr.away)} {mr.away}",
-            "Result":      ("🟢 Home Win" if winner == mr.home else
-                           "🟡 Draw"     if winner == "Draw" else
-                           "🔴 Away Win"),
+            "Home":   f"{flag(mr.home)} {mr.home}",
+            "Score":  f"{mr.home_goals} – {mr.away_goals}",
+            "Away":   f"{flag(mr.away)} {mr.away}",
+            "Result": ("Home win" if winner == mr.home else
+                       "Draw"     if winner == "Draw" else
+                       "Away win"),
         })
     st.dataframe(pd.DataFrame(match_rows), use_container_width=True, hide_index=True)
 
     # ── Multi-seed stability ──────────────────────────────────────────────────
-    st.markdown("---")
-    st.subheader("🔄 Stability Check — Multiple Seeds")
-    st.caption(
-        "Run the group 10 times to see how often each team finishes in each position."
+    theme.section(
+        "Stability Check",
+        "Run the group 10 times to see how often each team finishes in each position.",
     )
     if st.button("Run 10-seed stability check", key="gs_stability"):
         pos_counts: dict[str, list[int]] = {t: [0, 0, 0, 0] for t in group_teams}
