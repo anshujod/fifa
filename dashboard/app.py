@@ -101,7 +101,7 @@ with st.sidebar:
         pass
 
     st.markdown("---")
-    st.caption("Poisson · XGBoost · LightGBM · Elo")
+    st.caption("Simulation-driven tournament intelligence")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Page routing
