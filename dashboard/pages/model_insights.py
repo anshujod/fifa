@@ -112,7 +112,7 @@ def render() -> None:
         if source == "SHAP":
             st.caption("Source: SHAP TreeExplainer values")
         else:
-            st.warning("SHAP unavailable — showing native XGBoost gain importance instead")
+            st.caption("Source: Native XGBoost gain importance")
 
         fig_imp = plot_feature_importance(imp_df)
         st.plotly_chart(fig_imp, use_container_width=True)
@@ -238,9 +238,10 @@ def render() -> None:
             fig_dep = sa.plot_dependency_grid(top_n=n_dep, outcome_class=shap_class)
             st.plotly_chart(fig_dep, use_container_width=True)
 
+    except ModuleNotFoundError:
+        st.caption("SHAP is not installed — deep-dive plots are unavailable.")
     except Exception as shap_exc:
-        st.error(f"SHAP plots could not be generated: {shap_exc}")
-        st.caption("Ensure SHAP is installed: `pip install shap`")
+        st.caption(f"SHAP plots could not be loaded: {shap_exc}")
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 3: Ensemble Architecture

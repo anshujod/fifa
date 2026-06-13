@@ -82,9 +82,6 @@ with st.sidebar:
     try:
         from dashboard.utils.data_loader import load_mc_probabilities, load_mc_results_json
 
-        meta = load_mc_results_json().get("metadata", {})
-        theme.sidebar_status(int(meta.get("n_simulations", 10_000)))
-
         mc = load_mc_probabilities()
         top3 = mc.nlargest(3, "p_winner")[["team", "p_winner"]]
         st.markdown(
