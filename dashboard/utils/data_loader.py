@@ -50,6 +50,28 @@ TIER_COLOURS: dict[str, str] = {
     "grey":   "#9E9E9E",
 }
 
+# ─────────────────────────────────────────────────────────────────────────────
+# ISO 3166-1 alpha-2 lookup → crisp rectangular broadcast flags (flagcdn.com)
+# Used by the cinematic hero / contenders board where emoji flags render
+# inconsistently across platforms.
+# ─────────────────────────────────────────────────────────────────────────────
+_ISO_MAP: dict[str, str] = {
+    "Algeria": "dz", "Argentina": "ar", "Australia": "au", "Austria": "at",
+    "Belgium": "be", "Bosnia and Herzegovina": "ba", "Brazil": "br",
+    "Canada": "ca", "Cape Verde": "cv", "Colombia": "co", "Croatia": "hr",
+    "Curaçao": "cw", "Czech Republic": "cz", "DR Congo": "cd",
+    "Ecuador": "ec", "Egypt": "eg", "England": "gb-eng", "France": "fr",
+    "Germany": "de", "Ghana": "gh", "Haiti": "ht", "Iran": "ir",
+    "Iraq": "iq", "Ivory Coast": "ci", "Japan": "jp", "Jordan": "jo",
+    "Mexico": "mx", "Morocco": "ma", "Netherlands": "nl",
+    "New Zealand": "nz", "Norway": "no", "Panama": "pa",
+    "Paraguay": "py", "Portugal": "pt", "Qatar": "qa",
+    "Saudi Arabia": "sa", "Scotland": "gb-sct", "Senegal": "sn",
+    "South Africa": "za", "South Korea": "kr", "Spain": "es",
+    "Sweden": "se", "Switzerland": "ch", "Tunisia": "tn", "Turkey": "tr",
+    "United States": "us", "Uruguay": "uy", "Uzbekistan": "uz",
+}
+
 
 def flag(team: str) -> str:
     return _FLAG_MAP.get(team, "🌍")
@@ -58,6 +80,23 @@ def flag(team: str) -> str:
 def flag_team(team: str) -> str:
     """Return '🇪🇸 Spain'."""
     return f"{flag(team)} {team}"
+
+
+def flag_code(team: str) -> str | None:
+    """Return the flagcdn ISO code for a team, or None if unknown."""
+    return _ISO_MAP.get(team)
+
+
+def flag_url(team: str, width: int = 80) -> str:
+    """
+    Return a crisp rectangular flag image URL (flagcdn.com) for `team`.
+    `width` is one of flagcdn's supported widths (40, 80, 160, 320 ...).
+    Falls back to a neutral globe placeholder for unknown teams.
+    """
+    code = _ISO_MAP.get(team)
+    if not code:
+        return "https://flagcdn.com/w80/un.png"
+    return f"https://flagcdn.com/w{width}/{code}.png"
 
 
 # ─────────────────────────────────────────────────────────────────────────────

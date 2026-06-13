@@ -12,20 +12,28 @@ from plotly.subplots import make_subplots
 
 
 # ── colour palette ────────────────────────────────────────────────────────────
-ACCENT   = "#3B82F6"
-ACCENT_2 = "#60A5FA"
-SUCCESS  = "#10B981"
+ACCENT   = "#4C8DFF"
+ACCENT_2 = "#7DB0FF"
+GOLD     = "#E9C46A"
+GOLD_2   = "#F2D98C"
+SUCCESS  = "#34D399"
 WARNING  = "#F59E0B"
-ERROR    = "#EF4444"
+ERROR    = "#F87171"
 NEUTRAL  = "#64748B"
-TEXT     = "#F8FAFC"
-TEXT_DIM = "#94A3B8"
+TEXT     = "#F4F7FB"
+TEXT_DIM = "#8B97AD"
 BLUE     = ACCENT
 BG       = "rgba(0,0,0,0)"  # transparent — lets the app background show through
-CARD     = "#172033"        # surface background
+CARD     = "#10182B"        # surface background
 
 # blue ramp for sequential / staged data (dark → light)
-BLUE_RAMP = ["#1E3A8A", "#1D4ED8", "#2563EB", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE"]
+BLUE_RAMP = ["#1E3A8A", "#2563EB", "#3B82F6", "#4C8DFF", "#7DB0FF", "#A9CBFF", "#CFE0FF"]
+
+# field-blue ramp with a gold cap reserved for the clear leader
+PROB_RAMP = [
+    [0.0, "#16203A"], [0.30, "#1E3A8A"], [0.58, "#2E6BE0"],
+    [0.80, "#4C8DFF"], [0.92, "#7DB0FF"], [0.965, "#C9A24B"], [1.0, "#F2D98C"],
+]
 
 # ── global template (Inter, soft grid, restrained colorway) ──────────────────
 pio.templates["wc_premium"] = go.layout.Template(
@@ -42,8 +50,8 @@ pio.templates["wc_premium"] = go.layout.Template(
         xaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
         yaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
         legend=dict(bgcolor="rgba(0,0,0,0)"),
-        colorway=["#3B82F6", "#60A5FA", "#10B981", "#94A3B8",
-                  "#F59E0B", "#818CF8", "#2DD4BF", "#CBD5E1"],
+        colorway=["#4C8DFF", "#E9C46A", "#7DB0FF", "#34D399",
+                  "#818CF8", "#2DD4BF", "#F59E0B", "#CBD5E1"],
         margin=dict(t=56, b=44, l=56, r=24),
     )
 )
@@ -109,8 +117,8 @@ def tournament_funnel(df: pd.DataFrame, teams: list[str]) -> go.Figure:
     labels = list(STAGE_LABELS.values())
 
     fig = go.Figure()
-    palette = ["#3B82F6", "#60A5FA", "#10B981", "#94A3B8", "#F59E0B",
-               "#818CF8", "#2DD4BF", "#CBD5E1"]
+    palette = ["#E9C46A", "#4C8DFF", "#7DB0FF", "#34D399", "#818CF8",
+               "#2DD4BF", "#F59E0B", "#CBD5E1"]
     for i, team in enumerate(teams):
         row = df[df["team"] == team]
         if row.empty:
@@ -137,6 +145,41 @@ def tournament_funnel(df: pd.DataFrame, teams: list[str]) -> go.Figure:
         yaxis=dict(gridcolor="rgba(148,163,184,.10)", range=[0, 105]),
         xaxis=dict(gridcolor="rgba(148,163,184,.10)"),
         margin=dict(t=50, b=40, l=60, r=20),
+    )
+    return fig
+
+
+def probability_landscape(df: pd.DataFrame) -> go.Figure:
+    """
+    Treemap of all 48 nations, each tile sized and shaded by P(champion).
+    A single broadcast-grade visual that shows the entire field at a glance.
+    """
+    d = df.sort_values("p_winner", ascending=False).copy()
+    pct = d["p_winner"] * 100
+    labels = [f"{t}<br><b>{p:.1f}%</b>" for t, p in zip(d["team"], pct)]
+
+    fig = go.Figure(go.Treemap(
+        labels=labels,
+        parents=[""] * len(d),
+        values=d["p_winner"],
+        marker=dict(
+            colors=d["p_winner"],
+            colorscale=PROB_RAMP,
+            line=dict(width=2, color="#070B14"),
+            cornerradius=6,
+        ),
+        text=d["team"],
+        textinfo="label",
+        textfont=dict(family="Space Grotesk, Inter, sans-serif", size=14, color="#F4F7FB"),
+        hovertemplate="<b>%{text}</b><br>Championship probability: %{value:.2%}<extra></extra>",
+        tiling=dict(pad=3),
+        sort=True,
+    ))
+    fig.update_layout(
+        plot_bgcolor=BG, paper_bgcolor=BG,
+        font_color=TEXT,
+        height=460,
+        margin=dict(t=10, b=10, l=6, r=6),
     )
     return fig
 
@@ -195,12 +238,27 @@ def scoreline_heatmap(
         colorscale="Blues",
         text=[[f"{grid[i, j]:.1f}%" for j in range(max_goals + 1)]
               for i in range(max_goals + 1)],
-        texttemplate="%{text}",
         hovertemplate=f"<b>{home} %{{y}} – %{{x}} {away}</b><br>Prob: %{{text}}<extra></extra>",
         showscale=True,
         colorbar=dict(title="Prob %", ticksuffix="%", tickfont_color="white",
                       title_font_color="white"),
     ))
+
+    # Per-cell labels: the Blues scale runs near-white (low) → deep blue (high),
+    # so a single text colour fails one end. Ink the labels by their own value —
+    # dark ink on light cells, white on saturated cells — to clear WCAG contrast.
+    cell_threshold = grid.max() * 0.55 if grid.max() else 1.0
+    for i in range(max_goals + 1):
+        for j in range(max_goals + 1):
+            fig.add_annotation(
+                x=str(j), y=str(i), text=f"{grid[i, j]:.1f}%",
+                showarrow=False,
+                font=dict(
+                    color="#F4F7FB" if grid[i, j] >= cell_threshold else "#0B1020",
+                    size=12,
+                ),
+            )
+
     fig.update_layout(
         title=f"Scoreline Probability Matrix",
         xaxis_title=f"{away} Goals",
@@ -307,7 +365,8 @@ def squad_position_pie(squad: list[dict], team: str) -> go.Figure:
     from collections import Counter
     counts = Counter(p.get("position", "?") for p in squad)
     pos_order = ["GK", "DF", "MF", "FW"]
-    colours = {"GK": "#1D4ED8", "DF": "#3B82F6", "MF": "#60A5FA", "FW": "#93C5FD"}
+    # Monochrome brand-blue ramp (deep → light) across the four position groups
+    colours = {"GK": BLUE_RAMP[1], "DF": BLUE_RAMP[2], "MF": ACCENT, "FW": ACCENT_2}
     labels = [p for p in pos_order if p in counts]
     values = [counts[p] for p in labels]
 
@@ -351,8 +410,8 @@ def form_radar(snapshot: pd.Series, team: str) -> go.Figure:
     fig = go.Figure(go.Scatterpolar(
         r=vals, theta=cats,
         fill="toself",
-        fillcolor="rgba(59, 130, 246, 0.18)",
-        line=dict(color="#3B82F6", width=2),
+        fillcolor="rgba(76, 141, 255, 0.18)",
+        line=dict(color=ACCENT, width=2),
         name=team,
     ))
     fig.update_layout(
@@ -555,8 +614,8 @@ def plot_group_standings(
     """
     n_rows = len(ranking)
     zone_fill = {
-        0: "rgba(16,185,129,.08)", 1: "rgba(16,185,129,.08)",
-        2: "rgba(245,158,11,.07)", 3: "rgba(148,163,184,.04)",
+        0: "rgba(52,211,153,.08)", 1: "rgba(52,211,153,.08)",   # brand SUCCESS — qualify
+        2: "rgba(245,158,11,.07)", 3: "rgba(148,163,184,.04)",  # brand WARNING — third / out
     }
     row_colors = [zone_fill.get(i, "rgba(0,0,0,0)") for i in range(n_rows)]
 
@@ -630,9 +689,9 @@ def plot_feature_importance(imp_df: "pd.DataFrame") -> go.Figure:
         return fig
 
     CAT_COL: dict[str, str] = {
-        "ELO/Ranking":    "#3B82F6",
-        "Expected Goals": "#10B981",
-        "Head-to-Head":   "#F59E0B",
+        "ELO/Ranking":    ACCENT,     # brand electric blue
+        "Expected Goals": SUCCESS,    # brand green
+        "Head-to-Head":   WARNING,    # brand amber
         "Confederation":  "#818CF8",
         "Form/Momentum":  "#60A5FA",
         "Goals":          "#2DD4BF",

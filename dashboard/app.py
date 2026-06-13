@@ -34,7 +34,7 @@ import streamlit as st
 # Page config (must be the first Streamlit call)
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="WC 2026 — Prediction Engine",
+    page_title="FIFA World Cup 2026",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -69,29 +69,37 @@ PAGES = [
 with st.sidebar:
     theme.sidebar_logo()
 
+    # Deep-linkable pages: ?page=Model+Insights selects on load and the URL
+    # stays in sync, so individual pages can be shared (and audited) directly.
+    _qp = st.query_params.get("page")
+    _default = PAGES.index(_qp) if _qp in PAGES else 0
     page = st.radio(
         "Navigate",
         options=PAGES,
+        index=_default,
         key="nav_page",
         label_visibility="collapsed",
     )
+    if st.query_params.get("page") != page:
+        st.query_params["page"] = page
 
     st.markdown("---")
 
     # Model status + quick stats
     try:
-        from dashboard.utils.data_loader import load_mc_probabilities, load_mc_results_json
+        from dashboard.utils.data_loader import load_mc_probabilities, flag_url
 
         mc = load_mc_probabilities()
         top3 = mc.nlargest(3, "p_winner")[["team", "p_winner"]]
         st.markdown(
-            "<div style='font-size:11px;font-weight:600;letter-spacing:.09em;"
-            "text-transform:uppercase;color:#94A3B8;margin:16px 0 6px 4px'>"
+            f"<div style='font-size:11px;font-weight:700;letter-spacing:.12em;"
+            f"text-transform:uppercase;color:{theme.TEXT_3};margin:16px 0 8px 4px'>"
             "Title favourites</div>",
             unsafe_allow_html=True,
         )
         theme.sidebar_favourites([
-            {"pos": i + 1, "team": row["team"], "pct": f"{row['p_winner']*100:.1f}%"}
+            {"pos": i + 1, "team": row["team"], "pct": f"{row['p_winner']*100:.1f}%",
+             "flag_url": flag_url(row["team"], 40)}
             for i, (_, row) in enumerate(top3.iterrows())
         ])
     except Exception:
@@ -103,7 +111,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────────────────────
 # Page routing
 # ─────────────────────────────────────────────────────────────────────────────
-from dashboard.pages import (
+from dashboard.views import (
     home,
     match_predictor,
     group_standings,
