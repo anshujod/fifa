@@ -170,13 +170,41 @@ section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.07); }
     [data-testid="stExpandSidebarButton"] { display: none !important; }
     [data-testid="stMain"] { position: relative !important; inset: auto !important; }
 }
-/* On phones, the sidebar overlays the content when open — give it near-full
-   width and a clear expand affordance. */
+/* On phones the nav can't hide behind a collapse control — stack the whole
+   sidebar full-width ON TOP of the content (in normal flow), so navigation is
+   always visible and the page gets full width below it. The page links lay out
+   as compact wrapping chips so all 7 fit in a couple of rows. */
 @media (max-width: 768px) {
-    section[data-testid="stSidebar"] { min-width: 82vw !important; width: 82vw !important; }
-    [data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapseButton"] {
-        display: flex !important; color: #3AC9E0 !important;
+    [data-testid="stAppViewContainer"] { flex-direction: column !important; }
+    section[data-testid="stSidebar"] {
+        position: relative !important;
+        transform: none !important;
+        visibility: visible !important;
+        min-width: 100% !important; width: 100% !important; max-width: 100% !important;
+        margin: 0 !important;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255,255,255,.08) !important;
     }
+    [data-testid="stSidebarContent"] { display: flex !important; }
+    section[data-testid="stSidebar"] .block-container { padding: 0.8rem 1rem 1rem !important; }
+    [data-testid="stMain"] { position: relative !important; inset: auto !important; }
+    [data-testid="stSidebarCollapseButton"],
+    [data-testid="stExpandSidebarButton"] { display: none !important; }
+    /* Page links → wrapping horizontal chips */
+    section[data-testid="stSidebar"] div[role="radiogroup"] {
+        flex-direction: row !important; flex-wrap: wrap !important; gap: 6px !important;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label {
+        width: auto !important;
+        background: #161B23 !important; border-color: rgba(255,255,255,.10) !important;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) {
+        background: rgba(58,201,224,.12) !important; border-color: rgba(58,201,224,.40) !important;
+    }
+    /* Tighten the banner: drop the dividers and the status line */
+    .sb-status { display: none !important; }
+    section[data-testid="stSidebar"] hr { display: none !important; margin: 0 !important; }
+    section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { display: none !important; }
 }
 
 /* ── Native metric cards ───────────────────────────────────────────────── */
