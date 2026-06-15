@@ -1,91 +1,87 @@
 ---
-name: World Cup 2026 Prediction Lab
-description: Broadcast-grade dark analytics dashboard for FIFA World Cup 2026 forecasting.
+name: World Cup 2026 Forecasting Terminal
+description: A near-black, monospace, single-cyan-accent trading-terminal for FIFA World Cup 2026 forecasts.
 colors:
-  bg: "#070B14"
-  bg-2: "#0B1020"
-  surface: "#10182B"
-  surface-2: "#16203A"
-  border: "#94A3B81A"
-  text: "#F4F7FB"
-  text-2: "#AEB9CC"
-  text-3: "#8B98AF"
-  gold: "#E9C46A"
-  gold-2: "#F2D98C"
-  gold-deep: "#C9A24B"
-  accent: "#4C8DFF"
-  accent-2: "#7DB0FF"
-  success: "#34D399"
-  warning: "#F59E0B"
-  error: "#F87171"
+  bg: "#0A0C10"
+  bg-2: "#0D1016"
+  surface: "#11151C"
+  surface-2: "#161B23"
+  border: "#FFFFFF14"
+  grid: "#FFFFFF08"
+  text: "#E6EDF3"
+  text-2: "#9BA7B4"
+  text-3: "#7D8794"
+  accent: "#3AC9E0"
+  accent-bright: "#74E2F2"
+  accent-deep: "#1C6E7E"
+  champion: "#E8A33D"
+  champion-bright: "#F4C36B"
+  pos: "#3FB950"
+  neg: "#F85149"
+  warn: "#D29922"
 typography:
   display:
-    fontFamily: "Space Grotesk, Inter, sans-serif"
-    fontSize: "44px"
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
+    fontSize: "40px"
     fontWeight: 600
-    lineHeight: 1.12
-    letterSpacing: "-0.03em"
+    lineHeight: 1.08
+    letterSpacing: "-0.01em"
   headline:
-    fontFamily: "Space Grotesk, Inter, sans-serif"
-    fontSize: "32px"
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
+    fontSize: "30px"
     fontWeight: 600
     lineHeight: 1.12
-    letterSpacing: "-0.03em"
+    letterSpacing: "-0.01em"
   title:
-    fontFamily: "Space Grotesk, Inter, sans-serif"
-    fontSize: "23px"
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
+    fontSize: "21px"
     fontWeight: 600
     lineHeight: 1.2
-    letterSpacing: "-0.02em"
+    letterSpacing: "0"
+  data:
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
+    fontSize: "27px"
+    fontWeight: 600
+    lineHeight: 1
+    letterSpacing: "0"
   body:
-    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontFamily: "IBM Plex Sans, -apple-system, sans-serif"
     fontSize: "15px"
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "normal"
   label:
-    fontFamily: "Inter, sans-serif"
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
     fontSize: "11px"
-    fontWeight: 600
+    fontWeight: 500
     lineHeight: 1.2
-    letterSpacing: "0.11em"
-  metric:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "30px"
-    fontWeight: 600
-    lineHeight: 1
-    letterSpacing: "-0.02em"
+    letterSpacing: "0.16em"
 rounded:
-  sm: "10px"
-  md: "14px"
-  lg: "16px"
-  pill: "99px"
+  xs: "2px"
+  sm: "4px"
+  md: "6px"
+  lg: "8px"
 spacing:
   xs: "8px"
   sm: "14px"
   md: "18px"
-  lg: "22px"
-  xl: "46px"
+  lg: "24px"
+  xl: "48px"
 components:
   button-primary:
-    backgroundColor: "{colors.gold}"
-    textColor: "#1A1407"
-    rounded: "{rounded.sm}"
-    padding: "0.62rem 1.5rem"
+    backgroundColor: "{colors.accent}"
+    textColor: "#06222A"
+    rounded: "{rounded.md}"
+    padding: "0.55rem 1.4rem"
   button-primary-hover:
-    backgroundColor: "{colors.gold-2}"
-    textColor: "#1A1407"
+    backgroundColor: "{colors.accent-bright}"
+    textColor: "#06222A"
   button-secondary:
     backgroundColor: "{colors.surface-2}"
     textColor: "{colors.text}"
-    rounded: "{rounded.sm}"
-    padding: "0.5rem 1.25rem"
-  card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.text}"
-    rounded: "{rounded.lg}"
-    padding: "20px 22px"
-  metric-card:
+    rounded: "{rounded.md}"
+    padding: "0.5rem 1.2rem"
+  panel:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.text}"
     rounded: "{rounded.md}"
@@ -93,193 +89,172 @@ components:
   chip:
     backgroundColor: "{colors.surface-2}"
     textColor: "{colors.text-2}"
-    rounded: "{rounded.pill}"
-    padding: "8px 16px"
+    rounded: "{rounded.sm}"
+    padding: "7px 14px"
 ---
 
-# Design System: World Cup 2026 Prediction Lab
+# Design System: World Cup 2026 Forecasting Terminal
 
 ## 1. Overview
 
-**Creative North Star: "The FIFA World Cup 2026 Broadcast Desk"**
+**Creative North Star: "The Forecasting Terminal"**
 
-This is the on-screen graphics package of a serious televised football-intelligence desk,
-translated into a web dashboard. The canvas is a deep midnight blue — the dark of a studio set
-just before the broadcast cuts in — and over it sit precise, tabular numbers, a single
-FIFA-inspired gold reserved for the champion, and an electric blue that signals live computed
-data. It feels expensive, calm, and certain. The work argues for itself: this is a portfolio
-piece whose job is to make a reviewer think *"this person knows what they're doing"* within
-seconds, so every screen leads with a legible headline insight and lets the rigor (confidence
-intervals, calibration, backtests) sit one layer beneath.
+This is a Bloomberg/trading-terminal for football — the screen an analyst keeps open to watch
+the model's read on the tournament. The canvas is near-black graph-paper; data is set in
+monospace so every column aligns and every figure reads as a measured quantity, not a
+decoration. A single electric cyan is the one accent the system spends — it marks live data,
+probability, and active state. Exactly one warm signal (amber) exists, and it marks exactly one
+thing per view: the champion / leader. Everything else is neutral.
 
-The system is **data-forward and decoration-back**. Typography and disciplined layout carry
-the design; ornament is stripped until only meaning-bearing elements remain. Depth comes from
-tonal layering on a near-black ground, not from heavy shadows or glass. Motion is quiet and
-confident — bars grow once, sections reveal once, nothing bounces.
+The system is **flat, gridded, and tabular**. There are no gradient cards, no glows, no
+gold-gamer chrome. Depth is one hairline (`rgba(255,255,255,0.08)`) and one tonal step off the
+canvas — nothing more. Panels are sharp (4–6px radius), bars are near-square, and motion is
+fast and minimal: things appear, they don't perform. The aesthetic argues the author's
+engineering credibility on sight — it looks like a tool built by someone who respects data.
 
-It explicitly rejects two things. **No rainbow / chart-junk:** color encodes meaning (gold =
-champion, blue = probability/live, neutral grays = structure) or it is not spent. **No toy or
-gimmicky treatment:** no emoji-as-UI, no mascots, no amateur flourishes — rectangular country
-flags are the only pictorial element, and they are rendered cleanly with a soft shadow.
+It explicitly rejects what came before and what AI reaches for. **No dark-dashboard-with-gold**
+(the category reflex for "sports prediction"). **No Inter / Space Grotesk** (the most common
+AI-UI pairing of 2026). **No gradient-tinted cards, no decorative glow, no rainbow charts.** If
+it looks like a generic SaaS analytics dashboard, the redesign failed.
 
 **Key Characteristics:**
-- Cinematic near-black canvas (`#070B14`) with subtle radial gold/blue atmosphere
-- One gold accent, champion-only; one electric blue for live data and probability
-- Space Grotesk for numbers and headings, Inter for body — pure weight/role contrast
-- Tabular numerals everywhere a figure appears
-- Flat-by-default surfaces; borders and tonal tints define cards, not drop shadows
-- Quiet, single-pass motion honoring `prefers-reduced-motion`
+- Near-black graph-paper canvas (`#0A0C10`) with a faint baseline grid
+- Monospace everything-that-is-data (IBM Plex Mono); IBM Plex Sans only for prose
+- One cyan accent for data/active; one amber signal for the single champion
+- Flat surfaces, one hairline border, 4–6px radii, near-square bars
+- Tabular columns; figures align down the page
+- Fast, minimal motion — appearance, not choreography
 
 ## 2. Colors
 
-A near-monochrome midnight palette carrying exactly two meaning-bearing accents — gold and
-electric blue — over a four-step neutral ramp.
+A near-monochrome terminal palette: a four-step near-black ramp, cool off-white ink, one cyan
+data accent, and one amber champion signal. GitHub-dark-grade semantic green/red/amber for
+status only.
 
 ### Primary
-- **Champion Gold** (`#E9C46A`, light `#F2D98C`, deep `#C9A24B`): The single brand accent,
-  reserved for the tournament leader/champion, the primary CTA, selected sidebar state, and
-  section kickers. Its rarity is the entire point. Used as a gradient (`#E9C46A → #C9A24B`) on
-  primary buttons and the leading contender's progress fill.
+- **Signal Cyan** (`#3AC9E0`, bright `#74E2F2`, deep `#1C6E7E`): The one data accent. Probability
+  bars, active nav, primary buttons, chart series, links, the live dot's companion. This is the
+  colour the whole system is "in".
 
 ### Secondary
-- **Electric Blue** (`#4C8DFF`, light `#7DB0FF`): The "live data" color. Drives probability
-  bars, the home-win segment of outcome bars, chart series, and computed-value highlights. Pairs
-  with gold as the only two saturated hues in the system.
+- **Champion Amber** (`#E8A33D`, bright `#F4C36B`): The single warm signal. Reserved for the one
+  champion / leader per view — the lead contender row, the simulated tournament winner, the
+  active favourite. Amber + cyan is a deliberate CRT-terminal duo. (Carried in the `GOLD*`
+  constants for code compatibility; it is amber, not gold.)
 
 ### Neutral
-- **Midnight Canvas** (`#070B14`, raised `#0B1020`): The app background — a deep, slightly blue
-  near-black with a faint radial gold/blue glow layered on top.
-- **Charcoal Surface** (`#10182B`, raised `#16203A`): Card, panel, and input backgrounds, used
-  as low-opacity gradients so they read as tonal lifts off the canvas.
-- **Ghost Border** (`rgba(148,163,184,0.10)`): The 1px hairline that defines every card and
-  divider. Strengthens to ~0.22 on hover.
-- **Ink** (`#F4F7FB`): Primary text and key figures.
-- **Slate** (`#AEB9CC`): Secondary text, body copy on surfaces.
-- **Muted Slate** (`#8B98AF`): Labels, captions, meta — the lightest text permitted; never
-  lighter on body-sized text.
+- **Terminal Black** (`#0A0C10`, panel-black `#0D1016`): The canvas — a cool near-black with a
+  1.8%-opacity white grid laid over it.
+- **Panel** (`#11151C`, raised `#161B23`): Surfaces and inputs, as flat fills (no gradient).
+- **Hairline** (`rgba(255,255,255,0.08)`): The single border weight; brightens to cyan on hover.
+- **Ink** (`#E6EDF3`): Primary text and figures.
+- **Slate** (`#9BA7B4`): Secondary text, prose on panels.
+- **Muted** (`#7D8794`): Labels, captions, meta — the lightest text allowed (≥4.5:1 on canvas).
 
 ### Status
-- **Success Green** (`#34D399`), **Warning Amber** (`#F59E0B`), **Error Red** (`#F87171`):
-  Status and delta indicators only. Never decorative.
+- **Green** (`#3FB950`) up/win · **Red** (`#F85149`) down/loss · **Amber** (`#D29922`) warning.
+  Semantic only, never decorative.
 
 ### Named Rules
-**The Champion-Only Rule.** Gold is spent on ≤10% of any screen — the leader, the primary
-action, the active nav item, kickers. If gold is on a second team or a generic accent, it has
-been devalued. Blue, not gold, is the default data color.
+**The One-Cyan Rule.** Cyan is the only brand hue for data and interaction. New chart categories
+are separated by neutral value steps or shape, not new hues — never reach for a third colour.
 
-**The Two-Hue Rule.** Gold and blue are the only saturated colors. A third accent is forbidden;
-new categories are distinguished by neutral value steps, not new hues. This is what keeps the
-system off the rainbow / chart-junk path.
+**The Single-Signal Rule.** Amber appears once per screen and means "the leader." A second amber
+element devalues it; if two things are amber, one is wrong.
 
 ## 3. Typography
 
-**Display Font:** Space Grotesk (with Inter, sans-serif fallback)
-**Body Font:** Inter (with -apple-system, BlinkMacSystemFont fallback)
+**Display / Data Font:** IBM Plex Mono (with ui-monospace, monospace)
+**Body Font:** IBM Plex Sans (with -apple-system, sans-serif)
 
-**Character:** A geometric-grotesque display paired with a neutral humanist sans — contrast by
-role and weight, never two similar sans-serifs competing. Space Grotesk's slightly mechanical
-numerals give figures a broadcast-data feel; Inter keeps prose quiet and legible.
+**Character:** A monospace-led system. IBM Plex Mono carries headings, numerals, labels and
+every figure — its fixed advance is the source of the terminal feel and makes columns self-align.
+IBM Plex Sans handles running prose only, so paragraphs stay readable. The pairing reads
+"engineering tool," and Plex is far less saturated in AI output than Inter/Space Grotesk.
 
 ### Hierarchy
-- **Display** (Space Grotesk 600, 44px, line-height 1.12, `-0.03em`): Hero page titles only
-  (`.wc-header.hero h1`).
-- **Headline** (Space Grotesk 600, 32px, `-0.03em`): Standard page titles.
-- **Title** (Space Grotesk 600, 23px, `-0.02em`): Section headings (`.wc-section h2`).
-- **Metric** (Space Grotesk 600, 27–30px, tabular-nums, `-0.02em`): KPI and probability values.
-- **Body** (Inter 400, 15px, line-height 1.6): Subtitles and prose, capped ~65–75ch (`max-width`
-  ~680px on headers).
-- **Label** (Inter 600, 11px, `0.10–0.16em`, UPPERCASE): KPI labels, kickers, table headers.
+- **Display** (Plex Mono 600, ~40px, line-height 1.08): Hero page title only.
+- **Headline** (Plex Mono 600, 30px): Standard page titles (mixed-case, not uppercase — mono
+  uppercase at display size overflows).
+- **Title** (Plex Mono 600, 21px): Section headings.
+- **Data** (Plex Mono 600, 21–40px): KPI values, probabilities, scorelines.
+- **Body** (Plex Sans 400, 15px, line-height 1.6): Prose and subtitles, ~65–75ch.
+- **Label** (Plex Mono 500, 11px, `0.16em`, UPPERCASE): Kickers, KPI labels, table headers,
+  prefixed with a `▸` marker on section eyebrows.
 
 ### Named Rules
-**The Tabular-Figure Rule.** Every number that can change — probabilities, scores, Elo, counts —
-uses `font-variant-numeric: tabular-nums` so columns align and values don't jitter on rerun.
+**The Monospace-Figure Rule.** Every number lives in IBM Plex Mono. Mono is inherently tabular,
+so figures align down a column with no extra work — that alignment is the terminal's signature.
 
-**The Two-Family Rule.** Space Grotesk for headings and figures, Inter for everything else. No
-third typeface. Hierarchy comes from size and weight within these two, never from new fonts.
+**The Two-Family Rule.** Plex Mono for structure and data, Plex Sans for prose. No third
+typeface; never uppercase a display-size heading (mono gets too wide and overflows).
 
 ## 4. Elevation
 
-Flat by default. Depth is built from **tonal layering on a near-black ground**, not from cast
-shadows: surfaces are low-opacity gradient lifts off the canvas, separated by 1px ghost borders.
-The only true shadows in the system are small, tight drops under flag images to seat them on the
-surface. Atmosphere — not elevation — comes from large, very faint radial gradients (gold top-
-right, blue top-left) fixed behind the whole app.
+Flat. There are no shadows on UI surfaces and no gradients. Depth is exactly two moves: a single
+hairline border (`rgba(255,255,255,0.08)`) and one tonal step (`#11151C` panel on `#0A0C10`
+canvas). The faint baseline grid behind everything supplies the "graph-paper" depth. The only
+shadows in the system are tight drops under flag images so they seat on the panel.
 
 ### Shadow Vocabulary
-- **Flag seat** (`box-shadow: 0 2px 6px rgba(0,0,0,.45)`): Under rectangular flags only, to lift
-  them off the row. Smaller variant (`0 1px 3px`) for sidebar/group flags.
-- **Status glow** (animated `box-shadow` pulse on the live dot): The single decorative shadow,
-  signalling "model online".
+- **Flag seat** (`box-shadow: 0 1px 3px rgba(0,0,0,.5)`): under rectangular flags only.
 
 ### Named Rules
-**The Flat-By-Default Rule.** Cards are flat at rest. On hover they respond by brightening their
-border (`.10 → .22 opacity`) and lifting 2px via `transform`, never by gaining a drop shadow. If
-a surface needs a shadow to separate from the canvas, the tonal contrast is wrong — fix the
-gradient, not the shadow.
+**The Flat-Grid Rule.** Surfaces are flat at rest and respond to hover by brightening their
+hairline toward cyan — never by lifting, gaining a shadow, or sliding. If a panel needs a shadow
+to separate from the canvas, raise its tonal step instead.
 
 ## 5. Components
 
 ### Buttons
-- **Shape:** Softly rounded (10px radius).
-- **Primary:** Gold gradient (`#E9C46A → #C9A24B`) with near-black ink (`#1A1407`), weight 700,
-  `0.62rem 1.5rem` padding. Reserved for the one key action per view.
-- **Secondary:** Charcoal surface (`rgba(22,32,58,.6)`) with a ghost border and ink text.
-- **Hover / Focus:** Primary brightens to `#F2D98C → #E9C46A`; secondary lifts 1px and its border
-  shifts toward gold (`rgba(233,196,106,.35)`). Transitions ~0.18s.
+- **Shape:** sharp (6px radius).
+- **Primary:** solid Signal Cyan (`#3AC9E0`) with near-black ink (`#06222A`), Plex Mono 600.
+- **Secondary:** panel fill with a hairline border, ink text.
+- **Hover / Focus:** primary brightens to `#74E2F2`; secondary's hairline shifts to cyan. ~120ms,
+  no transform.
 
 ### Chips (ensemble pipeline)
-- **Style:** Pill (99px), charcoal fill, ghost border, 13px weight-600 slate text, a 7px blue
-  dot leading each. Connected by a muted `+` separator to read as a model pipeline.
-- **State:** Static / informational — chips display the ensemble, they are not interactive filters.
+- **Style:** small radius (4px), panel fill, hairline, Plex Mono, a cyan dot leading. Joined by a
+  muted `+`. Informational, not interactive.
 
-### Cards / Containers
-- **Corner Style:** 14–16px radius (`md`/`lg`).
-- **Background:** Charcoal surface as a vertical gradient (`rgba(22,32,58,.5) → rgba(16,24,43,.5)`).
-- **Shadow Strategy:** None at rest — see Flat-By-Default Rule.
-- **Border:** 1px ghost border (`rgba(148,163,184,.10)`), brightening on hover.
-- **Internal Padding:** 18–22px.
-- **Hover:** Border brightens and the card lifts 2px (KPI/engine cards) or slides 3px right
-  (contender rows). Lead/champion cards carry a gold-tinted border and background wash.
+### Panels / Cards
+- **Corner Style:** 6px.
+- **Background:** flat `#11151C` (no gradient).
+- **Border:** 1px hairline; brightens toward cyan on hover.
+- **Internal Padding:** 18–20px.
+- **Numerals:** Plex Mono, ink.
 
 ### Inputs / Fields
-- **Style:** Charcoal fill (`rgba(16,24,43,.8)`), 10px radius, no heavy stroke.
-- **Focus:** Slider handles and active tracks use gold; selects open on the dark surface.
+- **Style:** panel fill `#11151C`, 1px hairline, 6px radius, Plex Mono for numeric entry.
+- **Focus / Slider:** cyan track and handle.
 
 ### Navigation (sidebar)
-- **Style:** Vertical radio list on a darker rail (`rgba(8,12,22,.97)`), 13.5px slate labels,
-  9px radius rows, native radio dots hidden.
-- **States:** Hover = faint slate wash; active = gold-tinted background + gold border + ink
-  weight-600 label. Topped by a gold-mark logo lockup and a pulsing "model online" status.
+- **Style:** permanently open rail on `rgba(10,12,16,.97)`, Plex Sans labels, 6px rows.
+- **States:** hover = faint white wash; active = cyan-tinted fill + cyan hairline + bright ink.
+  Logo mark is a cyan-outlined mono square.
 
 ### Signature: The Contender Board
-The hero component — a broadcast-style ranking. Each row is a CSS grid of `position · flag ·
-name+probability-bar · percentage`. Bars are blue and scaled to the leader; the leader's row
-(`.lead`) flips to a gold border, gold-washed background, gold position number, gold percentage,
-and a gold bar fill. Rows reveal in a staggered sequence and the bar grows once from the left.
-This is where the Champion-Only Rule is most visible: exactly one row is gold.
+The hero ranking. Each row is a mono grid of `pos · flag · name + cyan probability bar · pct`.
+Bars are cyan, scaled to the leader. The leader row (`.lead`) is the system's one amber moment:
+amber hairline, amber position index, amber bar, amber percentage. Exactly one row is amber —
+the most visible expression of the Single-Signal Rule.
 
 ## 6. Do's and Don'ts
 
 ### Do:
-- **Do** keep gold champion-only — the leader, the primary CTA, the active nav item, kickers
-  (≤10% of any screen). Default data color is electric blue (`#4C8DFF`).
-- **Do** apply `font-variant-numeric: tabular-nums` (via Space Grotesk) to every figure.
-- **Do** define cards with a 1px ghost border (`rgba(148,163,184,.10)`) and a tonal gradient
-  fill; brighten the border on hover instead of adding a shadow.
-- **Do** keep muted text at `#8B98AF` or lighter-ink, and verify ≥4.5:1 on the surface it sits
-  on; bump toward `#AEB9CC`/`#F4F7FB` if a label is borderline.
-- **Do** pair every probability color with its numeric label — color never carries meaning alone.
-- **Do** keep motion single-pass and confident (`cubic-bezier(.22,.7,.2,1)`), with a
-  `prefers-reduced-motion` fallback that disables reveals.
+- **Do** set every figure in IBM Plex Mono so columns self-align (the terminal signature).
+- **Do** keep cyan as the only data/interaction hue; separate chart categories by value or shape.
+- **Do** reserve amber for exactly one champion/leader element per screen.
+- **Do** build panels as flat fills with one hairline; brighten the hairline toward cyan on hover
+  instead of adding shadow or lift (Flat-Grid Rule).
+- **Do** keep muted text at `#7D8794` or lighter-ink and verify ≥4.5:1 on its surface.
+- **Do** keep motion fast and minimal (~120–450ms), with a `prefers-reduced-motion` fallback.
 
 ### Don't:
-- **Don't** build rainbow or chart-junk visuals. No third saturated hue, no decorative gradients
-  on data, no chart that doesn't inform.
-- **Don't** use toy or gimmicky treatments — no emoji-as-UI, no mascots, no playful flourishes.
-  Clean rectangular flags are the only pictorial element.
-- **Don't** spend gold on non-champion elements; a second gold item devalues the accent.
-- **Don't** add drop shadows to separate surfaces — if a card needs one, the tonal contrast is
-  wrong (Flat-By-Default Rule).
-- **Don't** introduce a third typeface or pair two similar sans-serifs. Space Grotesk + Inter only.
-- **Don't** use light-gray body text on tinted surfaces "for elegance"; it fails contrast and is
-  the fastest way to make rigorous work look amateur.
+- **Don't** reintroduce the dark-dashboard-with-gold look — no gold gradients, no gamer chrome.
+  This is the category reflex the redesign exists to escape.
+- **Don't** use Inter or Space Grotesk anywhere — the most common AI-UI pairing of 2026.
+- **Don't** add gradient-tinted cards, decorative glows, or glassmorphism. Flat only.
+- **Don't** build rainbow / chart-junk visuals or spend a third saturated hue (One-Cyan Rule).
+- **Don't** let two elements be amber at once; a second amber devalues the champion signal.
+- **Don't** uppercase a display-size mono heading — it gets too wide and overflows on tablet.

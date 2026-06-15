@@ -1,61 +1,53 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-13T00:00:00Z",
-  "title": "Design System: World Cup 2026 Prediction Lab",
+  "generatedAt": "2026-06-15T00:00:00Z",
+  "title": "Design System: World Cup 2026 Forecasting Terminal",
   "extensions": {
     "colorMeta": {
-      "gold": {
-        "role": "primary",
-        "displayName": "Champion Gold",
-        "canonical": "#E9C46A",
-        "tonalRamp": ["#3A2E12", "#5C4A20", "#856B2E", "#AD8B3D", "#C9A24B", "#E9C46A", "#F2D98C", "#FAEBC4"]
-      },
       "accent": {
+        "role": "primary",
+        "displayName": "Signal Cyan",
+        "canonical": "#3AC9E0",
+        "tonalRamp": ["#0E3A44", "#125663", "#1C7A8C", "#2AA5BD", "#3AC9E0", "#74E2F2", "#A9EFF8", "#D6F6FB"]
+      },
+      "champion": {
         "role": "secondary",
-        "displayName": "Electric Blue",
-        "canonical": "#4C8DFF",
-        "tonalRamp": ["#0E2348", "#163663", "#234E8F", "#3570CF", "#4C8DFF", "#7DB0FF", "#A8CCFF", "#D6E6FF"]
+        "displayName": "Champion Amber",
+        "canonical": "#E8A33D",
+        "tonalRamp": ["#3A2A10", "#5C4218", "#855F22", "#A06A1E", "#E8A33D", "#F4C36B", "#F8D89A", "#FBE9C6"]
       },
       "bg": {
         "role": "neutral",
-        "displayName": "Midnight Canvas",
-        "canonical": "#070B14",
-        "tonalRamp": ["#070B14", "#0B1020", "#10182B", "#16203A", "#25304A", "#34425F", "#5A6B8A", "#8B98AF"]
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "Charcoal Surface",
-        "canonical": "#10182B",
-        "tonalRamp": ["#0B1020", "#10182B", "#16203A", "#1E2A46", "#25304A", "#34425F", "#48597B", "#647499"]
+        "displayName": "Terminal Black",
+        "canonical": "#0A0C10",
+        "tonalRamp": ["#0A0C10", "#0D1016", "#11151C", "#161B23", "#232A33", "#3A434F", "#6B7480", "#9BA7B4"]
       },
       "text": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "#F4F7FB",
-        "tonalRamp": ["#8B98AF", "#AEB9CC", "#C2CBDA", "#D7DEEB", "#E6EBF3", "#F4F7FB", "#FAFCFE", "#FFFFFF"]
+        "canonical": "#E6EDF3",
+        "tonalRamp": ["#6A7480", "#7D8794", "#9BA7B4", "#C3CDD8", "#D7DEE6", "#E6EDF3", "#F2F5F8", "#FFFFFF"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero page titles only." },
-      "headline": { "displayName": "Headline", "purpose": "Standard page titles." },
-      "title": { "displayName": "Title", "purpose": "Section headings." },
-      "metric": { "displayName": "Metric", "purpose": "KPI and probability values, tabular." },
-      "body": { "displayName": "Body", "purpose": "Subtitles and prose, ~65-75ch." },
-      "label": { "displayName": "Label", "purpose": "Uppercase labels, kickers, table headers." }
+      "display": { "displayName": "Display", "purpose": "Hero page title only — Plex Mono." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles — Plex Mono." },
+      "title": { "displayName": "Title", "purpose": "Section headings — Plex Mono." },
+      "data": { "displayName": "Data", "purpose": "KPI values, probabilities, scorelines — Plex Mono tabular." },
+      "body": { "displayName": "Body", "purpose": "Prose & subtitles — Plex Sans, ~65-75ch." },
+      "label": { "displayName": "Label", "purpose": "Uppercase ▸-prefixed kickers/labels — Plex Mono." }
     },
     "shadows": [
-      { "name": "flag-seat", "value": "0 2px 6px rgba(0,0,0,0.45)", "purpose": "Under rectangular flag images to seat them on the surface." },
-      { "name": "flag-seat-sm", "value": "0 1px 3px rgba(0,0,0,0.4)", "purpose": "Smaller flags in sidebar and group cards." }
+      { "name": "flag-seat", "value": "0 1px 3px rgba(0,0,0,0.5)", "purpose": "Under rectangular flags only; the system is otherwise flat." }
     ],
     "motion": [
-      { "name": "ease-confident", "value": "cubic-bezier(0.22, 0.7, 0.2, 1)", "purpose": "Default reveal and bar-growth easing; quiet exponential ease-out." },
-      { "name": "ease-state", "value": "ease", "purpose": "Short 0.18s border/background hover transitions." },
-      { "name": "reveal-up", "value": "revealUp 0.7s cubic-bezier(0.22,0.7,0.2,1) both", "purpose": "Single-pass section/card entrance; disabled under prefers-reduced-motion." },
-      { "name": "grow-bar", "value": "growBar 1.1s cubic-bezier(0.2,0.7,0.2,1) both", "purpose": "Probability/contender bars grow once from the left." }
+      { "name": "ease-snappy", "value": "cubic-bezier(0.2, 0.6, 0.2, 1)", "purpose": "Reveal/state easing — fast, minimal." },
+      { "name": "reveal-up", "value": "revealUp 0.42s cubic-bezier(0.2,0.6,0.2,1) both", "purpose": "Single-pass appearance; disabled under prefers-reduced-motion." },
+      { "name": "grow-bar", "value": "growBar 0.9s cubic-bezier(0.2,0.7,0.2,1) both", "purpose": "Probability bars grow once from the left." }
     ],
     "breakpoints": [
-      { "name": "tablet", "value": "1100px" },
-      { "name": "content-max", "value": "1200px" }
+      { "name": "stack", "value": "640px" },
+      { "name": "tablet", "value": "1100px" }
     ]
   },
   "components": [
@@ -63,84 +55,67 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one key action per view; gold gradient, near-black ink.",
-      "html": "<button class=\"ds-btn-primary\">Run Prediction</button>",
-      "css": ".ds-btn-primary { background: linear-gradient(135deg, #E9C46A, #C9A24B); color: #1A1407; border: none; border-radius: 10px; padding: 0.62rem 1.5rem; font-family: Inter, sans-serif; font-weight: 700; font-size: 14px; cursor: pointer; transition: background 0.18s ease, transform 0.12s ease; } .ds-btn-primary:hover { background: linear-gradient(135deg, #F2D98C, #E9C46A); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #F2D98C; outline-offset: 2px; }"
+      "description": "The one key action per view; solid cyan, near-black ink, mono.",
+      "html": "<button class=\"ds-btn-primary\">Run simulation</button>",
+      "css": ".ds-btn-primary { background: #3AC9E0; color: #06222A; border: none; border-radius: 6px; padding: 0.55rem 1.4rem; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 600; font-size: 13.5px; cursor: pointer; transition: background 0.12s ease; } .ds-btn-primary:hover { background: #74E2F2; } .ds-btn-primary:focus-visible { outline: 2px solid #74E2F2; outline-offset: 2px; }"
     },
     {
-      "name": "Secondary Button",
-      "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Default action; charcoal surface with ghost border.",
-      "html": "<button class=\"ds-btn-secondary\">Reset</button>",
-      "css": ".ds-btn-secondary { background: rgba(22,32,58,.6); color: #F4F7FB; border: 1px solid rgba(148,163,184,.18); border-radius: 10px; padding: 0.5rem 1.25rem; font-family: Inter, sans-serif; font-weight: 600; font-size: 14px; cursor: pointer; transition: background 0.18s ease, border-color 0.18s ease, transform 0.12s ease; } .ds-btn-secondary:hover { background: rgba(30,42,70,.8); border-color: rgba(233,196,106,.35); transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid #4C8DFF; outline-offset: 2px; }"
-    },
-    {
-      "name": "KPI Card",
+      "name": "KPI Panel",
       "kind": "card",
-      "refersTo": "metric-card",
-      "description": "Headline metric tile: uppercase label, large tabular value, optional delta.",
-      "html": "<div class=\"ds-kpi\"><div class=\"ds-kpi-label\">Championship Favourite</div><div class=\"ds-kpi-value\">Argentina</div><div class=\"ds-kpi-delta\">18.4% to win</div></div>",
-      "css": ".ds-kpi { background: linear-gradient(180deg, rgba(22,32,58,.55), rgba(16,24,43,.55)); border: 1px solid rgba(148,163,184,.10); border-radius: 16px; padding: 20px 22px 18px; transition: border-color 0.2s ease, transform 0.2s ease; } .ds-kpi:hover { border-color: rgba(233,196,106,.28); transform: translateY(-2px); } .ds-kpi-label { font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; color: #8B98AF; margin-bottom: 12px; } .ds-kpi-value { font-family: 'Space Grotesk', sans-serif; font-size: 27px; font-weight: 600; color: #F4F7FB; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; } .ds-kpi-delta { font-size: 12.5px; font-weight: 500; margin-top: 8px; color: #7DB0FF; }"
+      "refersTo": "panel",
+      "description": "Flat metric panel: mono uppercase label, large mono tabular value.",
+      "html": "<div class=\"ds-kpi\"><div class=\"ds-kpi-label\">Championship Favourite</div><div class=\"ds-kpi-value\">Spain</div><div class=\"ds-kpi-delta\">18.4% to win</div></div>",
+      "css": ".ds-kpi { background: #11151C; border: 1px solid rgba(255,255,255,.08); border-radius: 6px; padding: 18px 20px 16px; transition: border-color .15s ease; } .ds-kpi:hover { border-color: rgba(58,201,224,.38); } .ds-kpi-label { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #7D8794; margin-bottom: 12px; } .ds-kpi-value { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 26px; font-weight: 600; color: #E6EDF3; font-variant-numeric: tabular-nums; } .ds-kpi-delta { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; margin-top: 8px; color: #3AC9E0; }"
     },
     {
       "name": "Pipeline Chip",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Static informational chip naming an ensemble model; blue dot leading.",
+      "description": "Static mono chip naming an ensemble model; cyan square dot.",
       "html": "<span class=\"ds-chip\"><span class=\"ds-chip-dot\"></span>XGBoost</span>",
-      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 8px; background: rgba(22,32,58,.6); border: 1px solid rgba(148,163,184,.14); border-radius: 99px; padding: 8px 16px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #D7DEEB; } .ds-chip-dot { width: 7px; height: 7px; border-radius: 50%; background: #4C8DFF; }"
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 8px; background: #161B23; border: 1px solid rgba(255,255,255,.10); border-radius: 4px; padding: 7px 14px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12.5px; font-weight: 500; color: #C3CDD8; } .ds-chip-dot { width: 6px; height: 6px; border-radius: 1px; background: #3AC9E0; }"
     },
     {
       "name": "Contender Row (leader)",
       "kind": "custom",
-      "refersTo": "card",
-      "description": "Signature broadcast ranking row; the leader variant flips blue to champion gold.",
-      "html": "<div class=\"ds-cb-row ds-lead\"><div class=\"ds-cb-pos\">1</div><div class=\"ds-cb-flag\"></div><div class=\"ds-cb-mid\"><div class=\"ds-cb-name\">Argentina <span>Group C</span></div><div class=\"ds-cb-track\"><div class=\"ds-cb-fill\"></div></div></div><div class=\"ds-cb-pct\">18.4%</div></div>",
-      "css": ".ds-cb-row { display: grid; grid-template-columns: 30px 34px 1fr 70px; align-items: center; gap: 16px; background: linear-gradient(180deg, rgba(22,32,58,.5), rgba(16,24,43,.5)); border: 1px solid rgba(148,163,184,.09); border-radius: 14px; padding: 14px 18px; transition: border-color .2s ease, transform .18s ease; font-family: Inter, sans-serif; } .ds-cb-row:hover { border-color: rgba(148,163,184,.22); transform: translateX(3px); } .ds-lead { border-color: rgba(233,196,106,.45); background: linear-gradient(180deg, rgba(233,196,106,.10), rgba(16,24,43,.55)); } .ds-cb-pos { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #E9C46A; text-align: center; font-variant-numeric: tabular-nums; } .ds-cb-flag { width: 34px; height: 23px; border-radius: 4px; background: #25304A; box-shadow: 0 2px 6px rgba(0,0,0,.45); } .ds-cb-name { font-size: 15px; font-weight: 600; color: #F4F7FB; margin-bottom: 8px; } .ds-cb-name span { font-size: 11.5px; font-weight: 500; color: #8B98AF; margin-left: 8px; } .ds-cb-track { height: 6px; border-radius: 99px; background: rgba(148,163,184,.10); overflow: hidden; } .ds-cb-fill { height: 100%; width: 100%; border-radius: 99px; background: linear-gradient(90deg, #C9A24B, #F2D98C); } .ds-cb-pct { font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 600; color: #E9C46A; font-variant-numeric: tabular-nums; text-align: right; }"
-    },
-    {
-      "name": "Outcome Bar",
-      "kind": "custom",
-      "refersTo": "card",
-      "description": "Segmented win/draw/win probability bar for a match prediction.",
-      "html": "<div class=\"ds-outcome\"><div class=\"ds-outcome-bar\"><div style=\"width:54%;background:#4C8DFF\"></div><div style=\"width:24%;background:#475569\"></div><div style=\"width:22%;background:#94A3B8\"></div></div><div class=\"ds-outcome-legend\"><span><b>Brazil</b> 54%</span><span>Draw 24%</span><span><b>France</b> 22%</span></div></div>",
-      "css": ".ds-outcome { margin: 8px 0 4px; font-family: Inter, sans-serif; } .ds-outcome-bar { display: flex; height: 11px; border-radius: 99px; overflow: hidden; background: rgba(148,163,184,.12); } .ds-outcome-legend { display: flex; justify-content: space-between; font-size: 12px; color: #8B98AF; margin-top: 8px; font-variant-numeric: tabular-nums; } .ds-outcome-legend b { color: #F4F7FB; font-weight: 600; }"
+      "refersTo": "panel",
+      "description": "Signature ranking row; the leader variant is the one amber moment.",
+      "html": "<div class=\"ds-cb-row ds-lead\"><div class=\"ds-cb-pos\">1</div><div class=\"ds-cb-flag\"></div><div class=\"ds-cb-mid\"><div class=\"ds-cb-name\">Spain <span>Group C</span></div><div class=\"ds-cb-track\"><div class=\"ds-cb-fill\"></div></div></div><div class=\"ds-cb-pct\">18.4%</div></div>",
+      "css": ".ds-cb-row { display: grid; grid-template-columns: 30px 34px 1fr 70px; align-items: center; gap: 16px; background: #11151C; border: 1px solid rgba(255,255,255,.07); border-radius: 6px; padding: 13px 18px; font-family: 'IBM Plex Sans', sans-serif; } .ds-lead { border-color: rgba(232,163,61,.50); background: rgba(232,163,61,.07); } .ds-cb-pos { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 600; color: #E8A33D; text-align: center; } .ds-cb-flag { width: 34px; height: 23px; border-radius: 2px; background: #232A33; } .ds-cb-name { font-size: 15px; font-weight: 600; color: #E6EDF3; margin-bottom: 8px; } .ds-cb-name span { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11.5px; color: #7D8794; margin-left: 8px; } .ds-cb-track { height: 6px; border-radius: 2px; background: rgba(255,255,255,.06); overflow: hidden; } .ds-cb-fill { height: 100%; width: 100%; border-radius: 2px; background: #E8A33D; } .ds-cb-pct { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 20px; font-weight: 600; color: #E8A33D; text-align: right; font-variant-numeric: tabular-nums; }"
     }
   ],
   "narrative": {
-    "northStar": "The FIFA World Cup 2026 Broadcast Desk",
-    "overview": "This is the on-screen graphics package of a serious televised football-intelligence desk, translated into a web dashboard. The canvas is a deep midnight blue and over it sit precise tabular numbers, a single FIFA-inspired gold reserved for the champion, and an electric blue that signals live computed data. It feels expensive, calm, and certain. The system is data-forward and decoration-back: typography and disciplined layout carry the design, depth comes from tonal layering on a near-black ground rather than heavy shadows, and motion is quiet and single-pass. It explicitly rejects rainbow/chart-junk visuals and toy/gimmicky treatments.",
+    "northStar": "The Forecasting Terminal",
+    "overview": "A Bloomberg/trading-terminal for football. Near-black graph-paper canvas, monospace data (IBM Plex Mono) so every figure aligns into columns, IBM Plex Sans for prose. One cyan accent carries all data and interaction; one amber signal marks exactly the single champion/leader per view. Flat surfaces, a single hairline border, sharp 4-6px radii, near-square bars. No gradients, no glow, no gold-gamer chrome. Motion is fast and minimal.",
     "keyCharacteristics": [
-      "Cinematic near-black canvas (#070B14) with subtle radial gold/blue atmosphere",
-      "One gold accent, champion-only; one electric blue for live data and probability",
-      "Space Grotesk for numbers and headings, Inter for body",
-      "Tabular numerals everywhere a figure appears",
-      "Flat-by-default surfaces; borders and tonal tints define cards, not drop shadows",
-      "Quiet, single-pass motion honoring prefers-reduced-motion"
+      "Near-black graph-paper canvas (#0A0C10) with a faint baseline grid",
+      "Monospace data (IBM Plex Mono); IBM Plex Sans only for prose",
+      "One cyan accent for data/active; one amber signal for the single champion",
+      "Flat surfaces, one hairline border, 4-6px radii, near-square bars",
+      "Tabular columns; figures align down the page",
+      "Fast, minimal motion"
     ],
     "rules": [
-      { "name": "The Champion-Only Rule", "body": "Gold is spent on ≤10% of any screen — the leader, the primary action, the active nav item, kickers. If gold is on a second team or a generic accent, it has been devalued. Blue, not gold, is the default data color.", "section": "colors" },
-      { "name": "The Two-Hue Rule", "body": "Gold and blue are the only saturated colors. A third accent is forbidden; new categories are distinguished by neutral value steps, not new hues.", "section": "colors" },
-      { "name": "The Tabular-Figure Rule", "body": "Every number that can change uses font-variant-numeric: tabular-nums so columns align and values don't jitter on rerun.", "section": "typography" },
-      { "name": "The Two-Family Rule", "body": "Space Grotesk for headings and figures, Inter for everything else. No third typeface.", "section": "typography" },
-      { "name": "The Flat-By-Default Rule", "body": "Cards are flat at rest. On hover they respond by brightening their border and lifting 2px, never by gaining a drop shadow.", "section": "elevation" }
+      { "name": "The One-Cyan Rule", "body": "Cyan is the only brand hue for data and interaction. New chart categories are separated by value or shape, never a third colour.", "section": "colors" },
+      { "name": "The Single-Signal Rule", "body": "Amber appears once per screen and means 'the leader.' A second amber element devalues it.", "section": "colors" },
+      { "name": "The Monospace-Figure Rule", "body": "Every number lives in IBM Plex Mono so figures align into columns — the terminal signature.", "section": "typography" },
+      { "name": "The Flat-Grid Rule", "body": "Surfaces are flat and respond to hover by brightening their hairline toward cyan — never by lifting or gaining a shadow.", "section": "elevation" }
     ],
     "dos": [
-      "Do keep gold champion-only — the leader, the primary CTA, the active nav item, kickers (≤10% of any screen). Default data color is electric blue (#4C8DFF).",
-      "Do apply font-variant-numeric: tabular-nums (via Space Grotesk) to every figure.",
-      "Do define cards with a 1px ghost border (rgba(148,163,184,.10)) and a tonal gradient fill; brighten the border on hover instead of adding a shadow.",
-      "Do keep muted text at #8B98AF or lighter-ink, and verify ≥4.5:1 on the surface it sits on.",
-      "Do pair every probability color with its numeric label — color never carries meaning alone.",
-      "Do keep motion single-pass and confident (cubic-bezier(.22,.7,.2,1)), with a prefers-reduced-motion fallback."
+      "Do set every figure in IBM Plex Mono so columns self-align.",
+      "Do keep cyan as the only data/interaction hue; separate chart categories by value or shape.",
+      "Do reserve amber for exactly one champion/leader element per screen.",
+      "Do build flat panels with one hairline; brighten toward cyan on hover instead of shadow/lift.",
+      "Do keep muted text at #7D8794 or lighter-ink and verify >=4.5:1.",
+      "Do keep motion fast and minimal with a prefers-reduced-motion fallback."
     ],
     "donts": [
-      "Don't build rainbow or chart-junk visuals. No third saturated hue, no decorative gradients on data, no chart that doesn't inform.",
-      "Don't use toy or gimmicky treatments — no emoji-as-UI, no mascots, no playful flourishes.",
-      "Don't spend gold on non-champion elements; a second gold item devalues the accent.",
-      "Don't add drop shadows to separate surfaces — if a card needs one, the tonal contrast is wrong.",
-      "Don't introduce a third typeface or pair two similar sans-serifs. Space Grotesk + Inter only.",
-      "Don't use light-gray body text on tinted surfaces 'for elegance'; it fails contrast."
+      "Don't reintroduce the dark-dashboard-with-gold look — no gold gradients, no gamer chrome.",
+      "Don't use Inter or Space Grotesk anywhere — the most common AI-UI pairing of 2026.",
+      "Don't add gradient-tinted cards, decorative glows, or glassmorphism.",
+      "Don't build rainbow / chart-junk visuals or spend a third saturated hue.",
+      "Don't let two elements be amber at once.",
+      "Don't uppercase a display-size mono heading — it overflows."
     ]
   }
 }

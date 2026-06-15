@@ -28,12 +28,12 @@ STAGE_COLS = {
 
 
 def _prob_colour(p: float) -> str:
-    """Electric-blue intensity scaled to MC probability — brand accent ramp."""
-    if   p >= 0.15: return theme.ACCENT_2   # #7DB0FF
-    elif p >= 0.08: return theme.ACCENT     # #4C8DFF
-    elif p >= 0.04: return "#3570CF"        # accent ramp, mid
-    elif p >= 0.02: return "#234E8F"        # accent ramp, deep
-    else:           return theme.SURFACE_2  # #16203A — inert / unlikely
+    """Signal-cyan intensity scaled to MC probability — brand accent ramp."""
+    if   p >= 0.15: return theme.ACCENT_2   # bright cyan
+    elif p >= 0.08: return theme.ACCENT     # signal cyan
+    elif p >= 0.04: return "#1C7A8C"        # cyan ramp, mid
+    elif p >= 0.02: return "#125663"        # cyan ramp, deep
+    else:           return theme.SURFACE_2  # inert / unlikely
 
 
 def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:

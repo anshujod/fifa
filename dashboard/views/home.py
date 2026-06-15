@@ -43,111 +43,103 @@ _STAGE_SHORT = {
 _HERO_TEMPLATE = """
 <!doctype html><html><head><meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { height:100%; }
   body {
-    font-family:'Inter',-apple-system,sans-serif;
-    background:
-      radial-gradient(820px 480px at 86% 8%, rgba(233,196,106,.06), transparent 62%),
-      radial-gradient(760px 520px at 4% 0%, rgba(76,141,255,.10), transparent 60%),
-      #070B14;
-    color:#F4F7FB; overflow:hidden;
-  }
-  .wrap { position:relative; padding:14px 4px; min-height:100%;
-    display:flex; flex-direction:column; justify-content:center; }
-  .grid-lines {
-    position:absolute; inset:0;
+    font-family:'IBM Plex Sans',-apple-system,sans-serif;
+    background-color:#0A0C10;
     background-image:
-      linear-gradient(rgba(148,163,184,.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148,163,184,.04) 1px, transparent 1px);
-    background-size:54px 54px; -webkit-mask-image:radial-gradient(circle at 70% 30%, #000, transparent 75%);
-    mask-image:radial-gradient(circle at 70% 30%, #000, transparent 75%); pointer-events:none;
+      linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px),
+      radial-gradient(760px 520px at 92% -8%, rgba(58,201,224,.07), transparent 60%);
+    background-size:32px 32px, 32px 32px, 100% 100%;
+    color:#E6EDF3; overflow:hidden;
   }
-  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; position:relative; }
-  .live { display:flex; align-items:center; gap:9px; font-size:11px; font-weight:700;
-    letter-spacing:.18em; text-transform:uppercase; color:#AEB9CC; }
-  .live .dot { width:8px; height:8px; border-radius:50%; background:#34D399;
-    box-shadow:0 0 0 0 rgba(52,211,153,.5); animation:pulse 2.2s infinite; }
-  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(52,211,153,.45)} 70%{box-shadow:0 0 0 8px rgba(52,211,153,0)} 100%{box-shadow:0 0 0 0 rgba(52,211,153,0)} }
-  .host { font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:#7A87A0; }
+  .mono { font-family:'IBM Plex Mono', ui-monospace, monospace; }
+  .wrap { position:relative; padding:10px 4px; min-height:100%;
+    display:flex; flex-direction:column; justify-content:center; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:22px;
+    font-family:'IBM Plex Mono', ui-monospace, monospace; }
+  .live { display:flex; align-items:center; gap:9px; font-size:11px; font-weight:500;
+    letter-spacing:.16em; text-transform:uppercase; color:#9BA7B4; }
+  .live .dot { width:8px; height:8px; border-radius:50%; background:#3FB950;
+    box-shadow:0 0 0 0 rgba(63,185,80,.5); animation:pulse 2.2s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(63,185,80,.45)} 70%{box-shadow:0 0 0 8px rgba(63,185,80,0)} 100%{box-shadow:0 0 0 0 rgba(63,185,80,0)} }
+  .host { font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#6A7480; }
 
-  .main { display:grid; grid-template-columns:1.08fr .92fr; gap:38px; align-items:center; position:relative; }
-  @media (max-width:680px){ .main{ grid-template-columns:1fr; gap:30px; } }
+  .main { display:grid; grid-template-columns:1.06fr .94fr; gap:38px; align-items:center; }
+  @media (max-width:680px){
+    .main{ grid-template-columns:1fr; gap:18px; }
+    .sub{ margin-bottom:18px; }
+    .sp-num{ font-size:52px; }
+  }
 
-  .eyebrow { font-size:12px; font-weight:700; letter-spacing:.20em; text-transform:uppercase;
-    color:#E9C46A; margin-bottom:16px; opacity:0; animation:rise .7s .05s forwards; }
-  h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(32px,3.7vw,46px); font-weight:600;
-    line-height:1.04; letter-spacing:-0.035em; margin-bottom:20px;
-    opacity:0; animation:rise .8s .12s forwards; }
-  h1 .accent { color:#E9C46A; }
-  .sub { font-size:15.5px; line-height:1.62; color:#AEB9CC; max-width:520px; margin-bottom:26px;
-    opacity:0; animation:rise .8s .2s forwards; }
-  .chips { display:flex; flex-wrap:wrap; gap:9px; opacity:0; animation:rise .8s .28s forwards; }
-  .chip { font-size:12px; font-weight:600; color:#C2CBDA; background:rgba(22,32,58,.6);
-    border:1px solid rgba(148,163,184,.14); border-radius:99px; padding:7px 14px; }
-  .chip b { color:#F4F7FB; font-family:'Space Grotesk',sans-serif; }
+  .eyebrow { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:12px; font-weight:500;
+    letter-spacing:.18em; text-transform:uppercase; color:#3AC9E0; margin-bottom:16px;
+    opacity:0; animation:rise .5s .05s forwards; }
+  h1 { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:clamp(30px,3.4vw,42px);
+    font-weight:600; line-height:1.08; letter-spacing:-0.01em; margin-bottom:20px;
+    opacity:0; animation:rise .55s .12s forwards; }
+  h1 .accent { color:#3AC9E0; }
+  .sub { font-size:15.5px; line-height:1.62; color:#9BA7B4; max-width:520px; margin-bottom:26px;
+    opacity:0; animation:rise .55s .2s forwards; }
+  .chips { display:flex; flex-wrap:wrap; gap:9px; opacity:0; animation:rise .55s .28s forwards; }
+  .chip { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:12px; font-weight:500;
+    color:#9BA7B4; background:#11151C; border:1px solid rgba(255,255,255,.10);
+    border-radius:4px; padding:7px 13px; }
+  .chip b { color:#E6EDF3; font-weight:600; }
 
   .spotlight {
-    position:relative; border:1px solid rgba(233,196,106,.26); border-radius:22px;
-    background:linear-gradient(165deg, rgba(233,196,106,.05), rgba(16,24,43,.62) 60%);
-    padding:30px 32px 28px; opacity:0; animation:rise .9s .34s forwards;
-    box-shadow:0 24px 60px -34px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.04);
+    position:relative; border:1px solid rgba(255,255,255,.09); border-radius:6px;
+    background:#11151C; padding:26px 28px 24px; opacity:0; animation:rise .6s .34s forwards;
   }
-  .sp-label { font-size:11px; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
-    color:#E9C46A; margin-bottom:18px; }
+  .spotlight::before { content:""; position:absolute; left:0; top:0; right:0; height:1px;
+    background:linear-gradient(90deg, #3AC9E0, transparent 70%); }
+  .sp-label { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:11px; font-weight:500;
+    letter-spacing:.16em; text-transform:uppercase; color:#3AC9E0; margin-bottom:18px; }
+  .sp-label::before { content:"\\25B8  "; }
   .sp-team { display:flex; align-items:center; gap:16px; margin-bottom:22px; }
-  .sp-team img { width:64px; height:43px; border-radius:7px; object-fit:cover;
-    box-shadow:0 8px 22px rgba(0,0,0,.5); }
-  .sp-team .nm { font-family:'Space Grotesk',sans-serif; font-size:28px; font-weight:600; letter-spacing:-0.02em; }
-  .sp-team .rk { font-size:12px; color:#8B97AD; margin-top:3px; letter-spacing:.04em; }
+  .sp-team img { width:60px; height:40px; border-radius:3px; object-fit:cover;
+    box-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .sp-team .nm { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:26px; font-weight:600;
+    letter-spacing:-0.01em; color:#E6EDF3; }
+  .sp-team .rk { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:12px; color:#7D8794;
+    margin-top:4px; letter-spacing:.02em; }
   .sp-prob { display:flex; align-items:flex-end; gap:14px; margin-bottom:6px; }
-  .sp-num { font-family:'Space Grotesk',sans-serif; font-size:74px; font-weight:600; line-height:.9;
-    letter-spacing:-0.04em; color:#F2D98C; font-variant-numeric:tabular-nums; }
-  .sp-cap { font-size:12px; font-weight:600; letter-spacing:.10em; text-transform:uppercase;
-    color:#8B97AD; padding-bottom:12px; line-height:1.4; }
-  .sp-gap { font-size:13px; color:#AEB9CC; padding-top:16px; margin-top:16px;
-    border-top:1px solid rgba(148,163,184,.12); }
-  .sp-gap b { color:#F4F7FB; font-weight:600; }
+  .sp-num { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:68px; font-weight:600;
+    line-height:.92; letter-spacing:-0.02em; color:#F4C36B; font-variant-numeric:tabular-nums; }
+  .sp-cap { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:11px; font-weight:500;
+    letter-spacing:.14em; text-transform:uppercase; color:#7D8794; padding-bottom:12px; line-height:1.5; }
+  .sp-gap { font-size:13px; color:#9BA7B4; padding-top:16px; margin-top:16px;
+    border-top:1px solid rgba(255,255,255,.08); line-height:1.55; }
+  .sp-gap b { color:#E6EDF3; font-weight:600; font-family:'IBM Plex Mono', ui-monospace, monospace; }
 
-  .ribbon { margin-top:26px; position:relative; opacity:0; animation:rise .8s .5s forwards; }
-  .ribbon .hd { font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
-    color:#7A87A0; margin-bottom:12px; }
-  .rib-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
-  @media (max-width:700px){ .rib-grid{ grid-template-columns:repeat(2,1fr); } }
-  .rib { display:flex; align-items:center; gap:11px; background:rgba(22,32,58,.45);
-    border:1px solid rgba(148,163,184,.10); border-radius:12px; padding:11px 13px; }
-  .rib img { width:28px; height:19px; border-radius:4px; object-fit:cover; box-shadow:0 2px 6px rgba(0,0,0,.45); }
-  .rib .t { font-size:12.5px; font-weight:500; color:#C2CBDA; line-height:1.2; }
-  .rib .p { font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600;
-    color:#F4F7FB; font-variant-numeric:tabular-nums; margin-top:2px; }
-
-  @keyframes rise { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes rise { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
   @media (prefers-reduced-motion: reduce){ *{animation:none!important;opacity:1!important} }
 </style></head>
 <body>
   <div class="wrap">
-    <div class="grid-lines"></div>
     <div class="topbar">
-      <div class="live"><span class="dot"></span> Prediction Engine · Live Forecast</div>
-      <div class="host">United States · Canada · Mexico</div>
+      <div class="live"><span class="dot"></span> Forecast Engine // Live</div>
+      <div class="host">USA · CAN · MEX</div>
     </div>
     <div class="main">
       <div class="intro">
         <div class="eyebrow">FIFA World Cup 2026</div>
         <h1>Who lifts the<br><span class="accent">2026 World Cup?</span></h1>
-        <div class="sub">Machine-learning forecasts trained on Elo ratings, squad value, expected goals, historical performance and full-tournament simulation.</div>
+        <div class="sub">A four-model ensemble — Elo, Poisson, XGBoost, LightGBM — blended, calibrated, and run through 10,000 full-tournament simulations.</div>
         <div class="chips">
-          <span class="chip"><b id="c-sims">10,000</b> simulations</span>
-          <span class="chip"><b>4-model</b> ensemble</span>
-          <span class="chip"><b>48</b> nations</span>
+          <span class="chip"><b id="c-sims">10,000</b> SIMS</span>
+          <span class="chip"><b>4</b> MODELS</span>
+          <span class="chip"><b>48</b> NATIONS</span>
         </div>
       </div>
       <div class="spotlight">
         <div class="sp-label">Projected Champion</div>
         <div class="sp-team">
-          <img id="sp-flag" src="" alt="">
+          <img id="sp-flag" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
           <div>
             <div class="nm" id="sp-name">—</div>
             <div class="rk" id="sp-rank">—</div>
@@ -214,7 +206,7 @@ def _render_hero(df, elo, n_sims: int) -> None:
         "contenders": contenders,
     }
     html = _HERO_TEMPLATE.replace("__DATA__", json.dumps(data))
-    components.html(html, height=660, scrolling=False)
+    components.html(html, height=410, scrolling=False)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -288,6 +280,8 @@ def render() -> None:
     if selected:
         st.plotly_chart(tournament_funnel(df, selected), use_container_width=True,
                         config={"displayModeBar": False})
+    else:
+        st.caption("Pick one or more teams above to plot their survival curves.")
 
     # ── Simulation Engine ──────────────────────────────────────────────────────
     theme.section(
@@ -312,55 +306,67 @@ def render() -> None:
         "Elo ratings", "Poisson goal model", "XGBoost", "LightGBM",
         "Monte Carlo bracket",
     ])
+    st.markdown(
+        f"<div style='margin-top:14px;font-size:13.5px;color:{theme.TEXT_2}'>"
+        f"See the calibration curves, out-of-sample accuracy and feature importance on "
+        f"<a href='?page=Model+Insights' target='_self' "
+        f"style='color:{theme.ACCENT};text-decoration:none;font-weight:600'>Model Insights →</a></div>",
+        unsafe_allow_html=True,
+    )
 
-    # ── Full probability table ─────────────────────────────────────────────────
+    # ── Drill-downs ────────────────────────────────────────────────────────────
+    # The hero, contenders and landscape already carry the headline. These two
+    # views answer narrower follow-up questions ("the per-stage breakdown", "the
+    # draw"), so they live behind progressive disclosure to keep the scroll tight.
     theme.section(
-        "Every Team, Every Stage",
-        "The complete probability matrix — odds of reaching each round, for all 48 nations.",
+        "Go Deeper",
+        "The full per-stage matrix and the group draw, for when you want the detail "
+        "behind the headline forecast.",
         kicker="Full Forecast",
     )
-    stage_cols = list(_STAGE_SHORT.keys())
-    display = df[["flag_team", "group"] + stage_cols].copy()
-    display.columns = ["Team", "Grp"] + [_STAGE_SHORT[c] for c in stage_cols]
-    st.dataframe(
-        display,
-        use_container_width=True,
-        height=560,
-        hide_index=True,
-        column_config={
-            "Team": st.column_config.TextColumn("Team", width="medium"),
-            "Grp":  st.column_config.TextColumn("Grp", width="small"),
-            **{
-                _STAGE_SHORT[c]: st.column_config.NumberColumn(
-                    _STAGE_SHORT[c], format="percent", width="small",
-                )
-                for c in stage_cols[:-1]
-            },
-            "Champion": st.column_config.ProgressColumn(
-                "Champion", format="percent", min_value=0.0,
-                max_value=float(df["p_winner"].max()),
-            ),
-        },
-    )
 
-    # ── Groups at a glance ─────────────────────────────────────────────────────
-    theme.section(
-        "Groups at a Glance",
-        "All 12 groups, each team shown with its championship probability.",
-        kicker="The Draw",
-    )
-    from src.simulation.group_stage import WC2026_GROUPS
-    group_data: dict[str, list[dict]] = {}
-    for gid in sorted(WC2026_GROUPS.keys()):
-        teams_in_g = WC2026_GROUPS[gid]
-        group_df = (
-            df[df["team"].isin(teams_in_g)].sort_values("p_winner", ascending=False)
+    with st.expander("Every team, every stage — the complete probability matrix", expanded=False):
+        stage_cols = list(_STAGE_SHORT.keys())
+        display = df[["flag_team", "group"] + stage_cols].copy()
+        display.columns = ["Team", "Grp"] + [_STAGE_SHORT[c] for c in stage_cols]
+        st.dataframe(
+            display,
+            use_container_width=True,
+            height=560,
+            hide_index=True,
+            column_config={
+                "Team": st.column_config.TextColumn("Team", width="medium"),
+                "Grp":  st.column_config.TextColumn("Grp", width="small"),
+                **{
+                    _STAGE_SHORT[c]: st.column_config.NumberColumn(
+                        _STAGE_SHORT[c], format="percent", width="small",
+                    )
+                    for c in stage_cols[:-1]
+                },
+                "Champion": st.column_config.ProgressColumn(
+                    "Champion", format="percent", min_value=0.0,
+                    max_value=float(df["p_winner"].max()),
+                ),
+            },
         )
-        group_data[gid] = [
-            {"flag_url": flag_url(r["team"], 40), "team": r["team"], "prob": float(r["p_winner"])}
-            for _, r in group_df.iterrows()
-        ]
-    theme.group_cards(group_data)
+
+    with st.expander("Groups at a glance — all 12 groups", expanded=False):
+        try:
+            from src.simulation.group_stage import WC2026_GROUPS
+            group_data: dict[str, list[dict]] = {}
+            for gid in sorted(WC2026_GROUPS.keys()):
+                teams_in_g = WC2026_GROUPS[gid]
+                group_df = (
+                    df[df["team"].isin(teams_in_g)].sort_values("p_winner", ascending=False)
+                )
+                group_data[gid] = [
+                    {"flag_url": flag_url(r["team"], 40), "team": r["team"],
+                     "prob": float(r["p_winner"])}
+                    for _, r in group_df.iterrows()
+                ]
+            theme.group_cards(group_data)
+        except Exception:
+            st.caption("Group draw data is unavailable right now.")
 
     # ── Footer ─────────────────────────────────────────────────────────────────
     st.markdown(

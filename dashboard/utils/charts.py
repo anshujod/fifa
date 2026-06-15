@@ -11,47 +11,49 @@ import plotly.io as pio
 from plotly.subplots import make_subplots
 
 
-# ── colour palette ────────────────────────────────────────────────────────────
-ACCENT   = "#4C8DFF"
-ACCENT_2 = "#7DB0FF"
-GOLD     = "#E9C46A"
-GOLD_2   = "#F2D98C"
-SUCCESS  = "#34D399"
-WARNING  = "#F59E0B"
-ERROR    = "#F87171"
-NEUTRAL  = "#64748B"
-TEXT     = "#F4F7FB"
-TEXT_DIM = "#8B97AD"
+# ── colour palette — Terminal (cyan data accent · amber champion signal) ────────
+ACCENT   = "#3AC9E0"        # signal cyan
+ACCENT_2 = "#74E2F2"
+GOLD     = "#E8A33D"        # amber — champion / leader (name kept for compatibility)
+GOLD_2   = "#F4C36B"
+SUCCESS  = "#3FB950"
+WARNING  = "#D29922"
+ERROR    = "#F85149"
+NEUTRAL  = "#3A434F"
+TEXT     = "#E6EDF3"
+TEXT_DIM = "#7D8794"
 BLUE     = ACCENT
-BG       = "rgba(0,0,0,0)"  # transparent — lets the app background show through
-CARD     = "#10182B"        # surface background
+BG       = "rgba(0,0,0,0)"  # transparent — lets the terminal canvas show through
+CARD     = "#11151C"        # panel background
 
-# blue ramp for sequential / staged data (dark → light)
-BLUE_RAMP = ["#1E3A8A", "#2563EB", "#3B82F6", "#4C8DFF", "#7DB0FF", "#A9CBFF", "#CFE0FF"]
+MONO     = "IBM Plex Mono, ui-monospace, monospace"
 
-# field-blue ramp with a gold cap reserved for the clear leader
+# cyan ramp for sequential / staged data (dark → light)
+BLUE_RAMP = ["#0E3A44", "#125663", "#1C7A8C", "#2AA5BD", "#3AC9E0", "#74E2F2", "#A9EFF8"]
+
+# field-cyan ramp with an amber cap reserved for the clear leader
 PROB_RAMP = [
-    [0.0, "#16203A"], [0.30, "#1E3A8A"], [0.58, "#2E6BE0"],
-    [0.80, "#4C8DFF"], [0.92, "#7DB0FF"], [0.965, "#C9A24B"], [1.0, "#F2D98C"],
+    [0.0, "#11151C"], [0.30, "#125663"], [0.58, "#1C8DA3"],
+    [0.80, "#3AC9E0"], [0.92, "#74E2F2"], [0.965, "#E8A33D"], [1.0, "#F4C36B"],
 ]
 
-# ── global template (Inter, soft grid, restrained colorway) ──────────────────
+# ── global template (Plex Mono, faint grid, cyan-led colorway) ───────────────
 pio.templates["wc_premium"] = go.layout.Template(
     layout=dict(
-        font=dict(family="Inter, -apple-system, sans-serif", color=TEXT, size=13),
-        title=dict(font=dict(size=15, color=TEXT)),
+        font=dict(family=MONO, color=TEXT, size=12),
+        title=dict(font=dict(family=MONO, size=14, color=TEXT)),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         hoverlabel=dict(
-            bgcolor="#1E293B",
-            bordercolor="rgba(148,163,184,.25)",
-            font=dict(family="Inter, sans-serif", color=TEXT, size=13),
+            bgcolor="#161B23",
+            bordercolor="rgba(255,255,255,.12)",
+            font=dict(family=MONO, color=TEXT, size=12),
         ),
-        xaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
-        yaxis=dict(gridcolor="rgba(148,163,184,.08)", zerolinecolor="rgba(148,163,184,.16)"),
+        xaxis=dict(gridcolor="rgba(255,255,255,.06)", zerolinecolor="rgba(255,255,255,.12)"),
+        yaxis=dict(gridcolor="rgba(255,255,255,.06)", zerolinecolor="rgba(255,255,255,.12)"),
         legend=dict(bgcolor="rgba(0,0,0,0)"),
-        colorway=["#4C8DFF", "#E9C46A", "#7DB0FF", "#34D399",
-                  "#818CF8", "#2DD4BF", "#F59E0B", "#CBD5E1"],
+        colorway=["#3AC9E0", "#E8A33D", "#74E2F2", "#3FB950",
+                  "#9BA7B4", "#A9EFF8", "#D29922", "#6B7480"],
         margin=dict(t=56, b=44, l=56, r=24),
     )
 )
@@ -85,7 +87,7 @@ STAGE_LABELS = {
 def top_favourites_bar(df: pd.DataFrame, n: int = 10) -> go.Figure:
     """Horizontal bar chart — top N teams by P(champion)."""
     top = df.nlargest(n, "p_winner").sort_values("p_winner")
-    colours = [ACCENT if i == len(top) - 1 else "#334155"
+    colours = [GOLD if i == len(top) - 1 else ACCENT
                for i in range(len(top))]
 
     fig = go.Figure(go.Bar(
@@ -117,8 +119,8 @@ def tournament_funnel(df: pd.DataFrame, teams: list[str]) -> go.Figure:
     labels = list(STAGE_LABELS.values())
 
     fig = go.Figure()
-    palette = ["#E9C46A", "#4C8DFF", "#7DB0FF", "#34D399", "#818CF8",
-               "#2DD4BF", "#F59E0B", "#CBD5E1"]
+    palette = ["#3AC9E0", "#E8A33D", "#74E2F2", "#3FB950",
+               "#9BA7B4", "#A9EFF8", "#D29922", "#6B7480"]
     for i, team in enumerate(teams):
         row = df[df["team"] == team]
         if row.empty:
@@ -165,12 +167,12 @@ def probability_landscape(df: pd.DataFrame) -> go.Figure:
         marker=dict(
             colors=d["p_winner"],
             colorscale=PROB_RAMP,
-            line=dict(width=2, color="#070B14"),
-            cornerradius=6,
+            line=dict(width=2, color="#0A0C10"),
+            cornerradius=4,
         ),
         text=d["team"],
         textinfo="label",
-        textfont=dict(family="Space Grotesk, Inter, sans-serif", size=14, color="#F4F7FB"),
+        textfont=dict(family=MONO, size=14, color=TEXT),
         hovertemplate="<b>%{text}</b><br>Championship probability: %{value:.2%}<extra></extra>",
         tiling=dict(pad=3),
         sort=True,
@@ -193,7 +195,7 @@ def outcome_donut(p_home: float, p_draw: float, p_away: float,
     """Donut chart for match outcome probabilities."""
     labels = [f"{home} Win", "Draw", f"{away} Win"]
     values = [p_home * 100, p_draw * 100, p_away * 100]
-    colours = ["#3B82F6", "#475569", "#94A3B8"]
+    colours = [ACCENT, "#3A434F", "#6B7480"]
 
     fig = go.Figure(go.Pie(
         labels=labels,
@@ -235,7 +237,7 @@ def scoreline_heatmap(
         z=grid,
         x=[str(i) for i in range(max_goals + 1)],
         y=[str(i) for i in range(max_goals + 1)],
-        colorscale="Blues",
+        colorscale=[[0.0, "#0E1A20"], [0.5, "#1C7A8C"], [1.0, "#3AC9E0"]],
         text=[[f"{grid[i, j]:.1f}%" for j in range(max_goals + 1)]
               for i in range(max_goals + 1)],
         hovertemplate=f"<b>{home} %{{y}} – %{{x}} {away}</b><br>Prob: %{{text}}<extra></extra>",
@@ -244,9 +246,9 @@ def scoreline_heatmap(
                       title_font_color="white"),
     ))
 
-    # Per-cell labels: the Blues scale runs near-white (low) → deep blue (high),
-    # so a single text colour fails one end. Ink the labels by their own value —
-    # dark ink on light cells, white on saturated cells — to clear WCAG contrast.
+    # Per-cell labels: the cyan scale runs dark (low) → bright cyan (high), so a
+    # single text colour fails one end. Ink the labels by their own value — dark
+    # ink on bright cells, light ink on dark cells — to clear WCAG contrast.
     cell_threshold = grid.max() * 0.55 if grid.max() else 1.0
     for i in range(max_goals + 1):
         for j in range(max_goals + 1):
@@ -254,7 +256,8 @@ def scoreline_heatmap(
                 x=str(j), y=str(i), text=f"{grid[i, j]:.1f}%",
                 showarrow=False,
                 font=dict(
-                    color="#F4F7FB" if grid[i, j] >= cell_threshold else "#0B1020",
+                    family=MONO,
+                    color="#06222A" if grid[i, j] >= cell_threshold else TEXT,
                     size=12,
                 ),
             )
@@ -410,7 +413,7 @@ def form_radar(snapshot: pd.Series, team: str) -> go.Figure:
     fig = go.Figure(go.Scatterpolar(
         r=vals, theta=cats,
         fill="toself",
-        fillcolor="rgba(76, 141, 255, 0.18)",
+        fillcolor="rgba(58, 201, 224, 0.16)",
         line=dict(color=ACCENT, width=2),
         name=team,
     ))
@@ -614,8 +617,8 @@ def plot_group_standings(
     """
     n_rows = len(ranking)
     zone_fill = {
-        0: "rgba(52,211,153,.08)", 1: "rgba(52,211,153,.08)",   # brand SUCCESS — qualify
-        2: "rgba(245,158,11,.07)", 3: "rgba(148,163,184,.04)",  # brand WARNING — third / out
+        0: "rgba(63,185,80,.10)", 1: "rgba(63,185,80,.10)",     # SUCCESS — qualify
+        2: "rgba(210,153,34,.10)", 3: "rgba(255,255,255,.03)",  # WARNING — third / out
     }
     row_colors = [zone_fill.get(i, "rgba(0,0,0,0)") for i in range(n_rows)]
 
@@ -640,18 +643,18 @@ def plot_group_standings(
     fig = go.Figure(go.Table(
         header=dict(
             values=[f"<b>{h}</b>" for h in headers],
-            fill_color="#1E293B",
-            font=dict(color=TEXT_DIM, size=12, family="Inter, sans-serif"),
+            fill_color="#161B23",
+            font=dict(color=TEXT_DIM, size=12, family=MONO),
             align=["center", "left"] + ["center"] * 9,
-            line_color="rgba(148,163,184,.12)",
+            line_color="rgba(255,255,255,.10)",
             height=36,
         ),
         cells=dict(
             values=col_data,
             fill_color=fill,
-            font=dict(color=TEXT, size=12.5, family="Inter, sans-serif"),
+            font=dict(color=TEXT, size=12.5, family=MONO),
             align=["center", "left"] + ["center"] * 9,
-            line_color="rgba(148,163,184,.08)",
+            line_color="rgba(255,255,255,.07)",
             height=34,
         ),
         columnwidth=[40, 180, 45, 40, 40, 40, 45, 45, 50, 45, 110],
@@ -689,12 +692,12 @@ def plot_feature_importance(imp_df: "pd.DataFrame") -> go.Figure:
         return fig
 
     CAT_COL: dict[str, str] = {
-        "ELO/Ranking":    ACCENT,     # brand electric blue
-        "Expected Goals": SUCCESS,    # brand green
-        "Head-to-Head":   WARNING,    # brand amber
-        "Confederation":  "#818CF8",
-        "Form/Momentum":  "#60A5FA",
-        "Goals":          "#2DD4BF",
+        "ELO/Ranking":    ACCENT,      # signal cyan
+        "Expected Goals": SUCCESS,     # green
+        "Head-to-Head":   WARNING,     # amber
+        "Confederation":  "#8B7FE8",   # one violet — separates the 9-family chart
+        "Form/Momentum":  ACCENT_2,    # bright cyan
+        "Goals":          "#52C7A6",   # teal-green (bridges cyan↔green)
         "Match Context":  "#64748B",
         "Other":          "#94A3B8",
         "Unknown":        "#94A3B8",
@@ -773,15 +776,15 @@ def comparison_radar(
     fig = go.Figure()
     fig.add_trace(go.Scatterpolar(
         r=v1, theta=cats, fill="toself",
-        fillcolor="rgba(59,130,246,0.15)",
-        line=dict(color="#3B82F6", width=2),
+        fillcolor="rgba(58,201,224,0.14)",
+        line=dict(color=ACCENT, width=2),
         name=team1,
         hovertemplate=f"<b>{team1}</b><br>%{{theta}}: %{{r:.2f}}<extra></extra>",
     ))
     fig.add_trace(go.Scatterpolar(
         r=v2, theta=cats, fill="toself",
-        fillcolor="rgba(245,158,11,0.13)",
-        line=dict(color="#F59E0B", width=2),
+        fillcolor="rgba(232,163,61,0.13)",
+        line=dict(color=GOLD, width=2),
         name=team2,
         hovertemplate=f"<b>{team2}</b><br>%{{theta}}: %{{r:.2f}}<extra></extra>",
     ))
@@ -833,7 +836,7 @@ def wc_history_timeline(wc_df: "pd.DataFrame", team: str) -> go.Figure:
         )
         return fig
 
-    RESULT_COL = {"W": "#10B981", "D": "#94A3B8", "L": "#EF4444"}
+    RESULT_COL = {"W": SUCCESS, "D": "#6B7480", "L": ERROR}
     RESULT_SYM = {"W": "circle",  "D": "diamond", "L": "x"}
 
     # Ensure date is parseable

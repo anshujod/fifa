@@ -143,8 +143,8 @@ def render() -> None:
 <div style='display:flex;align-items:center;gap:18px;margin:6px 0 10px'>
   <span style='font-size:44px;line-height:1'>{flag(team)}</span>
   <div>
-    <div style='font-size:28px;font-weight:700;letter-spacing:-.02em;color:{theme.TEXT}'>{team}</div>
-    <div style='font-size:13.5px;color:{theme.TEXT_3};margin-top:4px'>{meta_html}</div>
+    <div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:28px;font-weight:600;letter-spacing:-.01em;color:{theme.TEXT}">{team}</div>
+    <div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:{theme.TEXT_3};margin-top:5px;font-variant-numeric:tabular-nums">{meta_html}</div>
   </div>
 </div>""",
         unsafe_allow_html=True,
