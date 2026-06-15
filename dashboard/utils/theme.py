@@ -151,21 +151,33 @@ section[data-testid="stSidebar"] div[role="radiogroup"] label p {
 }
 section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.07); }
 
-/* Navigation IS the sidebar — keep it permanently open so the menu can never
-   be lost. Force it visible at full width and remove the collapse controls. */
-section[data-testid="stSidebar"] {
-    position: relative !important;
-    min-width: 300px !important;
-    width: 300px !important;
-    transform: none !important;
-    visibility: visible !important;
-    margin-left: 0 !important;
-    flex-shrink: 0 !important;
+/* Navigation IS the sidebar — on desktop/tablet keep it permanently open so the
+   menu can never be lost. Below 769px (phones) this is RELAXED: the sidebar
+   collapses to an overlay and the expand control returns, so content gets the
+   full width. */
+@media (min-width: 769px) {
+    section[data-testid="stSidebar"] {
+        position: relative !important;
+        min-width: 300px !important;
+        width: 300px !important;
+        transform: none !important;
+        visibility: visible !important;
+        margin-left: 0 !important;
+        flex-shrink: 0 !important;
+    }
+    [data-testid="stSidebarContent"] { display: flex !important; }
+    [data-testid="stSidebarCollapseButton"],
+    [data-testid="stExpandSidebarButton"] { display: none !important; }
+    [data-testid="stMain"] { position: relative !important; inset: auto !important; }
 }
-[data-testid="stSidebarContent"] { display: flex !important; }
-[data-testid="stSidebarCollapseButton"],
-[data-testid="stExpandSidebarButton"] { display: none !important; }
-[data-testid="stMain"] { position: relative !important; inset: auto !important; }
+/* On phones, the sidebar overlays the content when open — give it near-full
+   width and a clear expand affordance. */
+@media (max-width: 768px) {
+    section[data-testid="stSidebar"] { min-width: 82vw !important; width: 82vw !important; }
+    [data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapseButton"] {
+        display: flex !important; color: #3AC9E0 !important;
+    }
+}
 
 /* ── Native metric cards ───────────────────────────────────────────────── */
 div[data-testid="stMetric"] {
@@ -596,6 +608,28 @@ section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
 .sb-fav .team { flex: 1; font-size: 13px; font-weight: 500; color: #C3CDD8; }
 .sb-fav .pct { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12.5px;
     font-weight: 600; color: #3AC9E0; font-variant-numeric: tabular-nums; }
+
+/* ── Mobile layout ─────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .block-container { padding-left: .7rem !important; padding-right: .7rem !important;
+        padding-top: 1.1rem; }
+    .wc-header h1 { font-size: 25px; }
+    .wc-header.hero h1 { font-size: 29px; }
+    .wc-header p { font-size: 14px; }
+    .wc-section { margin: 34px 0 14px; }
+    .wc-section h2 { font-size: 19px; }
+    /* Multi-column card grids collapse to one column */
+    .group-grid, .team-grid, .eng-grid, .kpi-grid { grid-template-columns: 1fr !important; }
+    /* Contender / weight rows tighten so nothing overflows the viewport */
+    .cb-row { grid-template-columns: 20px 26px 1fr 64px; gap: 10px; padding: 11px 12px; }
+    .cb-name { font-size: 13.5px; }
+    .cb-pct { font-size: 17px; }
+    .cb-flag { width: 26px; height: 18px; }
+    .wb-row { grid-template-columns: 1fr 66px; gap: 12px; padding: 13px 14px; }
+    .wb-pct { font-size: 18px; }
+    /* KPI / metric values shrink slightly to avoid wrapping */
+    .kpi-value, .team-card .main-value { font-size: 24px; }
+}
 </style>
 """
 

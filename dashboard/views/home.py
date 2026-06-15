@@ -71,9 +71,19 @@ _HERO_TEMPLATE = """
 
   .main { display:grid; grid-template-columns:1.06fr .94fr; gap:38px; align-items:center; }
   @media (max-width:680px){
-    .main{ grid-template-columns:1fr; gap:18px; }
-    .sub{ margin-bottom:18px; }
-    .sp-num{ font-size:52px; }
+    .wrap{ justify-content:flex-start; padding-top:14px; }
+    .topbar{ margin-bottom:16px; }
+    .host{ display:none; }
+    .main{ grid-template-columns:1fr; gap:14px; }
+    h1{ font-size:27px; margin-bottom:14px; }
+    .sub{ font-size:14px; margin-bottom:16px; }
+    .spotlight{ padding:18px 18px 16px; }
+    .sp-label{ margin-bottom:14px; }
+    .sp-team{ margin-bottom:16px; }
+    .sp-team img{ width:48px; height:32px; }
+    .sp-team .nm{ font-size:22px; }
+    .sp-num{ font-size:44px; }
+    .sp-gap{ padding-top:12px; margin-top:12px; }
   }
 
   .eyebrow { font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:12px; font-weight:500;
@@ -206,7 +216,7 @@ def _render_hero(df, elo, n_sims: int) -> None:
         "contenders": contenders,
     }
     html = _HERO_TEMPLATE.replace("__DATA__", json.dumps(data))
-    components.html(html, height=410, scrolling=False)
+    components.html(html, height=440, scrolling=False)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
