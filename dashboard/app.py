@@ -92,7 +92,7 @@ with st.sidebar:
         mc = load_mc_probabilities()
         top3 = mc.nlargest(3, "p_winner")[["team", "p_winner"]]
         st.markdown(
-            f"<div style='font-size:11px;font-weight:700;letter-spacing:.12em;"
+            f"<div class='sb-fav-label' style='font-size:11px;font-weight:700;letter-spacing:.12em;"
             f"text-transform:uppercase;color:{theme.TEXT_3};margin:16px 0 8px 4px'>"
             "Title favourites</div>",
             unsafe_allow_html=True,
@@ -130,5 +130,18 @@ ROUTES = {
     "Team Comparison":   team_comparison.render,
     "Model Insights":    model_insights.render,
 }
+
+# Mobile top navigation — hidden on desktop via CSS (the sidebar is the nav
+# there). Plain anchor links set the ?page= query param the sidebar radio also
+# reads, so they switch pages reliably on phones with no sidebar positioning.
+_mnav = "".join(
+    f'<a class="mnav-link{" active" if p == page else ""}" '
+    f'href="?page={p.replace(" ", "%20")}" target="_self">{p}</a>'
+    for p in PAGES
+)
+st.markdown(
+    f'<div class="mobile-nav"><span class="brand">WC<b>26</b> · Forecasting Terminal</span>{_mnav}</div>',
+    unsafe_allow_html=True,
+)
 
 ROUTES.get(page, home.render)()

@@ -174,37 +174,37 @@ section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.07); }
    sidebar full-width ON TOP of the content (in normal flow), so navigation is
    always visible and the page gets full width below it. The page links lay out
    as compact wrapping chips so all 7 fit in a couple of rows. */
+/* Mobile top-nav: hidden on desktop (the sidebar is the nav there). */
+.mobile-nav { display: none; }
+
+/* On phones the Streamlit sidebar is hidden entirely (its positioning traps
+   scroll); navigation is the in-flow .mobile-nav row of links instead, which
+   scrolls with the page and drives the ?page= query param. */
 @media (max-width: 768px) {
-    [data-testid="stAppViewContainer"] { flex-direction: column !important; }
-    section[data-testid="stSidebar"] {
-        position: relative !important;
-        transform: none !important;
-        visibility: visible !important;
-        min-width: 100% !important; width: 100% !important; max-width: 100% !important;
-        margin: 0 !important;
-        border-right: none !important;
-        border-bottom: 1px solid rgba(255,255,255,.08) !important;
+    section[data-testid="stSidebar"] { display: none !important; }
+    [data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapseButton"] {
+        display: none !important;
     }
-    [data-testid="stSidebarContent"] { display: flex !important; }
-    section[data-testid="stSidebar"] .block-container { padding: 0.8rem 1rem 1rem !important; }
-    [data-testid="stMain"] { position: relative !important; inset: auto !important; }
-    [data-testid="stSidebarCollapseButton"],
-    [data-testid="stExpandSidebarButton"] { display: none !important; }
-    /* Page links → wrapping horizontal chips */
-    section[data-testid="stSidebar"] div[role="radiogroup"] {
-        flex-direction: row !important; flex-wrap: wrap !important; gap: 6px !important;
+    [data-testid="stMain"] { position: relative !important; inset: auto !important; width: 100% !important; }
+    .mobile-nav {
+        display: flex; flex-wrap: wrap; gap: 6px;
+        margin: 0 0 20px; padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
     }
-    section[data-testid="stSidebar"] div[role="radiogroup"] label {
-        width: auto !important;
-        background: #161B23 !important; border-color: rgba(255,255,255,.10) !important;
+    .mobile-nav .brand {
+        flex-basis: 100%; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        font-size: 13px; font-weight: 600; color: #E6EDF3; margin-bottom: 4px;
     }
-    section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) {
-        background: rgba(58,201,224,.12) !important; border-color: rgba(58,201,224,.40) !important;
+    .mobile-nav .brand b { color: #3AC9E0; }
+    .mobile-nav a.mnav-link {
+        font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        font-size: 12.5px; font-weight: 500; text-decoration: none; white-space: nowrap;
+        color: #9BA7B4; background: #161B23; border: 1px solid rgba(255,255,255,.10);
+        border-radius: 6px; padding: 7px 12px;
     }
-    /* Tighten the banner: drop the dividers and the status line */
-    .sb-status { display: none !important; }
-    section[data-testid="stSidebar"] hr { display: none !important; margin: 0 !important; }
-    section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { display: none !important; }
+    .mobile-nav a.mnav-link.active {
+        color: #E6EDF3; background: rgba(58,201,224,.12); border-color: rgba(58,201,224,.42);
+    }
 }
 
 /* ── Native metric cards ───────────────────────────────────────────────── */
