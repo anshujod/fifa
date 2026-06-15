@@ -87,17 +87,18 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
 
     fig = go.Figure()
 
-    # Column x-positions
-    round_x = {0: 0.05, 1: 0.22, 2: 0.38, 3: 0.55, 4: 0.72, 5: 0.88}
+    # Column x-positions — evenly spaced; labels flow rightward from each marker,
+    # so headers are left-anchored at the same x to sit flush with their column.
+    round_x = {0: 0.02, 1: 0.18, 2: 0.34, 3: 0.50, 4: 0.66, 5: 0.82}
     col_labels = ["R32", "R16", "QF", "SF", "Final", "Champion"]
 
     # Draw column headers
     for col, label in enumerate(col_labels):
         fig.add_annotation(
-            x=round_x[col], y=1.03, xref="paper", yref="paper",
+            x=round_x[col], y=1.04, xref="paper", yref="paper",
             text=f"<b>{label}</b>", showarrow=False,
-            font=dict(size=12, color=theme.TEXT_3),
-            xanchor="center",
+            font=dict(size=12, color=theme.ACCENT),
+            xanchor="left",
         )
 
     # --- simplified bracket: show top MC teams per round ---
@@ -118,7 +119,10 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
             y = 1 - (row_i + 0.5) / n
             stage = stage_col_map[col_idx]
             p = float(mc_df[mc_df["team"] == team][stage].values[0])
-            colour = _prob_colour(p)
+            # The single champion (rightmost column) is the one amber signal.
+            is_champ = col_idx == 5
+            colour = theme.GOLD if is_champ else _prob_colour(p)
+            txt_color = theme.GOLD if is_champ else theme.TEXT
 
             # Team card (rectangle annotation)
             x = round_x[col_idx]
@@ -130,37 +134,26 @@ def _make_bracket_figure(mc_df: pd.DataFrame, groups: dict) -> go.Figure:
                 x=[x], y=[y],
                 mode="markers+text",
                 marker=dict(
-                    size=14,
+                    size=12,
                     color=colour,
                     symbol="square",
-                    line=dict(color="rgba(248,250,252,.25)", width=1),
+                    line=dict(color="rgba(255,255,255,.18)", width=1),
                 ),
-                text=[label],
-                textposition="middle right" if col_idx < 3 else "middle left",
-                textfont=dict(size=9 if n > 8 else 11, color=theme.TEXT),
+                text=["  " + label],
+                textposition="middle right",
+                textfont=dict(size=9 if n > 8 else 11, color=txt_color),
                 hovertemplate=f"<b>{team}</b><br>P({col_labels[col_idx]}): {p*100:.1f}%<extra></extra>",
                 showlegend=False,
             ))
 
-    # Highlight champion
-    champ = mc_df.nlargest(1, "p_winner").iloc[0]
-    fig.add_annotation(
-        x=round_x[5], y=0.5,
-        text=f"{flag(champ['team'])} <b>{champ['team']}</b>",
-        showarrow=False,
-        font=dict(size=15, color=theme.GOLD),
-        xanchor="center",
-        yshift=20,
-    )
-
     fig.update_layout(
-        title=dict(text="WC 2026 Bracket — MC Top Teams by Round", font_size=15),
+        title=dict(text="WC 2026 Bracket — most likely teams by round", font_size=14),
         plot_bgcolor="rgba(0,0,0,0)",
         paper_bgcolor="rgba(0,0,0,0)",
         font_color=theme.TEXT,
         height=700,
-        xaxis=dict(visible=False, range=[-0.05, 1.1]),
-        yaxis=dict(visible=False, range=[-0.02, 1.1]),
+        xaxis=dict(visible=False, range=[-0.04, 1.04]),
+        yaxis=dict(visible=False, range=[-0.02, 1.10]),
         margin=dict(t=60, b=20, l=20, r=20),
     )
     return fig
