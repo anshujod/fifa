@@ -1,6 +1,6 @@
 # FIFA World Cup 2026 Prediction Engine
 
-A simulation-driven tournament intelligence platform for FIFA World Cup 2026. Built with an ensemble machine learning pipeline, ELO ratings, and 10,000 Monte Carlo simulations, presented through a premium Streamlit analytics dashboard.
+A simulation-driven tournament intelligence platform for FIFA World Cup 2026. Built with an ensemble machine learning pipeline, ELO ratings, and 10,000 Monte Carlo simulations, presented through a monospace, trading-terminal-style Streamlit dashboard.
 
 ---
 
@@ -26,7 +26,7 @@ A simulation-driven tournament intelligence platform for FIFA World Cup 2026. Bu
 
 This system predicts match outcomes and simulates the full FIFA World Cup 2026 bracket. It combines a Poisson goal model with gradient-boosted classifiers, stacked through a logistic regression meta-learner. The calibrated ensemble is then used to drive 10,000 full-tournament Monte Carlo simulations, producing championship, qualification, and per-stage win probabilities for all 48 teams with Wilson score 95% confidence intervals.
 
-The dashboard presents results in a flat, typography-led analytics UI — no decorative elements, no rainbow charts, data-forward layout throughout.
+The dashboard — "The Forecasting Terminal" — presents results in a near-black, monospace, Bloomberg-style analytics UI: a graph-paper canvas, IBM Plex Mono for all figures so numbers align into columns, IBM Plex Sans for prose, a single cyan accent carrying all data and interaction, and a single amber signal marking exactly the one champion/leader per view. Flat surfaces, hairline borders, no decorative elements, no rainbow charts.
 
 ---
 
@@ -51,7 +51,7 @@ Per-team analytics including squad composition by position, top-capped players, 
 Side-by-side comparison for any two teams across eight dimensions: Attack, Defence, Form, ELO, FIFA Rank, Squad Value, Experience, and Head-to-Head record. Rendered as an overlay radar chart plus a metric table with winner highlighting.
 
 **Model Insights**  
-Calibration curves, cross-model accuracy and RPS comparison, feature importance (native XGBoost gain with graceful fallback if SHAP is unavailable), and backtest results for WC 2014, 2018, and 2022.
+Calibration curves, cross-model accuracy and RPS comparison, SHAP-based feature importance (with native XGBoost gain as an automatic fallback), and backtest results for WC 2014, 2018, and 2022. SHAP beeswarm, summary, dependency, and waterfall plots are pre-rendered to `results/shap_plots/`.
 
 ---
 
@@ -196,7 +196,7 @@ Ranked Probability Score (RPS) measures calibration quality across all three out
 fifa/
 ├── dashboard/
 │   ├── app.py                    # Entry point, sidebar, routing
-│   ├── pages/
+│   ├── views/
 │   │   ├── home.py
 │   │   ├── match_predictor.py
 │   │   ├── group_standings.py
@@ -274,6 +274,10 @@ fifa/
 │   ├── monte_carlo_stats.json
 │   ├── calibration_curves.png
 │   └── shap_plots/
+│       ├── shap_beeswarm.html
+│       ├── shap_summary.html
+│       ├── shap_dependency.html
+│       └── shap_waterfall.html
 │
 ├── notebooks/
 │   ├── 02_feature_engineering.ipynb
@@ -372,13 +376,19 @@ No environment variables are required. The app does not make external API calls 
 **`.streamlit/config.toml`**
 
 ```toml
+[client]
+showSidebarNavigation = false
+
 [theme]
-primaryColor = "#3B82F6"
-backgroundColor = "#0B1020"
-secondaryBackgroundColor = "#172033"
-textColor = "#F8FAFC"
-font = "sans serif"
+base = "dark"
+primaryColor = "#3AC9E0"          # signal cyan — the one data accent
+backgroundColor = "#0A0C10"       # near-black terminal canvas
+secondaryBackgroundColor = "#11151C"
+textColor = "#E6EDF3"
+font = "monospace"
 ```
+
+The full design system (palette, IBM Plex Mono/Sans typography, amber champion signal, spacing tokens) is documented in `DESIGN.md` and implemented in `dashboard/utils/theme.py`.
 
 **`packages.txt`** (system packages for Streamlit Cloud)
 
@@ -402,9 +412,12 @@ lightgbm==4.6.0
 joblib==1.5.3
 requests==2.34.2
 matplotlib==3.10.9
+shap==0.52.0
+numba==0.65.1
+llvmlite==0.47.0
 ```
 
-All packages ship Python 3.13 wheels. SHAP is not included because `shap` depends on `numba`, which does not yet support NumPy 2.4. The Model Insights page detects SHAP's absence and falls back to native XGBoost feature importance (gain-based) automatically.
+All packages ship Python 3.13 wheels. SHAP (with its `numba`/`llvmlite` dependencies) powers the feature-importance plots on the Model Insights page; if SHAP is unavailable at runtime, the page falls back to native XGBoost gain-based importance automatically.
 
 ---
 
